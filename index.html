@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maths Interface — Winchmore School</title>
+  <meta name="description" content="Welcome to everything about maths — Winchmore School Student Interface" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0B1F3A;
+      --teal:   #00C9A7;
+      --teal-dk:#009E84;
+      --amber:  #FFB347;
+      --white:  #FFFFFF;
+      --slate:  #F0F4F8;
+      --text:   #1E2D3D;
+      --muted:  #5A7184;
+      --radius: 14px;
+      --shadow: 0 4px 20px rgba(11,31,58,.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.3);
+    }
+
+    .nav-brand {
+      display: flex; align-items: center; gap: .7rem;
+      text-decoration: none;
+    }
+
+    .nav-logo {
+      width: 36px; height: 36px; background: var(--teal);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+      color: var(--navy); font-size: 1.1rem;
+    }
+
+    .nav-brand-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700; font-size: 1.1rem; color: var(--white);
+      line-height: 1.2;
+    }
+
+    .nav-brand-text span {
+      display: block; font-size: .7rem; font-weight: 400;
+      color: var(--teal); letter-spacing: .08em; text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex; gap: .2rem; list-style: none; align-items: center;
+    }
+
+    .nav-links > li { position: relative; }
+
+    .nav-links a, .nav-links button {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      font-family: 'Nunito', sans-serif; font-size: .9rem; font-weight: 600;
+      padding: .5rem .75rem; border-radius: 8px;
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; gap: .3rem;
+      transition: background .2s, color .2s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover, .nav-links button:hover,
+    .nav-links a:focus-visible, .nav-links button:focus-visible {
+      background: rgba(255,255,255,.1); color: var(--white);
+      outline: 2px solid var(--teal); outline-offset: 2px;
+    }
+
+    .nav-links .has-dropdown > button::after { content: ' ▾'; font-size: .7rem; }
+
+    .dropdown {
+      display: none; position: absolute; top: calc(100% + 8px); left: 0;
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); min-width: 200px;
+      list-style: none; overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+
+    .dropdown a {
+      color: var(--text); padding: .6rem 1rem; border-radius: 0;
+      font-size: .85rem;
+    }
+    .dropdown a:hover { background: var(--slate); color: var(--navy); outline: none; }
+
+    .has-dropdown:hover .dropdown,
+    .has-dropdown:focus-within .dropdown { display: block; }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: .5rem;
+    }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
+
+    .mobile-menu {
+      display: none; flex-direction: column;
+      background: var(--navy); padding: 1rem 2rem 1.5rem;
+    }
+    .mobile-menu a {
+      color: rgba(255,255,255,.85); text-decoration: none;
+      font-weight: 600; padding: .5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .mobile-menu a:hover { color: var(--teal); }
+    .mobile-menu.open { display: flex; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      position: relative; overflow: hidden;
+      padding: 5rem 2rem 4.5rem;
+      text-align: center;
+      min-height: 420px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+
+    /* Floating maths symbols — the signature element */
+    .hero-symbols {
+      position: absolute; inset: 0; pointer-events: none;
+      overflow: hidden;
+    }
+
+    .sym {
+      position: absolute;
+      font-family: 'Space Grotesk', sans-serif;
+      color: rgba(0,201,167,.12);
+      font-size: 5rem;
+      animation: floatSym linear infinite;
+      user-select: none;
+      line-height: 1;
+    }
+
+    @keyframes floatSym {
+      0%   { transform: translateY(110%) rotate(0deg); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { transform: translateY(-110%) rotate(30deg); opacity: 0; }
+    }
+
+    .hero-eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--teal); font-weight: 600; margin-bottom: 1rem;
+      position: relative; z-index: 1;
+    }
+
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 700; color: var(--white);
+      line-height: 1.15; position: relative; z-index: 1;
+    }
+
+    .hero h1 em {
+      font-style: normal; color: var(--teal);
+    }
+
+    .hero-sub {
+      margin-top: 1.2rem; max-width: 560px;
+      color: rgba(255,255,255,.7); font-size: 1.05rem;
+      position: relative; z-index: 1;
+    }
+
+    .hero-cta {
+      margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;
+      justify-content: center; position: relative; z-index: 1;
+    }
+
+    .btn-primary {
+      background: var(--teal); color: var(--navy);
+      font-family: 'Nunito', sans-serif; font-weight: 700;
+      font-size: .95rem; padding: .75rem 1.8rem;
+      border-radius: 50px; text-decoration: none;
+      border: 2px solid var(--teal);
+      transition: background .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: .4rem;
+    }
+    .btn-primary:hover { background: var(--teal-dk); border-color: var(--teal-dk); transform: translateY(-1px); }
+
+    .btn-outline {
+      background: transparent; color: var(--white);
+      font-family: 'Nunito', sans-serif; font-weight: 700;
+      font-size: .95rem; padding: .75rem 1.8rem;
+      border-radius: 50px; text-decoration: none;
+      border: 2px solid rgba(255,255,255,.35);
+      transition: border-color .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: .4rem;
+    }
+    .btn-outline:hover { border-color: var(--white); transform: translateY(-1px); }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section-alt { background: var(--slate); }
+
+    .container {
+      max-width: 1080px; margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center; margin-bottom: 2.5rem;
+    }
+
+    .section-eyebrow {
+      font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--teal-dk); font-weight: 700; margin-bottom: .5rem;
+    }
+
+    .section-header h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700; color: var(--navy);
+    }
+
+    .section-header p {
+      color: var(--muted); margin-top: .6rem; font-size: 1rem; max-width: 540px; margin-left: auto; margin-right: auto;
+    }
+
+    /* ── YEAR CARDS ── */
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .year-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex; flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .year-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 32px rgba(11,31,58,.18);
+    }
+
+    .year-card-banner {
+      height: 8px;
+    }
+
+    .year-card-body {
+      padding: 1.4rem 1.5rem 1.6rem;
+      flex: 1; display: flex; flex-direction: column;
+    }
+
+    .year-badge {
+      display: inline-block;
+      font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      padding: .25rem .7rem; border-radius: 50px;
+      margin-bottom: .8rem;
+    }
+
+    .year-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem; font-weight: 700; color: var(--navy);
+      margin-bottom: .4rem;
+    }
+
+    .year-card p {
+      font-size: .9rem; color: var(--muted); flex: 1;
+    }
+
+    .year-card-arrow {
+      margin-top: 1rem; font-size: .85rem; font-weight: 700;
+      display: flex; align-items: center; gap: .3rem;
+    }
+
+    /* colour themes per year */
+    .y7  .year-card-banner { background: #4ECDC4; }
+    .y7  .year-badge { background: #E0F9F7; color: #1A9E96; }
+    .y7  .year-card-arrow { color: #1A9E96; }
+
+    .y8  .year-card-banner { background: #45B7D1; }
+    .y8  .year-badge { background: #E0F3FA; color: #1889A8; }
+    .y8  .year-card-arrow { color: #1889A8; }
+
+    .y9  .year-card-banner { background: #7C83FD; }
+    .y9  .year-badge { background: #ECEEFF; color: #4A52CC; }
+    .y9  .year-card-arrow { color: #4A52CC; }
+
+    .y10 .year-card-banner { background: #F7B731; }
+    .y10 .year-badge { background: #FEF6DE; color: #C48A0B; }
+    .y10 .year-card-arrow { color: #C48A0B; }
+
+    .y11 .year-card-banner { background: #FC5C65; }
+    .y11 .year-badge { background: #FDE8E9; color: #C2282F; }
+    .y11 .year-card-arrow { color: #C2282F; }
+
+    .yal .year-card-banner { background: #26de81; }
+    .yal .year-badge { background: #E3FAF0; color: #178B52; }
+    .yal .year-card-arrow { color: #178B52; }
+
+    /* ── QUICK LINKS (info cards) ── */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.4rem;
+    }
+
+    .info-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1.6rem 1.8rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.06);
+      text-decoration: none; color: inherit;
+      display: flex; flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .info-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(11,31,58,.15); }
+
+    .info-icon {
+      font-size: 2rem; margin-bottom: .8rem;
+    }
+
+    .info-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem; font-weight: 700; color: var(--navy);
+      margin-bottom: .5rem;
+    }
+
+    .info-card p { font-size: .9rem; color: var(--muted); }
+
+    /* ── HOMEWORK SECTION ── */
+    .hw-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .hw-card {
+      border-radius: var(--radius);
+      padding: 1.4rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none; color: inherit;
+      border: 2px solid transparent;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .hw-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+    .hw-card.century { background: #EEF2FF; border-color: #c7d2fe; }
+    .hw-card.century:hover { border-color: #818cf8; }
+    .hw-card.mathswatch { background: #FFF7ED; border-color: #fed7aa; }
+    .hw-card.mathswatch:hover { border-color: #fb923c; }
+    .hw-card.drfrost { background: #F0FDF4; border-color: #bbf7d0; }
+    .hw-card.drfrost:hover { border-color: #4ade80; }
+
+    .hw-badge {
+      width: 52px; height: 52px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; flex-shrink: 0;
+    }
+    .century .hw-badge { background: #6366f1; }
+    .mathswatch .hw-badge { background: #f97316; }
+    .drfrost .hw-badge { background: #22c55e; }
+
+    .hw-card h3 {
+      font-family: 'Space Grotesk', sans-serif; font-size: .95rem;
+      font-weight: 700; color: var(--navy);
+    }
+    .hw-card p { font-size: .82rem; color: var(--muted); margin-top: .2rem; }
+
+    /* ── TIPS STRIP ── */
+    .tips-strip {
+      background: var(--navy); padding: 3rem 2rem;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tip {
+      display: flex; gap: .9rem; align-items: flex-start;
+    }
+
+    .tip-icon {
+      font-size: 1.8rem; flex-shrink: 0;
+    }
+
+    .tip h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: .95rem; font-weight: 700; color: var(--white);
+      margin-bottom: .3rem;
+    }
+
+    .tip p { font-size: .85rem; color: rgba(255,255,255,.6); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #07162A;
+      padding: 2rem;
+      text-align: center;
+      color: rgba(255,255,255,.45);
+      font-size: .82rem;
+    }
+    footer a { color: var(--teal); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero { padding: 3.5rem 1.5rem 3rem; }
+      .section { padding: 3rem 1.2rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sym { animation: none; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-brand" aria-label="Winchmore Maths home">
+    <div class="nav-logo" aria-hidden="true">∑</div>
+    <div class="nav-brand-text">
+      Maths Interface
+      <span>Winchmore School</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#year-groups">Year Groups</a></li>
+    <li><a href="#homework">Homework</a></li>
+    <li><a href="#revision">Revision</a></li>
+    <li class="has-dropdown">
+      <button aria-expanded="false" aria-haspopup="true">Year 9</button>
+      <ul class="dropdown" role="list">
+        <li><a href="#">Set 1 &amp; 2</a></li>
+        <li><a href="#">Set 3</a></li>
+        <li><a href="#">Set 4 &amp; 5</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <button aria-expanded="false" aria-haspopup="true">Year 10</button>
+      <ul class="dropdown" role="list">
+        <li><a href="#">Set 1 &amp; 2 Higher</a></li>
+        <li><a href="#">Set 3 Higher</a></li>
+        <li><a href="#">Set 4 &amp; 5</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <button aria-expanded="false" aria-haspopup="true">Year 11</button>
+      <ul class="dropdown" role="list">
+        <li><a href="#">Set 1 &amp; 2 Higher</a></li>
+        <li><a href="#">Set 3 Higher</a></li>
+        <li><a href="#">Set 4 &amp; 5 Foundation</a></li>
+        <li><a href="#">OCR Foundation</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <button aria-expanded="false" aria-haspopup="true">A Level</button>
+      <ul class="dropdown" role="list">
+        <li><a href="#">Year 12</a></li>
+        <li><a href="#">Year 13</a></li>
+      </ul>
+    </li>
+    <li><a href="#games">Games</a></li>
+  </ul>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="#year-groups">Year Groups</a>
+  <a href="#homework">Homework</a>
+  <a href="#revision">Revision</a>
+  <a href="#">Year 9</a>
+  <a href="#">Year 10</a>
+  <a href="#">Year 11</a>
+  <a href="#">A Level</a>
+  <a href="#games">🎮 Games</a>
+</div>
+
+<!-- ── HERO ── -->
+<header class="hero" role="banner">
+  <div class="hero-symbols" aria-hidden="true" id="symContainer"></div>
+
+  <div class="hero-eyebrow">Winchmore School — Learning to Realise Potential</div>
+  <h1>Your <em>Maths</em> Hub,<br>All in One Place</h1>
+  <p class="hero-sub">Find your year group, access homework sites, explore revision resources, and play maths games — everything you need, right here.</p>
+  <div class="hero-cta">
+    <a href="#year-groups" class="btn-primary">Find Your Year Group →</a>
+    <a href="#homework" class="btn-outline">Homework Sites</a>
+  </div>
+</header>
+
+<!-- ── HOW TO USE ── -->
+<section class="section" aria-labelledby="howto-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Getting Started</p>
+      <h2 id="howto-heading">How to Use This Site</h2>
+      <p>Three simple steps to get everything you need.</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-card" style="border-top: 4px solid var(--teal);">
+        <div class="info-icon">📚</div>
+        <h3>Find Your Year Group</h3>
+        <p>Scroll down and click your year banner. You'll find details on what you're currently studying in lessons.</p>
+      </div>
+      <div class="info-card" style="border-top: 4px solid var(--amber);">
+        <div class="info-icon">✅</div>
+        <h3>Log In to Homework Sites</h3>
+        <p>Visit the Homework section for login details and links to Century Tech, MathsWatch, and Dr Frost Maths.</p>
+      </div>
+      <div class="info-card" style="border-top: 4px solid #FC5C65;">
+        <div class="info-icon">🎯</div>
+        <h3>Revise &amp; Play</h3>
+        <p>Use the Revision section for videos and topic boosters, or visit Games for fun ways to build your skills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── YEAR GROUPS ── -->
+<section class="section section-alt" id="year-groups" aria-labelledby="years-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Your Learning</p>
+      <h2 id="years-heading">Click Your Year Group</h2>
+      <p>Explore topics, resources, and lesson content tailored for your class.</p>
+    </div>
+    <div class="year-grid">
+
+      <a href="#" class="year-card y7" aria-label="Year 7 KS3 Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">KS3</span>
+          <h3>Year 7</h3>
+          <p>Complete KS3 course — number, algebra, geometry, and statistics from the start.</p>
+          <span class="year-card-arrow">Explore Year 7 →</span>
+        </div>
+      </a>
+
+      <a href="#" class="year-card y8" aria-label="Year 8 KS3 Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">KS3</span>
+          <h3>Year 8</h3>
+          <p>Building on Year 7 — deeper algebra, ratio, and probability skills.</p>
+          <span class="year-card-arrow">Explore Year 8 →</span>
+        </div>
+      </a>
+
+      <a href="#" class="year-card y9" aria-label="Year 9 KS3 Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">KS3</span>
+          <h3>Year 9</h3>
+          <p>Completing KS3 and beginning GCSE preparation — Sets 1–5 resources available.</p>
+          <span class="year-card-arrow">Explore Year 9 →</span>
+        </div>
+      </a>
+
+      <a href="#" class="year-card y10" aria-label="Year 10 KS4 Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">KS4 — GCSE</span>
+          <h3>Year 10</h3>
+          <p>GCSE content for Higher and Foundation — Sets 1–5 with targeted resources.</p>
+          <span class="year-card-arrow">Explore Year 10 →</span>
+        </div>
+      </a>
+
+      <a href="#" class="year-card y11" aria-label="Year 11 GCSE Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">KS4 — GCSE</span>
+          <h3>Year 11</h3>
+          <p>Final GCSE year — exam technique, past papers, and topic-by-topic revision for all sets.</p>
+          <span class="year-card-arrow">Explore Year 11 →</span>
+        </div>
+      </a>
+
+      <a href="#" class="year-card yal" aria-label="A Level Maths">
+        <div class="year-card-banner"></div>
+        <div class="year-card-body">
+          <span class="year-badge">A Level</span>
+          <h3>A Level</h3>
+          <p>Years 12 and 13 — pure maths, statistics, and mechanics for sixth form students.</p>
+          <span class="year-card-arrow">Explore A Level →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── HOMEWORK ── -->
+<section class="section" id="homework" aria-labelledby="hw-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Weekly Tasks</p>
+      <h2 id="hw-heading">Homework Sites</h2>
+      <p>Maths homework is set weekly. Log in to your platform below to find and complete your tasks.</p>
+    </div>
+    <div class="hw-grid">
+      <a href="#" class="hw-card century">
+        <div class="hw-badge">🧠</div>
+        <div>
+          <h3>Century Tech</h3>
+          <p>AI-powered practice and diagnostics</p>
+        </div>
+      </a>
+      <a href="#" class="hw-card mathswatch">
+        <div class="hw-badge">📺</div>
+        <div>
+          <h3>MathsWatch</h3>
+          <p>Video lessons and online exercises</p>
+        </div>
+      </a>
+      <a href="#" class="hw-card drfrost">
+        <div class="hw-badge">❄️</div>
+        <div>
+          <h3>Dr Frost Maths</h3>
+          <p>Topic-based questions and challenges</p>
+        </div>
+      </a>
+    </div>
+    <p style="margin-top:1.5rem; color:var(--muted); font-size:.9rem;">
+      🔑 Forgotten your login? Click the platform logo for login help. If you still can't get in, ask your teacher to reset your details.
+    </p>
+  </div>
+</section>
+
+<!-- ── TIPS STRIP ── -->
+<div class="tips-strip" role="complementary" aria-label="Homework tips">
+  <div class="container">
+    <div class="tips-grid">
+      <div class="tip">
+        <div class="tip-icon">✅</div>
+        <div>
+          <h4>Where to Go</h4>
+          <p>Log in to Century Tech, MathsWatch, or Dr Frost Maths using the links and details on the Homework page.</p>
+        </div>
+      </div>
+      <div class="tip">
+        <div class="tip-icon">🗓️</div>
+        <div>
+          <h4>When It's Set</h4>
+          <p>Homework is posted weekly — check regularly so you don't miss a task.</p>
+        </div>
+      </div>
+      <div class="tip">
+        <div class="tip-icon">🆘</div>
+        <div>
+          <h4>Forgotten Your Login?</h4>
+          <p>Click the platform logo for help. If it still doesn't work, ask your teacher to reset your details.</p>
+        </div>
+      </div>
+      <div class="tip">
+        <div class="tip-icon">⏰</div>
+        <div>
+          <h4>Don't Leave It Late</h4>
+          <p>Little and often is better than all at once — 20 minutes a day makes a real difference.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── REVISION ── -->
+<section class="section section-alt" id="revision" aria-labelledby="rev-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Sharpen Your Skills</p>
+      <h2 id="rev-heading">Revision Resources</h2>
+      <p>Everything you need to prepare for tests, mocks, and GCSE exams.</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🎯</div>
+        <h3>Tailored for Your Level</h3>
+        <p>Whether you're on Foundation or Higher, you'll find revision videos, worked examples, and topic boosters to suit you.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🧠</div>
+        <h3>Smart Revision Strategies</h3>
+        <p>Explore tips on how to revise effectively — spaced practice, flashcards, and goal-setting ideas that make a real difference.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🛠️</div>
+        <h3>Support When You Need It</h3>
+        <p>Missed a lesson? Use the recap links here, and ask your teacher about lunchtime help sessions and interventions.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="#" class="btn-primary">Go to Revision →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── GAMES ── -->
+<section class="section" id="games" aria-labelledby="games-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Learn Through Play</p>
+      <h2 id="games-heading">Maths Games &amp; Puzzles</h2>
+      <p>Build confidence and sharpen skills with free, interactive games — no login needed for most.</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-card" style="border-top: 4px solid #7C83FD;">
+        <div class="info-icon">🎮</div>
+        <h3>Interactive Games</h3>
+        <p>A collection of engaging maths games and puzzles — from logic challenges to number fluency boosters.</p>
+      </div>
+      <div class="info-card" style="border-top: 4px solid #F7B731;">
+        <div class="info-icon">🔗</div>
+        <h3>Easy-Access Links</h3>
+        <p>All games are free to play online. Sites are grouped by topic and skill level, so you can find the right challenge quickly.</p>
+      </div>
+      <div class="info-card" style="border-top: 4px solid #26de81;">
+        <div class="info-icon">📈</div>
+        <h3>Build Confidence</h3>
+        <p>Use games to reinforce key maths concepts, improve recall, and develop problem-solving skills in a fun way.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="#" class="btn-primary">Explore Games →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>Winchmore School Maths Department &mdash; <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
+  <p style="margin-top:.4rem;">Problems with this site? Contact your Maths teacher.</p>
+</footer>
+
+<script>
+  // ── Floating maths symbols ──
+  const symbols = ['∑','π','√','∫','≠','∞','Δ','θ','λ','φ','∂','±','×','÷'];
+  const container = document.getElementById('symContainer');
+
+  function spawnSymbol() {
+    const el = document.createElement('div');
+    el.className = 'sym';
+    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    el.style.left = Math.random() * 100 + '%';
+    const dur = 10 + Math.random() * 14;
+    const delay = Math.random() * -dur;
+    el.style.animationDuration = dur + 's';
+    el.style.animationDelay = delay + 's';
+    el.style.fontSize = (3 + Math.random() * 4) + 'rem';
+    container.appendChild(el);
+    // Remove after a couple of cycles
+    setTimeout(() => el.remove(), (dur + Math.abs(delay)) * 1000 + 2000);
+  }
+
+  // Spawn a batch immediately then top up periodically
+  for (let i = 0; i < 14; i++) spawnSymbol();
+  setInterval(spawnSymbol, 2200);
+
+  // ── Mobile menu toggle ──
+  function toggleMenu(btn) {
+    const menu = document.getElementById('mobile-nav');
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  }
+</script>
+
+</body>
+</html>
