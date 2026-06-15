@@ -5,52 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Homework — Winchmore Maths</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* ── Platform card — full card is the link ── */
+    .platform-section {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(11,31,58,.13);
+      margin-bottom: 2rem;
+      border: 1px solid rgba(0,0,0,.07);
+    }
+
+    .platform-header {
+      display: flex; align-items: center; gap: 1.2rem;
+      padding: 1.4rem 1.8rem;
+      text-decoration: none;
+      transition: filter .2s;
+    }
+    .platform-header:hover { filter: brightness(1.06); }
+
+    .platform-logo {
+      width: 56px; height: 56px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; flex-shrink: 0; background: rgba(255,255,255,.2);
+    }
+
+    .platform-title { flex: 1; }
+    .platform-title h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: .15rem;
+    }
+    .platform-title p { font-size: .88rem; color: rgba(255,255,255,.8); }
+
+    .platform-cta {
+      background: rgba(255,255,255,.2); color: #fff;
+      font-family: 'Nunito', sans-serif; font-weight: 700; font-size: .85rem;
+      padding: .5rem 1.1rem; border-radius: 50px;
+      white-space: nowrap; flex-shrink: 0;
+      border: 1.5px solid rgba(255,255,255,.4);
+      transition: background .2s;
+    }
+    .platform-header:hover .platform-cta { background: rgba(255,255,255,.35); }
+
+    /* Colour themes */
+    .p-century  .platform-header { background: linear-gradient(135deg,#4f46e5,#7c3aed); }
+    .p-mwatch   .platform-header { background: linear-gradient(135deg,#ea580c,#f97316); }
+    .p-drfrost  .platform-header { background: linear-gradient(135deg,#16a34a,#22c55e); }
+    .p-tassomai .platform-header { background: linear-gradient(135deg,#7c3aed,#a855f7); }
+
+    /* Login details body */
+    .platform-body {
+      background: #fff; padding: 1.5rem 1.8rem;
+    }
+
+    .login-title {
+      font-family: 'Space Grotesk', sans-serif; font-size: .8rem;
+      font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 1rem;
+    }
+
+    .login-rows { display: flex; flex-direction: column; gap: .8rem; }
+
+    .login-row {
+      background: var(--slate); border-radius: 10px;
+      padding: .9rem 1.1rem;
+    }
+
+    .login-row-label {
+      font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: .35rem;
+    }
+
+    .login-row-values { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+    .login-field {
+      display: flex; align-items: center; gap: .5rem;
+      background: #fff; border-radius: 8px; padding: .4rem .8rem;
+      border: 1px solid rgba(0,0,0,.08);
+      font-size: .88rem;
+    }
+    .login-field strong {
+      color: var(--muted); font-weight: 600; font-size: .78rem;
+      text-transform: uppercase; letter-spacing: .05em; white-space: nowrap;
+    }
+    .login-field code {
+      font-family: 'Courier New', monospace; font-size: .88rem;
+      color: var(--navy); font-weight: 700;
+    }
+
+    .login-step {
+      display: flex; align-items: flex-start; gap: .7rem;
+      font-size: .9rem; color: var(--text);
+    }
+    .step-num {
+      background: var(--navy); color: #fff;
+      width: 22px; height: 22px; border-radius: 50%;
+      font-size: .72rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: .1rem;
+    }
+
+    /* Tip banner */
+    .tip-banner {
+      display: flex; align-items: center; gap: .8rem;
+      background: #FEF6DE; border: 1.5px solid #F7B731;
+      border-radius: 12px; padding: 1rem 1.2rem;
+      margin-bottom: 2.5rem; font-size: .9rem; color: var(--text);
+    }
+    .tip-banner span { font-size: 1.4rem; flex-shrink: 0; }
+  </style>
 </head>
 <body>
 
 <nav role="navigation" aria-label="Main navigation">
-  <a href="index.html" class="nav-brand">
-    <img src="winchmore_maths_logo.png" alt="Winchmore Mathematics" class="nav-logo-img"/>
+  <a href="index.html" class="nav-brand" aria-label="Winchmore Maths home">
+    <img src="winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
     <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
   </a>
   <ul class="nav-links" role="list">
     <li><a href="index.html">Home</a></li>
-    <li><a href="homework.html">Homework</a></li>
+    <li><a href="homework.html" class="active">Homework</a></li>
     <li><a href="revision.html">Revision</a></li>
     <li><a href="year-7.html">Year 7</a></li>
     <li><a href="year-8.html">Year 8</a></li>
-    <li class="has-dropdown">
-      <button aria-haspopup="true">Year 9</button>
+    <li class="has-dropdown"><button aria-haspopup="true">Year 9</button>
       <ul class="dropdown" role="list">
         <li><a href="year-9/set-1-2.html">Set 1 &amp; 2</a></li>
         <li><a href="year-9/set-3.html">Set 3</a></li>
         <li><a href="year-9/set-4-5.html">Set 4 &amp; 5</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <button aria-haspopup="true">Year 10</button>
+      </ul></li>
+    <li class="has-dropdown"><button aria-haspopup="true">Year 10</button>
       <ul class="dropdown" role="list">
         <li><a href="year-10/set-1-2-higher.html">Set 1 &amp; 2 Higher</a></li>
         <li><a href="year-10/set-3-higher.html">Set 3 Higher</a></li>
         <li><a href="year-10/set-4-5.html">Set 4 &amp; 5</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <button aria-haspopup="true">Year 11</button>
+      </ul></li>
+    <li class="has-dropdown"><button aria-haspopup="true">Year 11</button>
       <ul class="dropdown" role="list">
         <li><a href="year-11/set-1-2-higher.html">Set 1 &amp; 2 Higher</a></li>
         <li><a href="year-11/set-3-higher.html">Set 3 Higher</a></li>
         <li><a href="year-11/set-4-5-foundation.html">Set 4 &amp; 5 Foundation</a></li>
         <li><a href="year-11/foundation/ocr-foundation.html">OCR Foundation</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <button aria-haspopup="true">A Level</button>
+      </ul></li>
+    <li class="has-dropdown"><button aria-haspopup="true">A Level</button>
       <ul class="dropdown" role="list">
         <li><a href="a-level/year-12.html">Year 12</a></li>
         <li><a href="a-level/year-13.html">Year 13</a></li>
-      </ul>
-    </li>
+      </ul></li>
     <li><a href="games.html">Games</a></li>
   </ul>
   <button class="hamburger" aria-label="Open menu" aria-expanded="false"
@@ -73,16 +173,17 @@
   <a href="year-11/set-1-2-higher.html">Year 11 — Set 1 &amp; 2 Higher</a>
   <a href="year-11/set-3-higher.html">Year 11 — Set 3 Higher</a>
   <a href="year-11/set-4-5-foundation.html">Year 11 — Foundation</a>
+  <a href="year-11/foundation/ocr-foundation.html">OCR Foundation</a>
   <a href="a-level/year-12.html">A Level — Year 12</a>
   <a href="a-level/year-13.html">A Level — Year 13</a>
   <a href="games.html">&#127918; Games</a>
 </div>
 
-<div class="page-hero-bar" style="background:#00C9A7;height:6px;"></div>
-<header class="page-hero" style="border-top:5px solid #00C9A7;">
+<div style="background:#00C9A7;height:5px;"></div>
+<header class="page-hero">
   <p class="page-hero-eyebrow">Weekly Tasks</p>
   <h1>Homework <em>Sites</em></h1>
-  <p>All the login details and links you need to complete your weekly maths homework — in one place.</p>
+  <p>Click a platform to go straight to the site — then use the login details below to sign in.</p>
 </header>
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <a href="index.html">Home</a> <span>›</span> Homework
@@ -90,110 +191,134 @@
 
 <section class="section">
  <div class="container">
-  <div class="callout">
-    <strong>&#128203; How it works:</strong> Homework is set weekly. Log in to your platform below,
-    find your assigned task, and submit it before the deadline. If you're stuck, check the
-    tutorial videos inside each platform first, then ask your teacher.
+
+  <div class="tip-banner">
+    <span>&#128197;</span>
+    <div>Homework is set <strong>weekly</strong>. Log in to your platform, find the assigned task, and submit it before the deadline. If you're stuck, watch the tutorial videos inside each platform first — then ask your teacher.</div>
   </div>
 
-  <div class="section-header" style="margin-top:2.5rem;">
-    <p class="section-eyebrow">Platforms</p>
-    <h2>Choose Your Homework Site</h2>
-  </div>
-
-  <div class="hw-grid">
-    <a href="https://www.century.tech/" target="_blank" rel="noopener" class="hw-card century">
-      <div class="hw-badge">&#129504;</div>
-      <div>
-        <h3>Century Tech</h3>
-        <p>AI-powered practice and diagnostics</p>
+  <!-- ── CENTURY TECH ── -->
+  <div class="platform-section p-century">
+    <a href="https://app.century.tech/login/" target="_blank" rel="noopener" class="platform-header" aria-label="Go to Century Tech">
+      <div class="platform-logo">&#129504;</div>
+      <div class="platform-title">
+        <h2>Century Tech</h2>
+        <p>AI-powered practice — adapts to your level automatically</p>
       </div>
+      <span class="platform-cta">Open Site &#8594;</span>
     </a>
-    <a href="https://vle.mathswatch.co.uk/vle/" target="_blank" rel="noopener" class="hw-card mathswatch">
-      <div class="hw-badge">&#128250;</div>
-      <div>
-        <h3>MathsWatch</h3>
-        <p>Video lessons and online exercises</p>
+    <div class="platform-body">
+      <p class="login-title">&#128273; How to log in</p>
+      <div class="login-rows">
+        <div class="login-row">
+          <div class="login-row-label">All year groups</div>
+          <div class="login-row-values">
+            <div class="login-field"><strong>Email</strong><code>####@winchmore.enfield.sch.uk</code></div>
+            <div class="login-field"><strong>Password</strong><code>changeme</code></div>
+          </div>
+        </div>
       </div>
-    </a>
-    <a href="https://www.drfrost.org/" target="_blank" rel="noopener" class="hw-card drfrost">
-      <div class="hw-badge">&#10052;&#65039;</div>
-      <div>
-        <h3>Dr Frost Maths</h3>
-        <p>Topic-based questions and challenges</p>
-      </div>
-    </a>
-    <a href="https://www.tassomai.com/" target="_blank" rel="noopener" class="hw-card tassomai">
-      <div class="hw-badge">&#9889;</div>
-      <div>
-        <h3>Tassomai</h3>
-        <p>Retrieval practice via Google login</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="section-header" style="margin-top:3rem;">
-    <p class="section-eyebrow">Login Details</p>
-    <h2>How to Log In</h2>
-    <p>Use the details below for each platform. Replace #### with your student number.</p>
-  </div>
-
-  <div class="info-grid">
-    <div class="info-card" style="border-top:4px solid #6366f1;">
-      <div class="info-icon">&#129504;</div>
-      <h3>Century Tech</h3>
-      <div class="login-box">
-        <strong>Login:</strong> <code>####@winchmore.enfield.sch.uk</code><br/>
-        <strong>Password:</strong> <code>changeme</code>
-      </div>
-    </div>
-    <div class="info-card" style="border-top:4px solid #f97316;">
-      <div class="info-icon">&#128250;</div>
-      <h3>MathsWatch</h3>
-      <div class="login-box">
-        <strong>Years 10–11</strong><br/>
-        Login: <code>####@winchmore</code><br/>
-        Password: <code>winchmore</code><br/><br/>
-        <strong>Years 7–9</strong><br/>
-        Login: <code>firstname.lastname@winchmore</code><br/>
-        Password: <code>winchmore</code>
-      </div>
-    </div>
-    <div class="info-card" style="border-top:4px solid #22c55e;">
-      <div class="info-icon">&#10052;&#65039;</div>
-      <h3>Dr Frost Maths</h3>
-      <div class="login-box">
-        <strong>Login:</strong> <code>####@winchmore.enfield.sch.uk</code><br/>
-        <strong>Password:</strong> <code>password</code>
-      </div>
-    </div>
-    <div class="info-card" style="border-top:4px solid #a855f7;">
-      <div class="info-icon">&#9889;</div>
-      <h3>Tassomai</h3>
-      <div class="login-box">
-        1. Open Chrome and sign in with your Google Classroom account<br/>
-        2. Go to <strong>tassomai.com</strong><br/>
-        3. Click the <strong>Google</strong> button to log in<br/>
-        4. Follow the prompts and save your new password
-      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem;">&#128161; Replace <strong>####</strong> with your student number. You will be prompted to change your password on first login.</p>
     </div>
   </div>
 
-  <div class="callout" style="margin-top:2rem;">
-    &#128273; <strong>Forgotten your login?</strong> Ask your teacher to reset it —
-    your details are held by the school, not the platform.
+  <!-- ── MATHSWATCH ── -->
+  <div class="platform-section p-mwatch">
+    <a href="https://vle.mathswatch.co.uk/vle/" target="_blank" rel="noopener" class="platform-header" aria-label="Go to MathsWatch">
+      <div class="platform-logo">&#128250;</div>
+      <div class="platform-title">
+        <h2>MathsWatch</h2>
+        <p>Video lessons and interactive exercises for every topic</p>
+      </div>
+      <span class="platform-cta">Open Site &#8594;</span>
+    </a>
+    <div class="platform-body">
+      <p class="login-title">&#128273; How to log in</p>
+      <div class="login-rows">
+        <div class="login-row">
+          <div class="login-row-label">Years 10 &amp; 11</div>
+          <div class="login-row-values">
+            <div class="login-field"><strong>Username</strong><code>####@winchmore</code></div>
+            <div class="login-field"><strong>Password</strong><code>winchmore</code></div>
+          </div>
+        </div>
+        <div class="login-row">
+          <div class="login-row-label">Years 7, 8 &amp; 9</div>
+          <div class="login-row-values">
+            <div class="login-field"><strong>Username</strong><code>firstname.lastname@winchmore</code></div>
+            <div class="login-field"><strong>Password</strong><code>winchmore</code></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem;">&#128161; Use your full first and last name in lowercase, with a dot between them (e.g. <code>alex.smith@winchmore</code>).</p>
+    </div>
   </div>
+
+  <!-- ── DR FROST ── -->
+  <div class="platform-section p-drfrost">
+    <a href="https://www.drfrost.org/login" target="_blank" rel="noopener" class="platform-header" aria-label="Go to Dr Frost Maths">
+      <div class="platform-logo">&#10052;&#65039;</div>
+      <div class="platform-title">
+        <h2>Dr Frost Maths</h2>
+        <p>Topic-based questions, exam-style practice, and detailed feedback</p>
+      </div>
+      <span class="platform-cta">Open Site &#8594;</span>
+    </a>
+    <div class="platform-body">
+      <p class="login-title">&#128273; How to log in</p>
+      <div class="login-rows">
+        <div class="login-row">
+          <div class="login-row-label">All year groups</div>
+          <div class="login-row-values">
+            <div class="login-field"><strong>Email</strong><code>####@winchmore.enfield.sch.uk</code></div>
+            <div class="login-field"><strong>Password</strong><code>password</code></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem;">&#128161; Replace <strong>####</strong> with your student number. Change your password after first login.</p>
+    </div>
+  </div>
+
+  <!-- ── TASSOMAI ── -->
+  <div class="platform-section p-tassomai">
+    <a href="https://app.tassomai.com/" target="_blank" rel="noopener" class="platform-header" aria-label="Go to Tassomai">
+      <div class="platform-logo">&#9889;</div>
+      <div class="platform-title">
+        <h2>Tassomai</h2>
+        <p>Daily quiz-based retrieval practice — log in with Google</p>
+      </div>
+      <span class="platform-cta">Open Site &#8594;</span>
+    </a>
+    <div class="platform-body">
+      <p class="login-title">&#128273; How to log in — step by step</p>
+      <div class="login-rows">
+        <div class="login-row">
+          <div class="login-row-values" style="flex-direction:column; gap:.6rem;">
+            <div class="login-step"><span class="step-num">1</span><span>Open <strong>Chrome</strong> on your school device and make sure you are signed in to your school Google account.</span></div>
+            <div class="login-step"><span class="step-num">2</span><span>Go to <a href="https://app.tassomai.com/" target="_blank" rel="noopener" style="color:var(--teal-dk);font-weight:700;">app.tassomai.com</a></span></div>
+            <div class="login-step"><span class="step-num">3</span><span>Click the <strong>Sign in with Google</strong> button.</span></div>
+            <div class="login-step"><span class="step-num">4</span><span>Select your <strong>####@winchmore.enfield.sch.uk</strong> account when prompted.</span></div>
+            <div class="login-step"><span class="step-num">5</span><span>Follow the on-screen prompts to complete your setup, then save a new password.</span></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem;">&#128161; You must use your school Google account, not a personal one.</p>
+    </div>
+  </div>
+
+  <!-- ── FORGOTTEN LOGIN ── -->
+  <div class="callout" style="margin-top:1rem;">
+    &#128273; <strong>Forgotten your login or locked out?</strong> Ask your Maths teacher to reset your details — your account is managed by the school, not the platform.
+  </div>
+
  </div>
 </section>
 
-
 <footer>
   <p>Winchmore School Maths Department &mdash;
-    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">
-      winchmore.enfield.sch.uk</a></p>
+    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
   <p style="margin-top:.4rem;">Problems with this site? Contact your Maths teacher.</p>
 </footer>
 <script src="nav.js"></script>
-
 </body>
 </html>
