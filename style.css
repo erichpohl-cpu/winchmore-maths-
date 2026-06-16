@@ -295,3 +295,136 @@ footer a:hover { text-decoration: underline; }
   border: 3px solid rgba(255,255,255,.2);
   position: relative; z-index: 1;
 }
+
+/* ═══════════════════════════════════════════════
+   SCHOOL-MATCHED STYLE + BANNER ANIMATIONS (v2)
+   Matches winchmore.enfield.sch.uk design language
+   ═══════════════════════════════════════════════ */
+
+/* ── Animated page-hero banner ── */
+.page-hero, .hero {
+  position: relative;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0,201,167,.12), transparent 45%),
+    radial-gradient(circle at 85% 70%, rgba(255,179,71,.10), transparent 50%),
+    linear-gradient(135deg, #0B1F3A 0%, #12305A 60%, #0B1F3A 100%);
+  background-size: 200% 200%, 200% 200%, 100% 100%;
+  animation: heroGradient 18s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes heroGradient {
+  0%   { background-position: 0% 50%, 100% 50%, 0 0; }
+  50%  { background-position: 100% 50%, 0% 50%, 0 0; }
+  100% { background-position: 0% 50%, 100% 50%, 0 0; }
+}
+
+/* Watermark crest motif (echoes school site tree watermark) */
+.page-hero::before, .hero::before {
+  content: "";
+  position: absolute;
+  top: 50%; right: -60px;
+  width: 360px; height: 360px;
+  transform: translateY(-50%);
+  background: url('winchmore_maths_logo.png') center/contain no-repeat;
+  opacity: .05;
+  animation: watermarkFloat 12s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes watermarkFloat {
+  0%,100% { transform: translateY(-50%) rotate(0deg); }
+  50%     { transform: translateY(-54%) rotate(4deg); }
+}
+
+/* Hero content fade-up on load */
+.page-hero > *, .hero > * {
+  animation: fadeUp .8s cubic-bezier(.22,1,.36,1) backwards;
+}
+.page-hero-eyebrow, .hero-eyebrow { animation-delay: .05s; }
+.page-hero h1, .hero h1 { animation-delay: .18s; }
+.page-hero p, .hero-sub { animation-delay: .32s; }
+.hero-cta { animation-delay: .46s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Animated accent underline beneath hero headings */
+.page-hero h1::after, .hero h1::after {
+  content: "";
+  display: block;
+  width: 0; height: 4px;
+  margin: 1rem auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  animation: lineGrow 1s cubic-bezier(.22,1,.36,1) .6s forwards;
+}
+@keyframes lineGrow { to { width: 90px; } }
+
+/* ── Logo: ensure always visible, add subtle hover ── */
+.nav-logo-img {
+  width: 46px; height: 46px; border-radius: 10px;
+  object-fit: cover; flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+.nav-brand:hover .nav-logo-img { transform: rotate(-6deg) scale(1.08); }
+
+/* ── Card entrance animations on scroll (via IntersectionObserver in nav.js) ── */
+.card, .info-card, .hw-card, .game-card, .resource-link, .platform-section, .term-block {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s cubic-bezier(.22,1,.36,1);
+}
+.card.in-view, .info-card.in-view, .hw-card.in-view, .game-card.in-view,
+.resource-link.in-view, .platform-section.in-view, .term-block.in-view {
+  opacity: 1; transform: translateY(0);
+}
+
+/* Stagger helper — applied via nth-child for grids */
+.card-grid .card:nth-child(2), .info-grid .info-card:nth-child(2),
+.games-grid .game-card:nth-child(2) { transition-delay: .08s; }
+.card-grid .card:nth-child(3), .info-grid .info-card:nth-child(3),
+.games-grid .game-card:nth-child(3) { transition-delay: .16s; }
+.card-grid .card:nth-child(4), .info-grid .info-card:nth-child(4),
+.games-grid .game-card:nth-child(4) { transition-delay: .24s; }
+.card-grid .card:nth-child(5), .info-grid .info-card:nth-child(5) { transition-delay: .32s; }
+.card-grid .card:nth-child(6), .info-grid .info-card:nth-child(6) { transition-delay: .40s; }
+
+/* ── School tagline strip (echoes "Learning to realise potential") ── */
+.tagline-strip {
+  background: var(--teal);
+  color: var(--navy);
+  text-align: center;
+  padding: .55rem 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: .82rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+/* Button shimmer on hover */
+.btn-primary { position: relative; overflow: hidden; }
+.btn-primary::after {
+  content: "";
+  position: absolute; top: 0; left: -120%;
+  width: 80%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.45), transparent);
+  transform: skewX(-20deg);
+}
+.btn-primary:hover::after { animation: shimmer .9s; }
+@keyframes shimmer { to { left: 130%; } }
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .page-hero, .hero { animation: none; }
+  .page-hero::before, .hero::before { animation: none; }
+  .page-hero > *, .hero > * { animation: none; opacity: 1; transform: none; }
+  .page-hero h1::after, .hero h1::after { width: 90px; animation: none; }
+  .card, .info-card, .hw-card, .game-card, .resource-link, .platform-section, .term-block {
+    opacity: 1; transform: none;
+  }
+}
