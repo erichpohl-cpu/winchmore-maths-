@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>A Level — Core Pure Tracker (PLC) — Winchmore Maths</title>
   <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="tracker.css"/>
 </head>
 <body>
 
@@ -83,9 +84,9 @@
 
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #26de81;">
-  <p class="page-hero-eyebrow">Sixth Form &middot; Further Maths</p>
+  <p class="page-hero-eyebrow">Sixth Form &middot; Further Maths &middot; Free &middot; runs in your browser</p>
   <h1>Core Pure 1 <em>Tracker</em></h1>
-  <p>A ready-made Personal Learning Checklist (PLC) for Edexcel Core Pure 1 &mdash; score every skill red, amber or green and see confidence build across the class.</p>
+  <p>Download the PLC, score your class red / amber / green as you teach, then upload it back here for an instant progress report &mdash; per pupil and whole-class. Nothing leaves your device.</p>
 </header>
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <a href="../index.html">Home</a> <span>&rsaquo;</span> <a href="../a-level.html">A Level</a> <span>&rsaquo;</span> Core Pure Tracker
@@ -94,81 +95,59 @@
 <section class="section">
  <div class="container">
 
+  <!-- STEP 1: download -->
+  <div class="section-header">
+    <p class="section-eyebrow">Step 1</p>
+    <h2>Download the tracker</h2>
+    <p>One spreadsheet covering all nine Core Pure 1 topics. Pupils down the first column, skills across the top.</p>
+  </div>
+  <div class="cta-row" style="margin-bottom:1rem;">
+    <a href="core-pure-1-plc.xlsx" class="btn-primary" download>&#8595; Download the PLC (.xlsx)</a>
+  </div>
   <div class="callout">
-    &#128203; <strong>What this is.</strong> A class Personal Learning Checklist for Edexcel AS / A level Further Mathematics
-    (Core Pure 1). Skills run down the page grouped by topic; students run across the top. Score each skill
-    <strong>1, 2 or 3</strong> and the cell colours itself automatically.
+    &#128203; Type your pupils' names down column A, then score each skill <strong>1, 2 or 3</strong>
+    (1 = red / needs work, 2 = amber / partial, 3 = green / confident). Cells colour themselves as you type.
   </div>
 
-  <div class="section-header" style="margin-top:2rem;">
-    <p class="section-eyebrow">Download</p>
-    <h2>Get the tracker</h2>
-    <p>One spreadsheet covering all nine Core Pure 1 topics, ready to fill in for your class.</p>
+  <!-- STEP 2: upload -->
+  <div class="section-header" style="margin-top:3rem;">
+    <p class="section-eyebrow">Step 2</p>
+    <h2>Upload for a report</h2>
+    <p>Drop your completed workbook below. Blank cells count as &ldquo;not seen&rdquo; &mdash; you don't need every skill filled in to get a report. Everything runs locally in this tab.</p>
   </div>
 
-  <div class="resource-list">
-    <a href="core-pure-1-plc.xlsx" class="resource-link" download>
-      <div class="resource-icon" style="background:#E3FAF0;">&#128202;</div>
-      <div>
-        <h4>Core Pure 1 &mdash; Class PLC (.xlsx)</h4>
-        <p>Excel / Google Sheets workbook &middot; 49 skills across 9 topics &middot; auto-colouring 1/2/3</p>
+  <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload your completed tracker">
+    <div class="dz-icon">&#8593;</div>
+    <p class="dz-main"><strong>Click to choose a file</strong> or drag your completed PLC here</p>
+    <p class="dz-sub">.xlsx only — the file you downloaded above, with some scores filled in</p>
+    <input type="file" id="file-input" accept=".xlsx" hidden/>
+  </div>
+  <p id="tool-status" class="tool-status" role="status" aria-live="polite"></p>
+
+  <!-- REPORT -->
+  <div id="report-preview" hidden>
+    <div class="cta-row" style="justify-content:space-between;align-items:center;margin:1.5rem 0;">
+      <div class="callout green" style="margin:0;flex:1;">
+        <strong>RAG key —</strong> Green = confident (score 3). Amber = partial (2). Red = needs work (1).
+        Grey = not yet seen (blank).
       </div>
-      <span class="arrow">&#8595;</span>
-    </a>
+      <button id="download-pdf" class="btn-primary" style="white-space:nowrap;">&#8595; Download full PDF report</button>
+    </div>
+
+    <div class="section-header" style="margin-top:1rem;">
+      <p class="section-eyebrow">Whole class</p>
+      <h2>Class summary</h2>
+    </div>
+    <div id="class-summary-card"></div>
+
+    <div class="section-header" style="margin-top:2.5rem;">
+      <p class="section-eyebrow">Per pupil</p>
+      <h2>Pupil cards</h2>
+    </div>
+    <div id="student-cards"></div>
   </div>
 
-  <div class="section-header" style="margin-top:3rem;">
-    <p class="section-eyebrow">RAG key</p>
-    <h2>How the scoring works</h2>
-  </div>
-  <div class="info-grid">
-    <div class="info-card" style="border-top:4px solid #C0392B;">
-      <div class="info-icon">&#128308;</div>
-      <h3>1 &mdash; Red</h3>
-      <p>Needs work. The student can't yet do this skill independently and should revisit it.</p>
-    </div>
-    <div class="info-card" style="border-top:4px solid #F4A93F;">
-      <div class="info-icon">&#128993;</div>
-      <h3>2 &mdash; Amber</h3>
-      <p>Partial. The student can do this with support or makes some errors &mdash; nearly there.</p>
-    </div>
-    <div class="info-card" style="border-top:4px solid #1B998B;">
-      <div class="info-icon">&#128994;</div>
-      <h3>3 &mdash; Green</h3>
-      <p>Confident. The student can do this skill reliably and unaided.</p>
-    </div>
-  </div>
-
-  <div class="section-header" style="margin-top:3rem;">
-    <p class="section-eyebrow">How to use it</p>
-    <h2>Three steps</h2>
-  </div>
-  <div class="info-grid">
-    <div class="info-card" style="border-top:4px solid #26de81;">
-      <div class="info-icon">&#9312;</div>
-      <h3>Add your class</h3>
-      <p>Type your students' names across the top row, replacing the sample names.</p>
-    </div>
-    <div class="info-card" style="border-top:4px solid #26de81;">
-      <div class="info-icon">&#9313;</div>
-      <h3>Score as you teach</h3>
-      <p>After each topic, enter 1, 2 or 3 for each skill and student. Cells colour automatically.</p>
-    </div>
-    <div class="info-card" style="border-top:4px solid #26de81;">
-      <div class="info-icon">&#9314;</div>
-      <h3>Read the summaries</h3>
-      <p>Each topic shows a class-average row, and every student gets an overall confidence figure.</p>
-    </div>
-  </div>
-
-  <div class="callout" style="margin-top:2.5rem;">
-    &#128161; <strong>Topics covered:</strong> Complex Numbers &middot; Argand Diagrams &middot; Series &middot;
-    Roots of Polynomials &middot; Volumes of Revolution &middot; Matrices &middot; Linear Transformations &middot;
-    Proof by Induction &middot; Vectors. Based on the Edexcel Core Pure 1 specification.
-  </div>
-
-  <div class="cta-row" style="justify-content:center;margin-top:2rem;">
-    <a href="core-pure-1-plc.xlsx" class="btn-primary" download>Download the tracker &#8595;</a>
+  <div class="cta-row" style="justify-content:center;margin-top:2.5rem;">
     <a href="../a-level.html" class="btn-outline">Back to A Level</a>
   </div>
 
@@ -181,6 +160,12 @@
       winchmore.enfield.sch.uk</a></p>
   <p style="margin-top:.4rem;">Problems with this site? Contact your Maths teacher.</p>
 </footer>
+
+<!-- libraries: SheetJS (read xlsx) + jsPDF (build PDF) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="tracker-data.js"></script>
+<script src="tracker.js"></script>
 <script src="../nav.js"></script>
 
 </body>
