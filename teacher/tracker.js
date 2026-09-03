@@ -203,7 +203,7 @@
   }
 
   /* ---------- PDF ---------- */
-  function buildPDF(students,sp,logoImg,classUrl,studentUrls){
+  function buildPDF(students,sp,logoImg,classUrl,studentUrls,classCode){
     var SK=sp.skills, TOP=sp.topics;
     var doc=new window.jspdf.jsPDF({unit:"pt",format:"a4",orientation:"landscape"});
     var pageW=doc.internal.pageSize.getWidth(),pageH=doc.internal.pageSize.getHeight(),M=36;
@@ -234,46 +234,89 @@
         if(band==="green") items=items.slice(0,10);
         var c=rgb(color); doc.setFont("helvetica","bold");doc.setFontSize(10);doc.setTextColor(c[0],c[1],c[2]);
         doc.text(title+" ("+items.length+")",cx,y);
-        var yy=y+13; doc.setFont("helvetica","normal");doc.setFontSize(8);doc.setTextColor(40,50,65);
-        items.slice(0,14).forEach(function(s){ doc.text(doc.splitTextToSize(s.code+"  "+s.desc,150)[0],cx,yy); yy+=11; });
+        var yy=y+15; doc.setFont("helvetica","normal");doc.setFontSize(8.5);doc.setTextColor(40,50,65);
+        var wrapW=(pageW-2*M)/3-20;
+        items.slice(0,16).forEach(function(s){
+          var lines=doc.splitTextToSize(s.code+"  "+s.desc,wrapW);
+          doc.text(lines[0],cx,yy); yy+=12;
+        });
         return yy;
       }
+      var usableW=pageW-2*M, step=usableW/3;
       var y1=col("Top green skills","green",RAG.green,x);
-      var y2=col("Priorities — needs work","red",RAG.red,x+175);
-      var y3=col("Partial — nearly there","amber",RAG.amber,x+350);
+      var y2=col("Priorities — needs work","red",RAG.red,x+step);
+      var y3=col("Partial — nearly there","amber",RAG.amber,x+2*step);
       return Math.max(y1,y2,y3);
     }
 
+    var LOGO=76;                 // bigger logo
+    var headerBottom=M+LOGO-6;   // baseline under the header band
+    var colGap=28;
+    var leftW=250;               // left column (donut + confidence)
+    var rightX=M+leftW+colGap;   // right column start
+    var rightW=pageW-M-rightX;
+
+    function pageHeader(titleText, subText){
+      // top band
+      doc.setFillColor(18,35,58); doc.rect(0,0,pageW,M+LOGO+6,"F");
+      if(logoImg){ try{ doc.addImage(logoImg,"PNG",pageW-M-LOGO,M-6,LOGO,LOGO); }catch(e){} }
+      doc.setFont("helvetica","bold");doc.setFontSize(20);doc.setTextColor(255,255,255);
+      doc.text(titleText,M,M+18);
+      doc.setFont("helvetica","normal");doc.setFontSize(10);doc.setTextColor(180,200,224);
+      doc.text(subText,M,M+36);
+    }
+
+    var dateStr=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+    var classBit = classCode ? "Class "+classCode+"  ·  " : "";
+
     // ---- class page ----
-    logo(pageW-M-54,M-16,54);
-    doc.setFont("helvetica","bold");doc.setFontSize(18);doc.setTextColor(18,35,58);
-    doc.text(sp.title+" — Class Report",M,M+6);
-    doc.setFont("helvetica","normal");doc.setFontSize(10);doc.setTextColor(99,116,138);
-    doc.text((sp.year?sp.year+"  ·  ":"")+new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})+"  ·  "+students.length+" pupils",M,M+22);
-    doc.addImage(classUrl,"PNG",M,M+34,120,120);
+    pageHeader(sp.title+" — Class Report",
+      (sp.year?sp.year+"  ·  ":"")+classBit+dateStr+"  ·  "+students.length+" pupils");
+    // left: class donut + aggregate confidence
+    var cy0=M+LOGO+30;
+    doc.addImage(classUrl,"PNG",M,cy0,150,150);
+    // right: class chapters
     var cbd=TOP.map(function(t){ var sks=SK.filter(function(s){return s.topicCode===t.code;}); var vals=[]; students.forEach(function(st){sks.forEach(function(s){var v=st.scores[s.code];if(v)vals.push(v);});}); return {code:t.code,name:t.name,avg:vals.length?vals.reduce(function(a,b){return a+b;},0)/vals.length:null}; });
-    chapters(cbd,M+150,M+50,150);
+    chapters(cbd,rightX,cy0+6,Math.min(rightW-170,260));
     foot();
 
     // ---- per pupil ----
     students.forEach(function(st,idx){
       doc.addPage("a4","landscape");
-      logo(pageW-M-54,M-16,54);
-      doc.setFont("helvetica","bold");doc.setFontSize(18);doc.setTextColor(18,35,58);
-      doc.text(st.name||"(unnamed)",M,M+6);
-      doc.setFont("helvetica","normal");doc.setFontSize(9.5);doc.setTextColor(99,116,138);
-      doc.text((sp.year?sp.year+"  ·  ":"")+sp.title,M,M+21);
-      doc.addImage(studentUrls[idx],"PNG",M,M+30,110,110);
       var conf=confidence(st.scores,SK);
-      doc.setFont("helvetica","bold");doc.setFontSize(12);doc.setTextColor(27,153,139);
-      doc.text((conf.greenPct!==null?Math.round(conf.greenPct*100)+"% confident":"—")+(conf.avg!==null?"  ·  avg "+conf.avg.toFixed(1)+"/3":""),M,M+150);
-      doc.setFont("helvetica","normal");doc.setFontSize(8.5);doc.setTextColor(99,116,138);
-      doc.text(conf.seen+" of "+conf.total+" skills seen",M,M+163);
-      var y=chapters(topicBreakdown(st.scores,SK,TOP),M+150,M+40,120);
-      var y2=bandCols(st.scores,M,Math.max(y+10,M+190));
+      pageHeader(st.name||"(unnamed)",
+        (sp.year?sp.year+"  ·  ":"")+classBit+sp.title);
+
+      var topY=M+LOGO+26;
+      // LEFT COLUMN — donut + big confidence circle + stats
+      doc.addImage(studentUrls[idx],"PNG",M,topY,150,150);
+
+      // confidence "circle" badge (restored) under the donut
+      var badgeCx=M+75, badgeCy=topY+150+52, badgeR=40;
+      var g=rgb(RAG.green);
+      doc.setFillColor(g[0],g[1],g[2]); doc.circle(badgeCx,badgeCy,badgeR,"F");
+      doc.setTextColor(255,255,255);doc.setFont("helvetica","bold");doc.setFontSize(22);
+      doc.text(conf.greenPct!==null?Math.round(conf.greenPct*100)+"%":"—",badgeCx,badgeCy-2,{align:"center"});
+      doc.setFontSize(8);doc.setFont("helvetica","normal");
+      doc.text("confident",badgeCx,badgeCy+12,{align:"center"});
+      // stats to the right of the badge
+      var sx=M+140;
+      doc.setTextColor(18,35,58);doc.setFont("helvetica","bold");doc.setFontSize(12);
+      doc.text("Overall confidence",sx,badgeCy-22);
+      doc.setFont("helvetica","normal");doc.setFontSize(10);doc.setTextColor(60,72,88);
+      doc.text("Average score:  "+(conf.avg!==null?conf.avg.toFixed(1)+" / 3":"—"),sx,badgeCy-4);
+      doc.text("Skills seen:  "+conf.seen+" of "+conf.total,sx,badgeCy+12);
+      doc.text("Green "+summarise(st.scores,SK).green+"  ·  Amber "+summarise(st.scores,SK).amber+"  ·  Red "+summarise(st.scores,SK).red,sx,badgeCy+28);
+
+      // RIGHT COLUMN — confidence by chapter (full height)
+      var yEnd=chapters(topicBreakdown(st.scores,SK,TOP),rightX,topY+6,Math.min(rightW-170,260));
+
+      // BOTTOM — the three skill bands across the full width
+      var bandY=Math.max(topY+150+110, yEnd+24);
+      bandCols(st.scores,M,bandY);
       foot();
     });
-    doc.save(sp.title.replace(/[^\w]+/g,"_")+"_Report.pdf");
+    doc.save(sp.title.replace(/[^\w]+/g,"_")+(classCode?"_"+classCode.replace(/[^\w]+/g,""):"")+"_Report.pdf");
   }
 
   /* ---------- wiring ---------- */
@@ -331,7 +374,9 @@
           setTimeout(function(){
             try{
               var cu=classDonut.toDataURL("image/png"), su=[]; donuts.forEach(function(c){su.push(c.toDataURL("image/png"));});
-              buildPDF(students,sp,logoData,cu,su);
+              var ccEl=document.getElementById("class-code");
+              var cc=ccEl?ccEl.value.trim():"";
+              buildPDF(students,sp,logoData,cu,su,cc);
               setStatus("PDF downloaded.","ok");
             }catch(err){ setStatus("Couldn't build the PDF: "+err.message,"err"); }
           },30);

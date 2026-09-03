@@ -107,3 +107,9 @@
 .box-panel-amber h4 span { background:#FEF1DC; color:#b5751a; }
 
 @media (max-width:640px){ .chapter-row{grid-template-columns:1fr 80px 46px;} .rc-donut{flex-basis:100%;} }
+
+/* class code input */
+.classcode-row { display:flex; align-items:center; gap:.7rem; margin-bottom:1rem; flex-wrap:wrap; }
+.classcode-row label { font-size:.9rem; font-weight:600; color:#12233A; }
+.classcode-row input { padding:.5rem .8rem; border:1px solid #C7D2DE; border-radius:8px; font-size:.95rem; font-family:inherit; min-width:180px; }
+.classcode-row input:focus { outline:2px solid #26de81; border-color:#26de81; }
