@@ -1,0 +1,83 @@
+/* tracker.css — Core Pure PLC tracker: dropzone + RAG report cards.
+   Uses the site palette; scoped so it won't affect other pages. */
+
+.dropzone {
+  border: 2px dashed #26de81;
+  border-radius: 14px;
+  background: #F0FBF6;
+  padding: 2.4rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background .18s, border-color .18s, transform .12s;
+}
+.dropzone:hover, .dropzone:focus-visible { background: #E3F7EE; border-color: #1B998B; outline: none; }
+.dropzone.dragover { background: #D9F2E7; border-color: #147a6e; transform: scale(1.01); }
+.dz-icon { font-size: 2rem; color: #1B998B; margin-bottom: .4rem; }
+.dz-main { font-size: 1rem; color: #12233A; }
+.dz-sub  { font-size: .82rem; color: #63748A; margin-top: .3rem; }
+
+.tool-status { font-size: .9rem; margin-top: .8rem; min-height: 1.2em; }
+.tool-status.ok  { color: #147a6e; font-weight: 600; }
+.tool-status.err { color: #C0392B; font-weight: 600; }
+
+/* report cards */
+.report-card {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  background: #fff; border: 1px solid #E4E9EF; border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(11,31,58,.10);
+  padding: 1.4rem 1.6rem; margin-bottom: 1.2rem;
+}
+.report-card-main { flex: 1 1 340px; }
+.report-card-main h3 { font-family: inherit; font-size: 1.25rem; color: #12233A; margin-bottom: .8rem; }
+.report-card-side { flex: 0 0 210px; display: flex; flex-direction: column; align-items: center; gap: .7rem; }
+.report-card .donut { display: block; }
+
+.rag-legend { display: flex; flex-direction: column; gap: .3rem; width: 100%; font-size: .82rem; }
+.rag-chip { display: flex; align-items: center; gap: .45rem; color: #1F2A37; }
+.rag-chip i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex-shrink: 0; }
+
+.details-panel { font-size: .85rem; color: #1F2A37; text-align: center; }
+
+.grade-badge-wrap { text-align: center; }
+.grade-badge {
+  width: 62px; height: 62px; border-radius: 50%;
+  background: #12233A; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem; font-weight: 700; margin: 0 auto .35rem;
+}
+.grade-label { font-size: .74rem; color: #63748A; max-width: 180px; }
+
+.box-panel { margin-bottom: 1rem; }
+.box-panel h4 {
+  font-size: .9rem; color: #12233A; margin-bottom: .5rem;
+  display: flex; align-items: center; gap: .5rem;
+}
+.box-panel h4 span {
+  font-family: 'Space Mono', monospace; font-size: .72rem; font-weight: 700;
+  background: #F0F4F8; color: #63748A; padding: .1rem .5rem; border-radius: 50px;
+}
+.chip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: .5rem; }
+.topic-chip {
+  background: #FBFAF6; border: 1px solid #E4E9EF; border-radius: 8px;
+  padding: .45rem .6rem; display: flex; gap: .5rem; align-items: baseline;
+}
+.chip-code { font-family: 'Space Mono', monospace; font-size: .72rem; font-weight: 700; color: #12233A; flex-shrink: 0; }
+.chip-desc { font-size: .8rem; color: #1F2A37; }
+.chip-empty { font-size: .85rem; color: #9AA7B4; font-style: italic; }
+
+@media (max-width: 620px) {
+  .report-card-side { flex-basis: 100%; }
+}
+
+/* login card */
+.login-box-card {
+  background:#fff; border:1px solid #E4E9EF; border-radius:14px;
+  box-shadow:0 4px 20px rgba(11,31,58,.10); padding:1.8rem;
+}
+.login-box-card h2 { color:#12233A; margin-bottom:1rem; }
+.login-box-card label { display:block; font-size:.85rem; font-weight:600; color:#12233A; margin:.7rem 0 .3rem; }
+.login-box-card input {
+  width:100%; padding:.65rem .8rem; border:1px solid #C7D2DE; border-radius:8px;
+  font-size:.95rem; font-family:inherit;
+}
+.login-box-card input:focus { outline:2px solid #26de81; border-color:#26de81; }

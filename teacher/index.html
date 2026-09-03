@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Section — A Level Trackers — Winchmore Maths</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="tracker.css"/>
+  <script src="auth.js"></script>
+  <script>window.WM_AUTH.guard("login.html");</script>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-brand" aria-label="Winchmore Maths home">
+    <img src="../winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
+    <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="index.html" class="active">Teacher Section</a></li>
+    <li><a href="#" id="logout-link">Log out</a></li>
+  </ul>
+</nav>
+
+<div class="tagline-strip">Learning to Realise Potential</div>
+<header class="page-hero" style="border-top:5px solid #12233A;">
+  <p class="page-hero-eyebrow">Staff only &middot; A Level Trackers</p>
+  <h1>A Level <em>Trackers</em></h1>
+  <p>Personal Learning Checklists for each A level course. Download the workbook, score your class red / amber / green as you teach, then upload it back for an instant class &amp; per-pupil report.</p>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span>&rsaquo;</span> Teacher Section
+</nav>
+
+<section class="section">
+ <div class="container">
+  <div class="callout">
+    &#128273; <strong>Staff area.</strong> These trackers are kept here so students don't access them.
+    Everything runs in your browser &mdash; pupil scores never leave your device.
+  </div>
+
+  <div class="section-header" style="margin-top:2rem;">
+    <p class="section-eyebrow">Choose a course</p>
+    <h2>Available trackers</h2>
+  </div>
+
+  <div class="info-grid">
+    <a href="tracker.html?t=core-pure" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128202;</div>
+      <h3>Core Pure 1</h3>
+      <p>Further Maths &middot; 9 chapters, 47 skills</p>
+    </a>
+    <a href="tracker.html?t=as-pure" class="info-card" style="border-top:4px solid #4ECDC4;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128207;</div>
+      <h3>AS Pure</h3>
+      <p>AS Mathematics &middot; 14 chapters, 79 skills</p>
+    </a>
+    <a href="tracker.html?t=as-applied" class="info-card" style="border-top:4px solid #45B7D1;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128200;</div>
+      <h3>AS Applied</h3>
+      <p>Statistics &amp; Mechanics &middot; 11 chapters, 45 skills</p>
+    </a>
+    <a href="tracker.html?t=alevel-pure" class="info-card" style="border-top:4px solid #7C83FD;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128208;</div>
+      <h3>A level Pure</h3>
+      <p>A level Mathematics &middot; 12 chapters, 69 skills</p>
+    </a>
+    <a href="tracker.html?t=alevel-applied" class="info-card" style="border-top:4px solid #F7B731;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128201;</div>
+      <h3>A level Applied</h3>
+      <p>Statistics &amp; Mechanics &middot; 8 chapters, 36 skills</p>
+    </a>
+  </div>
+ </div>
+</section>
+
+<footer>
+  <p>Winchmore School Maths Department &mdash;
+    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
+  <p style="margin-top:.4rem;">Staff section &mdash; not linked from the student site.</p>
+</footer>
+
+<script>
+  document.getElementById("logout-link").addEventListener("click", function(e){
+    e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
+  });
+</script>
+</body>
+</html>

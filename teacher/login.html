@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Login — Winchmore Maths</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="tracker.css"/>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-brand" aria-label="Winchmore Maths home">
+    <img src="../winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
+    <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html">Home</a></li>
+  </ul>
+</nav>
+
+<div class="tagline-strip">Learning to Realise Potential</div>
+<header class="page-hero" style="border-top:5px solid #12233A;">
+  <p class="page-hero-eyebrow">Staff only</p>
+  <h1>Teacher <em>Section</em></h1>
+  <p>Sign in to access the A level trackers. These tools are for staff — students don't have access to this area.</p>
+</header>
+
+<section class="section">
+ <div class="container" style="max-width:440px;">
+  <div class="login-box-card">
+    <h2 style="font-family:inherit;">Sign in</h2>
+    <label for="u">Username</label>
+    <input type="text" id="u" autocomplete="username" autocapitalize="off" spellcheck="false"/>
+    <label for="p">Password</label>
+    <input type="password" id="p" autocomplete="current-password"/>
+    <button id="login-btn" class="btn-primary" style="width:100%;margin-top:1rem;justify-content:center;">Sign in</button>
+    <p id="login-err" class="tool-status" role="status" aria-live="polite"></p>
+  </div>
+ </div>
+</section>
+
+<footer>
+  <p>Winchmore School Maths Department &mdash;
+    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
+</footer>
+
+<script src="auth.js"></script>
+<script>
+  (function(){
+    // if already logged in, go straight to the hub
+    if (window.WM_AUTH.isLoggedIn()) { location.replace("index.html"); return; }
+    var params = new URLSearchParams(location.search);
+    var next = params.get("next") || "index.html";
+    // basic safety: only allow local targets
+    if (/^https?:|\/\//i.test(next)) next = "index.html";
+    function attempt(){
+      var u=document.getElementById("u").value.trim();
+      var p=document.getElementById("p").value;
+      var err=document.getElementById("login-err");
+      if (window.WM_AUTH.login(u,p)) { location.replace(next); }
+      else { err.textContent="Incorrect username or password."; err.className="tool-status err"; }
+    }
+    document.getElementById("login-btn").addEventListener("click", attempt);
+    document.getElementById("p").addEventListener("keydown", function(e){ if(e.key==="Enter") attempt(); });
+    document.getElementById("u").addEventListener("keydown", function(e){ if(e.key==="Enter") document.getElementById("p").focus(); });
+  })();
+</script>
+</body>
+</html>

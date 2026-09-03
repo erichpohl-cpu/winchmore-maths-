@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tracker — Teacher Section — Winchmore Maths</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="tracker.css"/>
+  <script src="auth.js"></script>
+  <script>window.WM_AUTH.guard("login.html");</script>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-brand" aria-label="Winchmore Maths home">
+    <img src="../winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
+    <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="index.html">Teacher Section</a></li>
+    <li><a href="#" id="logout-link">Log out</a></li>
+  </ul>
+</nav>
+
+<div class="tagline-strip">Learning to Realise Potential</div>
+<header class="page-hero" style="border-top:5px solid #26de81;">
+  <p class="page-hero-eyebrow" id="course-eyebrow">A Level Tracker</p>
+  <h1 id="course-title">Tracker</h1>
+  <p>Download the workbook, score your class as you teach, then upload it back for an instant report. Nothing leaves your device.</p>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span>&rsaquo;</span> <a href="index.html">Teacher Section</a> <span>&rsaquo;</span> <span id="crumb-course">Tracker</span>
+</nav>
+
+<section class="section">
+ <div class="container">
+
+  <div class="section-header">
+    <p class="section-eyebrow">Step 1</p>
+    <h2>Download the tracker</h2>
+    <p>One workbook with a <strong>Class list</strong> tab and a tab for each chapter. Type names once on the Class list; every chapter tab fills in automatically.</p>
+  </div>
+  <div class="cta-row" style="margin-bottom:1rem;">
+    <a href="#" id="download-link" class="btn-primary" download>&#8595; Download the workbook (.xlsx)</a>
+  </div>
+  <div class="callout">
+    &#128203; On each chapter tab, score every pupil <strong>1, 2 or 3</strong>
+    (1 = red / needs work, 2 = amber / partial, 3 = green / confident). Cells colour themselves as you type.
+  </div>
+
+  <div class="section-header" style="margin-top:3rem;">
+    <p class="section-eyebrow">Step 2</p>
+    <h2>Upload for a report</h2>
+    <p>Drop your completed workbook below. Blank cells count as &ldquo;not seen&rdquo;. Everything runs locally in this tab.</p>
+  </div>
+
+  <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload your completed tracker">
+    <div class="dz-icon">&#8593;</div>
+    <p class="dz-main"><strong>Click to choose a file</strong> or drag your completed workbook here</p>
+    <p class="dz-sub">.xlsx only — the file you downloaded above, with some scores filled in</p>
+    <input type="file" id="file-input" accept=".xlsx" hidden/>
+  </div>
+  <p id="tool-status" class="tool-status" role="status" aria-live="polite"></p>
+
+  <div id="report-preview" hidden>
+    <div class="cta-row" style="justify-content:space-between;align-items:center;margin:1.5rem 0;">
+      <div class="callout green" style="margin:0;flex:1;">
+        <strong>RAG key —</strong> Green = confident (3). Amber = partial (2). Red = needs work (1). Grey = not seen (blank).
+      </div>
+      <button id="download-pdf" class="btn-primary" style="white-space:nowrap;">&#8595; Download full PDF report</button>
+    </div>
+    <div class="section-header" style="margin-top:1rem;">
+      <p class="section-eyebrow">Whole class</p><h2>Class summary</h2>
+    </div>
+    <div id="class-summary-card"></div>
+    <div class="section-header" style="margin-top:2.5rem;">
+      <p class="section-eyebrow">Per pupil</p><h2>Pupil cards</h2>
+    </div>
+    <div id="student-cards"></div>
+  </div>
+
+  <div class="cta-row" style="justify-content:center;margin-top:2.5rem;">
+    <a href="index.html" class="btn-outline">Back to all trackers</a>
+  </div>
+
+ </div>
+</section>
+
+<footer>
+  <p>Winchmore School Maths Department &mdash;
+    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="tracker-data.js"></script>
+<script>
+  // pick the spec from ?t=key
+  (function(){
+    var key = new URLSearchParams(location.search).get("t") || "core-pure";
+    var t = (window.TRACKERS||{})[key];
+    if (!t) { key="core-pure"; t=(window.TRACKERS||{})[key]; }
+    window.TRACKER_KEY = key;
+    document.getElementById("course-title").textContent = t ? t.title : "Tracker";
+    document.getElementById("crumb-course").textContent = t ? t.title : "Tracker";
+    document.getElementById("course-eyebrow").textContent = "A Level Tracker · staff only";
+    document.title = (t? t.title : "Tracker") + " — Teacher Section";
+    var dl = document.getElementById("download-link");
+    if (t) dl.setAttribute("href", t.file);
+  })();
+</script>
+<script src="tracker.js"></script>
+<script>
+  document.getElementById("logout-link").addEventListener("click", function(e){
+    e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
+  });
+</script>
+</body>
+</html>
