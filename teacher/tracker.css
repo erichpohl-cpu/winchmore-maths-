@@ -81,3 +81,29 @@
   font-size:.95rem; font-family:inherit;
 }
 .login-box-card input:focus { outline:2px solid #26de81; border-color:#26de81; }
+
+/* report head + logo */
+.report-card-head { display:flex; align-items:center; gap:1rem; margin-bottom:1.1rem; }
+.course-logo { width:56px; height:56px; border-radius:50%; flex-shrink:0; }
+.report-card-head h3 { font-size:1.3rem; color:#12233A; }
+.rc-sub { font-size:.82rem; color:#63748A; }
+
+.report-card-top { display:flex; gap:1.6rem; flex-wrap:wrap; margin-bottom:1.2rem; }
+.rc-donut { flex:0 0 200px; display:flex; flex-direction:column; align-items:center; gap:.6rem; }
+.rc-chapters { flex:1 1 340px; }
+.sec-title { font-size:.95rem; color:#12233A; margin-bottom:.6rem; }
+
+/* chapter bars */
+.chapter-list { display:flex; flex-direction:column; gap:.35rem; }
+.chapter-row { display:grid; grid-template-columns: 1fr 120px 52px; align-items:center; gap:.6rem; }
+.chapter-name { font-size:.82rem; color:#1F2A37; }
+.chapter-bar { background:#E9ECF1; border-radius:6px; height:9px; overflow:hidden; }
+.chapter-fill { height:100%; border-radius:6px; }
+.chapter-val { font-size:.76rem; font-weight:700; text-align:right; font-family:'Space Mono',monospace; }
+
+/* 4-section grid */
+.sec-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
+.box-panel-green h4 span { background:#E3F6F1; color:#147a6e; }
+.box-panel-amber h4 span { background:#FEF1DC; color:#b5751a; }
+
+@media (max-width:640px){ .chapter-row{grid-template-columns:1fr 80px 46px;} .rc-donut{flex-basis:100%;} }

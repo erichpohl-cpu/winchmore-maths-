@@ -49,17 +49,25 @@
     (1 = red / needs work, 2 = amber / partial, 3 = green / confident). Cells colour themselves as you type.
   </div>
 
+  <div class="callout green" style="margin-top:1rem;">
+    &#128221; <strong>Two ways to fill it in.</strong> Either mark the workbook yourself, <em>or</em> set a
+    <strong>Google Form</strong> as a reflective task in Classroom and let pupils self-assess privately —
+    then download the responses as CSV and upload that instead. See
+    <a href="form-scripts/Create_Forms.gs" download>Create_Forms.gs</a> to generate the Forms
+    (one per course; pupils skip topics not yet taught).
+  </div>
+
   <div class="section-header" style="margin-top:3rem;">
     <p class="section-eyebrow">Step 2</p>
     <h2>Upload for a report</h2>
-    <p>Drop your completed workbook below. Blank cells count as &ldquo;not seen&rdquo;. Everything runs locally in this tab.</p>
+    <p>Drop your completed <strong>workbook</strong> here, <strong>or</strong> a <strong>Google Form responses CSV</strong>. Blank / unanswered skills count as &ldquo;not seen&rdquo;. Everything runs locally in this tab.</p>
   </div>
 
   <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload your completed tracker">
     <div class="dz-icon">&#8593;</div>
     <p class="dz-main"><strong>Click to choose a file</strong> or drag your completed workbook here</p>
-    <p class="dz-sub">.xlsx only — the file you downloaded above, with some scores filled in</p>
-    <input type="file" id="file-input" accept=".xlsx" hidden/>
+    <p class="dz-sub">.xlsx workbook <strong>or</strong> Google Form responses .csv</p>
+    <input type="file" id="file-input" accept=".xlsx,.csv" hidden/>
   </div>
   <p id="tool-status" class="tool-status" role="status" aria-live="polite"></p>
 
