@@ -35,8 +35,12 @@ var COURSES = {
 };
 
 function createAllForms() {
-  Object.keys(COURSES).forEach(function (name) { createForm_(name, COURSES[name]); });
-  Logger.log("All forms created — see links above.");
+  var ok = 0, fail = 0;
+  Object.keys(COURSES).forEach(function (name) {
+    try { createForm_(name, COURSES[name]); ok++; }
+    catch (e) { fail++; Logger.log("FAILED: " + name + " — " + (e && e.message ? e.message : e)); }
+  });
+  Logger.log("Done. " + ok + " form(s) created" + (fail ? ", " + fail + " failed (see above)." : "."));
 }
 function createAS_Pure(){ createForm_("AS Pure", COURSES["AS Pure"]); }
 function createAS_Applied(){ createForm_("AS Applied", COURSES["AS Applied"]); }
@@ -45,15 +49,18 @@ function createALevel_Applied(){ createForm_("A level Applied", COURSES["A level
 function createCore_Pure(){ createForm_("Core Pure 1", COURSES["Core Pure 1"]); }
 
 function createForm_(courseName, chapters) {
-  var form = FormApp.create(courseName + " — Skills Self-Reflection");
+  var form = FormApp.create(courseName + " - Skills Self-Reflection");
   form.setDescription(
     "Rate how confident you feel with each skill:\n" +
     "1 = I need more work   ·   2 = Getting there   ·   3 = Confident\n\n" +
     "Only answer the topics we've covered — leave anything we haven't done yet blank."
   );
-  form.setCollectEmail(COLLECT_EMAIL);
-  form.setAllowResponseEdits(true);
-  form.setLimitOneResponsePerUser(false);
+  if (COLLECT_EMAIL) {
+    try { form.setCollectEmail(true); }
+    catch (e) { Logger.log("   (Note: couldn't auto-collect email on this account — a name question is used instead.)"); }
+  }
+  try { form.setAllowResponseEdits(true); } catch (e) {}
+  try { form.setLimitOneResponsePerUser(false); } catch (e) {}
 
   if (ADD_NAME_QUESTION) {
     form.addTextItem().setTitle("Full name").setRequired(true);

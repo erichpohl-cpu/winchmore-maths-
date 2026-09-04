@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Create Forms script - copy and paste</title>
+<style>
+  body { font-family: Inter, Arial, sans-serif; margin: 0; background: #FBFAF6; color: #1F2A37; }
+  header { background: #12233A; color: #fff; padding: 1.2rem 1.5rem; }
+  header h1 { margin: 0; font-size: 1.15rem; }
+  header p { margin: .3rem 0 0; font-size: .85rem; color: #B4C8E0; }
+  .wrap { max-width: 960px; margin: 1.2rem auto; padding: 0 1.2rem; }
+  .steps { background:#E7F6F3; border-left:4px solid #1B998B; border-radius:0 8px 8px 0; padding:.9rem 1.1rem; font-size:.9rem; margin-bottom:1rem; }
+  .bar { display:flex; gap:.6rem; align-items:center; margin-bottom:.6rem; flex-wrap:wrap; }
+  button { font-family:inherit; font-weight:600; font-size:.9rem; padding:.55rem 1.1rem; border-radius:50px; border:2px solid #1B998B; background:#1B998B; color:#fff; cursor:pointer; }
+  button:hover { background:#147a6e; border-color:#147a6e; }
+  #status { font-size:.85rem; color:#147a6e; font-weight:600; }
+  textarea { width:100%; height:60vh; font-family:'Courier New',monospace; font-size:.8rem; border:1px solid #C7D2DE; border-radius:8px; padding:.8rem; white-space:pre; overflow:auto; background:#fff; }
+  a.back { color:#147a6e; font-size:.85rem; text-decoration:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Create_Forms.gs - copy and paste into Google Apps Script</h1>
+  <p>Generates one self-reflection Google Form per course (Core Pure, AS/A level Pure and Applied).</p>
+</header>
+<div class="wrap">
+  <div class="steps">
+    <strong>How to use:</strong> 1) Click <em>Copy all</em>. 2) Go to <strong>script.google.com - New project</strong>.
+    3) Select all in the editor and paste this in. 4) Save, then run <code>createAllForms</code>.
+    5) Approve permissions; the links to each Form appear in <strong>View - Logs</strong>.
+  </div>
+  <div class="steps" style="background:#FEF6E7;border-left-color:#F4A93F;"><strong>If you see "Something went wrong, try again":</strong> pick <code>createAllForms</code> from the function dropdown before pressing Run, and make sure you have Saved first. It is often just a temporary Google hiccup — run it again. The script now builds each course separately, so if one fails the others still work (check <strong>View - Logs</strong>). You can also run a single course, e.g. <code>createAS_Pure</code>.</div>
+  <div class="bar">
+    <button id="copyBtn">Copy all</button>
+    <span id="status"></span>
+    <span style="flex:1"></span>
+    <a class="back" href="../tracker.html">&larr; Back to tracker</a>
+  </div>
+  <textarea id="code" readonly>/**
+ * Create_Forms.gs — generates a Google Form for each A level course, one
+ * question per skill, ready to set as a reflective task in Google Classroom.
+ *
+ * WHY: students self-assess each skill 1/2/3 privately (Form responses are only
+ * visible to you). Because it&#x27;s &quot;one Form per course&quot;, pupils can SKIP any topic
+ * not yet taught — every skill question is optional, so unseen skills are simply
+ * left blank and the report treats them as &quot;not seen&quot;.
+ *
+ * HOW TO USE
+ *   1. script.google.com -&gt; New project. Paste this whole file in. Save.
+ *   2. Run  createAllForms   (or one of the createX functions for a single course).
+ *   3. Approve permissions on first run (it only creates Forms in your Drive).
+ *   4. The log (View -&gt; Logs) prints each Form&#x27;s edit + responder links.
+ *   5. In each Form: Responses tab -&gt; link to Sheets if you like; then in
+ *      Google Classroom attach the Form as an assignment.
+ *   6. When responses are in: File -&gt; Download -&gt; .csv  (or from the linked
+ *      Sheet), then upload that CSV to the Core Pure / A level tracker page.
+ *
+ * The skill list below mirrors the trackers exactly, so the CSV column headers
+ * line up with the report engine (each question starts with the skill code).
+ */
+
+/* ===== EDIT: your class/course setup ===== */
+var COLLECT_EMAIL = true;   // capture school email automatically (recommended)
+var ADD_NAME_QUESTION = true; // also ask for full name (handy if emails aren&#x27;t tidy)
+
+/* ===== SKILL DATA (mirrors the trackers) ===== */
+var COURSES = {
+  &quot;AS Pure&quot;: AS_PURE(),
+  &quot;AS Applied&quot;: AS_APPLIED(),
+  &quot;A level Pure&quot;: ALEVEL_PURE(),
+  &quot;A level Applied&quot;: ALEVEL_APPLIED(),
+  &quot;Core Pure 1&quot;: CORE_PURE()
+};
+
+function createAllForms() {
+  var ok = 0, fail = 0;
+  Object.keys(COURSES).forEach(function (name) {
+    try { createForm_(name, COURSES[name]); ok++; }
+    catch (e) { fail++; Logger.log(&quot;FAILED: &quot; + name + &quot; — &quot; + (e &amp;&amp; e.message ? e.message : e)); }
+  });
+  Logger.log(&quot;Done. &quot; + ok + &quot; form(s) created&quot; + (fail ? &quot;, &quot; + fail + &quot; failed (see above).&quot; : &quot;.&quot;));
+}
+function createAS_Pure(){ createForm_(&quot;AS Pure&quot;, COURSES[&quot;AS Pure&quot;]); }
+function createAS_Applied(){ createForm_(&quot;AS Applied&quot;, COURSES[&quot;AS Applied&quot;]); }
+function createALevel_Pure(){ createForm_(&quot;A level Pure&quot;, COURSES[&quot;A level Pure&quot;]); }
+function createALevel_Applied(){ createForm_(&quot;A level Applied&quot;, COURSES[&quot;A level Applied&quot;]); }
+function createCore_Pure(){ createForm_(&quot;Core Pure 1&quot;, COURSES[&quot;Core Pure 1&quot;]); }
+
+function createForm_(courseName, chapters) {
+  var form = FormApp.create(courseName + &quot; - Skills Self-Reflection&quot;);
+  form.setDescription(
+    &quot;Rate how confident you feel with each skill:\n&quot; +
+    &quot;1 = I need more work   ·   2 = Getting there   ·   3 = Confident\n\n&quot; +
+    &quot;Only answer the topics we&#x27;ve covered — leave anything we haven&#x27;t done yet blank.&quot;
+  );
+  if (COLLECT_EMAIL) {
+    try { form.setCollectEmail(true); }
+    catch (e) { Logger.log(&quot;   (Note: couldn&#x27;t auto-collect email on this account — a name question is used instead.)&quot;); }
+  }
+  try { form.setAllowResponseEdits(true); } catch (e) {}
+  try { form.setLimitOneResponsePerUser(false); } catch (e) {}
+
+  if (ADD_NAME_QUESTION) {
+    form.addTextItem().setTitle(&quot;Full name&quot;).setRequired(true);
+  }
+
+  chapters.forEach(function (ch) {
+    // section header per chapter so pupils can jump/skip by topic
+    form.addSectionHeaderItem()
+      .setTitle(&quot;Chapter &quot; + ch.code + &quot;: &quot; + ch.name)
+      .setHelpText(&quot;Skip this chapter if we haven&#x27;t covered it yet.&quot;);
+    ch.skills.forEach(function (sk, i) {
+      var code = ch.code + &quot;.&quot; + (i + 1);
+      var item = form.addMultipleChoiceItem();
+      item.setTitle(code + &quot;  &quot; + sk)
+          .setRequired(false)   // optional -&gt; unseen skills stay blank
+          .setChoiceValues([&quot;1 \u2013 Need more work&quot;, &quot;2 \u2013 Getting there&quot;, &quot;3 \u2013 Confident&quot;]);
+    });
+  });
+
+  Logger.log(courseName + &quot;:&quot;);
+  Logger.log(&quot;   Edit:    &quot; + form.getEditUrl());
+  Logger.log(&quot;   Share:   &quot; + form.getPublishedUrl());
+}
+
+/* ===== SKILL DATA (code order matches the trackers) ===== */
+function AS_PURE() { return [{&quot;code&quot;: &quot;1&quot;, &quot;name&quot;: &quot;Algebraic expressions&quot;, &quot;skills&quot;: [&quot;Index laws&quot;, &quot;Expanding brackets&quot;, &quot;Factorising&quot;, &quot;Negative &amp; fractional indices&quot;, &quot;Surds&quot;, &quot;Rationalising denominators&quot;]}, {&quot;code&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Quadratics&quot;, &quot;skills&quot;: [&quot;Solving quadratics&quot;, &quot;Completing the square&quot;, &quot;Quadratic functions &amp; graphs&quot;, &quot;The discriminant&quot;, &quot;Modelling with quadratics&quot;]}, {&quot;code&quot;: &quot;3&quot;, &quot;name&quot;: &quot;Equations &amp; inequalities&quot;, &quot;skills&quot;: [&quot;Simultaneous equations (linear)&quot;, &quot;Simultaneous (one quadratic)&quot;, &quot;Linear inequalities&quot;, &quot;Quadratic inequalities&quot;, &quot;Inequalities on graphs&quot;, &quot;Regions&quot;]}, {&quot;code&quot;: &quot;4&quot;, &quot;name&quot;: &quot;Graphs &amp; transformations&quot;, &quot;skills&quot;: [&quot;Cubic graphs&quot;, &quot;Quartic graphs&quot;, &quot;Reciprocal graphs&quot;, &quot;Points of intersection&quot;, &quot;Translations f(x+a), f(x)+a&quot;, &quot;Stretches&quot;, &quot;Transforming functions&quot;]}, {&quot;code&quot;: &quot;5&quot;, &quot;name&quot;: &quot;Straight line graphs&quot;, &quot;skills&quot;: [&quot;y=mx+c&quot;, &quot;Equation of a line&quot;, &quot;Parallel &amp; perpendicular&quot;, &quot;Length &amp; midpoint&quot;, &quot;Modelling with straight lines&quot;]}, {&quot;code&quot;: &quot;6&quot;, &quot;name&quot;: &quot;Circles&quot;, &quot;skills&quot;: [&quot;Midpoint &amp; perpendicular bisector&quot;, &quot;Equation of a circle&quot;, &quot;Intersections of line &amp; circle&quot;, &quot;Tangent &amp; chord properties&quot;, &quot;Circle &amp; triangle problems&quot;]}, {&quot;code&quot;: &quot;7&quot;, &quot;name&quot;: &quot;Algebraic methods&quot;, &quot;skills&quot;: [&quot;Algebraic fractions&quot;, &quot;Dividing polynomials&quot;, &quot;The factor theorem&quot;, &quot;Proof (deduction, exhaustion, counter-example)&quot;]}, {&quot;code&quot;: &quot;8&quot;, &quot;name&quot;: &quot;The binomial expansion&quot;, &quot;skills&quot;: [&quot;Pascal&#x27;s triangle&quot;, &quot;Factorial notation &amp; nCr&quot;, &quot;Binomial expansion&quot;, &quot;Using the expansion&quot;, &quot;Estimation&quot;]}, {&quot;code&quot;: &quot;9&quot;, &quot;name&quot;: &quot;Trigonometric ratios&quot;, &quot;skills&quot;: [&quot;The cosine rule&quot;, &quot;The sine rule&quot;, &quot;Areas of triangles&quot;, &quot;Solving triangle problems&quot;, &quot;Graphs of sin, cos, tan&quot;, &quot;Transforming trig graphs&quot;]}, {&quot;code&quot;: &quot;10&quot;, &quot;name&quot;: &quot;Trigonometric identities &amp; equations&quot;, &quot;skills&quot;: [&quot;Exact trig values&quot;, &quot;tan = sin/cos identity&quot;, &quot;sin²+cos²=1 identity&quot;, &quot;Solving trig equations&quot;, &quot;Harder trig equations&quot;]}, {&quot;code&quot;: &quot;11&quot;, &quot;name&quot;: &quot;Vectors&quot;, &quot;skills&quot;: [&quot;Vectors &amp; representation&quot;, &quot;Magnitude &amp; direction&quot;, &quot;Position vectors&quot;, &quot;Vectors in geometry&quot;, &quot;Modelling with vectors&quot;]}, {&quot;code&quot;: &quot;12&quot;, &quot;name&quot;: &quot;Differentiation&quot;, &quot;skills&quot;: [&quot;Gradients of curves&quot;, &quot;Differentiation from first principles&quot;, &quot;Differentiating x^n&quot;, &quot;Second derivatives&quot;, &quot;Tangents &amp; normals&quot;, &quot;Increasing/decreasing functions&quot;, &quot;Stationary points&quot;, &quot;Modelling with differentiation&quot;]}, {&quot;code&quot;: &quot;13&quot;, &quot;name&quot;: &quot;Integration&quot;, &quot;skills&quot;: [&quot;Integrating x^n&quot;, &quot;Indefinite integrals&quot;, &quot;Finding f(x) given f&#x27;(x)&quot;, &quot;Definite integrals&quot;, &quot;Area under a curve&quot;, &quot;Areas between curves &amp; lines&quot;]}, {&quot;code&quot;: &quot;14&quot;, &quot;name&quot;: &quot;Exponentials &amp; logarithms&quot;, &quot;skills&quot;: [&quot;Exponential functions&quot;, &quot;The number e&quot;, &quot;Logarithms &amp; laws&quot;, &quot;Solving equations with logs&quot;, &quot;Working with natural logs&quot;, &quot;Modelling with exponentials &amp; logs&quot;]}]; }
+
+function AS_APPLIED() { return [{&quot;code&quot;: &quot;1&quot;, &quot;name&quot;: &quot;Data collection&quot;, &quot;skills&quot;: [&quot;Populations &amp; samples&quot;, &quot;Sampling methods&quot;, &quot;Non-random sampling&quot;, &quot;Types of data&quot;, &quot;The large data set&quot;]}, {&quot;code&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Measures of location &amp; spread&quot;, &quot;skills&quot;: [&quot;Mean, median, mode&quot;, &quot;Quartiles &amp; percentiles&quot;, &quot;Range &amp; interquartile range&quot;, &quot;Variance &amp; standard deviation&quot;, &quot;Coding&quot;]}, {&quot;code&quot;: &quot;3&quot;, &quot;name&quot;: &quot;Representations of data&quot;, &quot;skills&quot;: [&quot;Outliers&quot;, &quot;Box plots&quot;, &quot;Cumulative frequency&quot;, &quot;Histograms&quot;, &quot;Comparing data&quot;]}, {&quot;code&quot;: &quot;4&quot;, &quot;name&quot;: &quot;Correlation&quot;, &quot;skills&quot;: [&quot;Correlation&quot;, &quot;Linear regression&quot;, &quot;Using regression lines&quot;]}, {&quot;code&quot;: &quot;5&quot;, &quot;name&quot;: &quot;Probability&quot;, &quot;skills&quot;: [&quot;Sample spaces &amp; Venn diagrams&quot;, &quot;Mutually exclusive &amp; independent events&quot;, &quot;Tree diagrams&quot;]}, {&quot;code&quot;: &quot;6&quot;, &quot;name&quot;: &quot;Statistical distributions&quot;, &quot;skills&quot;: [&quot;Probability distributions&quot;, &quot;The binomial distribution&quot;, &quot;Cumulative binomial probabilities&quot;]}, {&quot;code&quot;: &quot;7&quot;, &quot;name&quot;: &quot;Hypothesis testing&quot;, &quot;skills&quot;: [&quot;Hypotheses&quot;, &quot;Finding critical values&quot;, &quot;One-tailed tests&quot;, &quot;Two-tailed tests&quot;]}, {&quot;code&quot;: &quot;8&quot;, &quot;name&quot;: &quot;Modelling in mechanics&quot;, &quot;skills&quot;: [&quot;Constructing a model&quot;, &quot;Modelling assumptions&quot;, &quot;Quantities &amp; units&quot;, &quot;Working with vectors in mechanics&quot;]}, {&quot;code&quot;: &quot;9&quot;, &quot;name&quot;: &quot;Constant acceleration&quot;, &quot;skills&quot;: [&quot;Displacement–time graphs&quot;, &quot;Velocity–time graphs&quot;, &quot;Constant acceleration formulae (suvat)&quot;, &quot;Vertical motion under gravity&quot;]}, {&quot;code&quot;: &quot;10&quot;, &quot;name&quot;: &quot;Forces &amp; motion&quot;, &quot;skills&quot;: [&quot;Force diagrams&quot;, &quot;Forces as vectors&quot;, &quot;Newton&#x27;s 1st &amp; 2nd laws&quot;, &quot;Connected particles&quot;, &quot;Pulleys&quot;]}, {&quot;code&quot;: &quot;11&quot;, &quot;name&quot;: &quot;Variable acceleration&quot;, &quot;skills&quot;: [&quot;Functions of time&quot;, &quot;Using differentiation&quot;, &quot;Using integration&quot;, &quot;Constant acceleration via calculus&quot;]}]; }
+
+function ALEVEL_PURE() { return [{&quot;code&quot;: &quot;1&quot;, &quot;name&quot;: &quot;Algebraic methods&quot;, &quot;skills&quot;: [&quot;Proof by contradiction&quot;, &quot;Algebraic fractions&quot;, &quot;Partial fractions&quot;, &quot;Repeated factors&quot;, &quot;Algebraic division&quot;]}, {&quot;code&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Functions &amp; graphs&quot;, &quot;skills&quot;: [&quot;The modulus function&quot;, &quot;Functions &amp; mappings&quot;, &quot;Composite functions&quot;, &quot;Inverse functions&quot;, &quot;y=|f(x)| and y=f(|x|)&quot;, &quot;Combining transformations&quot;, &quot;Solving modulus problems&quot;]}, {&quot;code&quot;: &quot;3&quot;, &quot;name&quot;: &quot;Sequences &amp; series&quot;, &quot;skills&quot;: [&quot;Arithmetic sequences&quot;, &quot;Arithmetic series&quot;, &quot;Geometric sequences&quot;, &quot;Geometric series&quot;, &quot;Sum to infinity&quot;, &quot;Sigma notation&quot;, &quot;Recurrence relations&quot;, &quot;Modelling with series&quot;]}, {&quot;code&quot;: &quot;4&quot;, &quot;name&quot;: &quot;Binomial expansion&quot;, &quot;skills&quot;: [&quot;Expanding (1+x)^n for any n&quot;, &quot;Expanding (a+bx)^n&quot;, &quot;Using partial fractions with expansions&quot;]}, {&quot;code&quot;: &quot;5&quot;, &quot;name&quot;: &quot;Radians&quot;, &quot;skills&quot;: [&quot;Radian measure&quot;, &quot;Arc length&quot;, &quot;Sector area&quot;, &quot;Solving trig equations in radians&quot;, &quot;Small angle approximations&quot;]}, {&quot;code&quot;: &quot;6&quot;, &quot;name&quot;: &quot;Trigonometric functions&quot;, &quot;skills&quot;: [&quot;Secant, cosecant &amp; cotangent&quot;, &quot;Graphs of reciprocal trig&quot;, &quot;Inverse trig functions&quot;, &quot;Using sec/cosec/cot identities&quot;]}, {&quot;code&quot;: &quot;7&quot;, &quot;name&quot;: &quot;Trigonometry &amp; modelling&quot;, &quot;skills&quot;: [&quot;Addition formulae&quot;, &quot;Double angle formulae&quot;, &quot;Solving equations with these&quot;, &quot;R cos/sin form&quot;, &quot;Proving identities&quot;, &quot;Modelling with trig&quot;]}, {&quot;code&quot;: &quot;8&quot;, &quot;name&quot;: &quot;Parametric equations&quot;, &quot;skills&quot;: [&quot;Parametric equations&quot;, &quot;Converting to Cartesian&quot;, &quot;Curve sketching&quot;, &quot;Points of intersection&quot;, &quot;Modelling with parametrics&quot;]}, {&quot;code&quot;: &quot;9&quot;, &quot;name&quot;: &quot;Differentiation&quot;, &quot;skills&quot;: [&quot;Differentiating sin, cos, e^x, ln x&quot;, &quot;Chain rule&quot;, &quot;Product rule&quot;, &quot;Quotient rule&quot;, &quot;Implicit differentiation&quot;, &quot;Parametric differentiation&quot;, &quot;Rates of change&quot;]}, {&quot;code&quot;: &quot;10&quot;, &quot;name&quot;: &quot;Numerical methods&quot;, &quot;skills&quot;: [&quot;Locating roots&quot;, &quot;Iteration&quot;, &quot;Newton–Raphson&quot;, &quot;Applications to models&quot;]}, {&quot;code&quot;: &quot;11&quot;, &quot;name&quot;: &quot;Integration&quot;, &quot;skills&quot;: [&quot;Standard integrals&quot;, &quot;Integrating f(ax+b)&quot;, &quot;Using trig identities&quot;, &quot;Reverse chain rule&quot;, &quot;Integration by substitution&quot;, &quot;Integration by parts&quot;, &quot;Partial fractions&quot;, &quot;Areas&quot;, &quot;Trapezium rule&quot;, &quot;Differential equations&quot;]}, {&quot;code&quot;: &quot;12&quot;, &quot;name&quot;: &quot;Vectors (3D)&quot;, &quot;skills&quot;: [&quot;3D coordinates&quot;, &quot;Vectors in 3D&quot;, &quot;Magnitude &amp; unit vectors&quot;, &quot;Position vectors &amp; distances&quot;, &quot;Geometric problems in 3D&quot;]}]; }
+
+function ALEVEL_APPLIED() { return [{&quot;code&quot;: &quot;1&quot;, &quot;name&quot;: &quot;Regression, correlation &amp; hypothesis testing&quot;, &quot;skills&quot;: [&quot;Exponential models&quot;, &quot;Measuring correlation (PMCC)&quot;, &quot;Hypothesis testing for zero correlation&quot;]}, {&quot;code&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Conditional probability&quot;, &quot;skills&quot;: [&quot;Set notation&quot;, &quot;Conditional probability&quot;, &quot;Probability formulae&quot;, &quot;Tree diagrams with conditionals&quot;]}, {&quot;code&quot;: &quot;3&quot;, &quot;name&quot;: &quot;The normal distribution&quot;, &quot;skills&quot;: [&quot;The normal distribution&quot;, &quot;Finding probabilities&quot;, &quot;The inverse normal&quot;, &quot;Standard normal &amp; z-values&quot;, &quot;Finding μ and σ&quot;, &quot;Normal approximation to binomial&quot;, &quot;Hypothesis testing with the normal&quot;]}, {&quot;code&quot;: &quot;4&quot;, &quot;name&quot;: &quot;Moments&quot;, &quot;skills&quot;: [&quot;Moments&quot;, &quot;Resultant moments&quot;, &quot;Equilibrium&quot;, &quot;Centres of mass&quot;, &quot;Tilting&quot;]}, {&quot;code&quot;: &quot;5&quot;, &quot;name&quot;: &quot;Forces &amp; friction&quot;, &quot;skills&quot;: [&quot;Resolving forces&quot;, &quot;Inclined planes&quot;, &quot;Friction &amp; the coefficient μ&quot;]}, {&quot;code&quot;: &quot;6&quot;, &quot;name&quot;: &quot;Projectiles&quot;, &quot;skills&quot;: [&quot;Horizontal projection&quot;, &quot;Horizontal &amp; vertical components&quot;, &quot;Projectile formulae&quot;, &quot;Range, time &amp; greatest height&quot;]}, {&quot;code&quot;: &quot;7&quot;, &quot;name&quot;: &quot;Applications of forces&quot;, &quot;skills&quot;: [&quot;Static particles&quot;, &quot;Modelling with statics&quot;, &quot;Friction &amp; static particles&quot;, &quot;Static rigid bodies&quot;, &quot;Dynamics &amp; inclined planes&quot;, &quot;Connected particles&quot;]}, {&quot;code&quot;: &quot;8&quot;, &quot;name&quot;: &quot;Further kinematics&quot;, &quot;skills&quot;: [&quot;Vectors in kinematics&quot;, &quot;Vectors with calculus&quot;, &quot;Projectiles as vectors&quot;, &quot;Variable acceleration in 2D&quot;]}]; }
+
+function CORE_PURE() { return [{&quot;code&quot;: &quot;1&quot;, &quot;name&quot;: &quot;Complex numbers&quot;, &quot;skills&quot;: [&quot;Imaginary &amp; complex numbers&quot;, &quot;Multiplying complex numbers&quot;, &quot;Complex conjugation&quot;, &quot;Roots of quadratic equations&quot;, &quot;Solving cubic &amp; quartic equations&quot;]}, {&quot;code&quot;: &quot;2&quot;, &quot;name&quot;: &quot;Argand diagrams&quot;, &quot;skills&quot;: [&quot;Argand diagrams&quot;, &quot;Modulus &amp; argument&quot;, &quot;Modulus–argument form&quot;, &quot;Multiplying &amp; dividing in mod–arg form&quot;, &quot;Loci in the Argand plane&quot;, &quot;Regions in the Argand plane&quot;]}, {&quot;code&quot;: &quot;3&quot;, &quot;name&quot;: &quot;Series&quot;, &quot;skills&quot;: [&quot;Sums of natural numbers Σr&quot;, &quot;Sums of squares Σr² &amp; cubes Σr³&quot;, &quot;Using standard results&quot;, &quot;Method of differences&quot;]}, {&quot;code&quot;: &quot;4&quot;, &quot;name&quot;: &quot;Roots of polynomials&quot;, &quot;skills&quot;: [&quot;Roots of a quadratic&quot;, &quot;Roots of a cubic&quot;, &quot;Roots of a quartic&quot;, &quot;Expressions relating roots&quot;, &quot;Linear transformations of roots&quot;]}, {&quot;code&quot;: &quot;5&quot;, &quot;name&quot;: &quot;Volumes of revolution&quot;, &quot;skills&quot;: [&quot;Rotation about the x-axis&quot;, &quot;Rotation about the y-axis&quot;, &quot;Volumes of revolution around lines&quot;, &quot;Modelling with volumes&quot;]}, {&quot;code&quot;: &quot;6&quot;, &quot;name&quot;: &quot;Matrices&quot;, &quot;skills&quot;: [&quot;Introduction to matrices&quot;, &quot;Matrix multiplication&quot;, &quot;Determinants&quot;, &quot;Inverting a 2×2 matrix&quot;, &quot;Inverting a 3×3 matrix&quot;, &quot;Solving systems of equations&quot;]}, {&quot;code&quot;: &quot;7&quot;, &quot;name&quot;: &quot;Linear transformations&quot;, &quot;skills&quot;: [&quot;Linear transformations in 2D&quot;, &quot;Reflections &amp; rotations&quot;, &quot;Enlargements &amp; stretches&quot;, &quot;Successive transformations&quot;, &quot;The determinant as area scale factor&quot;, &quot;Transformations in 3D&quot;, &quot;Invariant points &amp; lines&quot;]}, {&quot;code&quot;: &quot;8&quot;, &quot;name&quot;: &quot;Proof by induction&quot;, &quot;skills&quot;: [&quot;Proof by induction (summation)&quot;, &quot;Proof by induction (divisibility)&quot;, &quot;Proof by induction (matrices)&quot;, &quot;Proof by induction (recurrence)&quot;]}, {&quot;code&quot;: &quot;9&quot;, &quot;name&quot;: &quot;Vectors&quot;, &quot;skills&quot;: [&quot;Equation of a line in 3D&quot;, &quot;Equation of a plane&quot;, &quot;Scalar product&quot;, &quot;Angles between lines &amp; planes&quot;, &quot;Points of intersection&quot;, &quot;Distances (point to line/plane)&quot;]}]; }
+</textarea>
+</div>
+<script>
+  var ta=document.getElementById("code");
+  document.getElementById("copyBtn").addEventListener("click",function(){
+    ta.focus(); ta.select(); ta.setSelectionRange(0,999999);
+    var done=false;
+    try { done=document.execCommand("copy"); } catch(e){}
+    if (navigator.clipboard) { navigator.clipboard.writeText(ta.value).then(function(){document.getElementById("status").textContent="Copied to clipboard";}); }
+    document.getElementById("status").textContent = done ? "Copied to clipboard" : "Selected - press Ctrl/Cmd+C to copy";
+  });
+</script>
+</body>
+</html>
