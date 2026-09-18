@@ -525,6 +525,37 @@
   </div>
 </header>
 
+<!-- ── WHAT ARE WE TEACHING THIS WEEK ── -->
+<section class="section" id="this-week" aria-labelledby="week-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Live from the scheme of work</p>
+      <h2 id="week-heading">What Are We Teaching This Week?</h2>
+      <p>Pick a year group to see last week, this week and next week's topic. Click any topic for the subskills covered.</p>
+    </div>
+
+    <div class="week-wheel-picker">
+      <div class="week-year-tabs" id="week-year-tabs"></div>
+      <div class="week-set-pills" id="week-set-pills"></div>
+    </div>
+
+    <div class="week-wheel" id="week-wheel">
+      <div class="wheel-slot wheel-prev">Loading&hellip;</div>
+      <div class="wheel-slot wheel-current">Loading&hellip;</div>
+      <div class="wheel-slot wheel-next">Loading&hellip;</div>
+    </div>
+    <p class="week-range-note" id="week-range"></p>
+  </div>
+</section>
+
+<div class="week-popup" id="week-popup" hidden>
+  <div class="week-popup-card">
+    <button class="week-popup-close" id="week-popup-close" aria-label="Close">&times;</button>
+    <h3 id="week-popup-title"></h3>
+    <ul id="week-popup-list"></ul>
+  </div>
+</div>
+
 <!-- ── HOW TO USE ── -->
 <section class="section" aria-labelledby="howto-heading">
   <div class="container">
@@ -800,6 +831,7 @@
   }
 </script>
 <script src="nav.js"></script>
+<script src="sow-wheel.js"></script>
 
 </body>
 </html>

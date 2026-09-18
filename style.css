@@ -439,3 +439,65 @@ footer a:hover { text-decoration: underline; }
   color: #147a6e; background: #E7F6F3; border: 1px solid #bfe8e0; border-radius: 50px;
   padding: .25rem .7rem; transition: background .15s, transform .15s; white-space: nowrap; }
 .oak-link:hover { background: #d2efe9; transform: translateX(2px); }
+
+/* ── "What are we teaching this week?" combination-lock widget ── */
+.week-wheel-picker { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 1.6rem; }
+.week-year-tabs { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+.week-tab {
+  font-family: inherit; font-size: .9rem; font-weight: 700; cursor: pointer;
+  padding: .5rem 1.1rem; border-radius: 50px; border: 1.5px solid var(--navy, #12233A);
+  background: #fff; color: var(--navy, #12233A); transition: background .15s, color .15s;
+}
+.week-tab.active, .week-tab:hover { background: var(--navy, #12233A); color: #fff; }
+.week-set-pills { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; }
+.week-pill {
+  font-family: inherit; font-size: .8rem; font-weight: 600; cursor: pointer;
+  padding: .35rem .85rem; border-radius: 50px; border: 1.5px solid #9fb0c3;
+  background: #f3f6f9; color: #33465c; transition: background .15s, border-color .15s;
+}
+.week-pill.active, .week-pill:hover { background: #26de81; border-color: #26de81; color: #0b3323; }
+
+.week-wheel {
+  max-width: 640px; margin: 0 auto; border-radius: 18px; overflow: hidden;
+  background: linear-gradient(#0c1a2c, #12233A 40%, #12233A 60%, #0c1a2c);
+  box-shadow: inset 0 8px 18px rgba(0,0,0,.35), 0 6px 20px rgba(0,0,0,.15);
+  padding: .6rem;
+}
+.wheel-slot {
+  display: flex; align-items: center; justify-content: center; gap: .5rem;
+  text-align: center; padding: .9rem 1rem; border-radius: 10px;
+  color: #cfd9e6; font-size: .92rem; transition: transform .15s;
+}
+.wheel-slot.wheel-prev, .wheel-slot.wheel-next { opacity: .55; font-size: .85rem; }
+.wheel-slot.wheel-current {
+  background: #fff; color: var(--navy, #12233A); font-weight: 800; font-size: 1.15rem;
+  margin: .3rem 0; box-shadow: 0 4px 14px rgba(0,0,0,.25);
+}
+.wheel-slot:hover { transform: scale(1.015); }
+.wheel-info-dot {
+  flex-shrink: 0; width: 1.15em; height: 1.15em; border-radius: 50%; font-size: .7rem;
+  font-style: italic; font-weight: 700; display: inline-flex; align-items: center; justify-content: center;
+  background: #26de81; color: #0b3323;
+}
+.wheel-slot.wheel-prev .wheel-info-dot, .wheel-slot.wheel-next .wheel-info-dot {
+  background: rgba(255,255,255,.25); color: #fff;
+}
+
+.week-popup {
+  position: fixed; inset: 0; background: rgba(10,20,35,.55); z-index: 80;
+  display: flex; align-items: center; justify-content: center; padding: 1rem;
+}
+.week-popup[hidden] { display: none; }
+.week-popup-card {
+  background: #fff; border-radius: 14px; padding: 1.6rem; max-width: 460px; width: 100%;
+  max-height: 80vh; overflow-y: auto; position: relative;
+}
+.week-popup-close {
+  position: absolute; top: .8rem; right: .9rem; border: none; background: none;
+  font-size: 1.4rem; line-height: 1; cursor: pointer; color: #5b6b7c;
+}
+.week-popup-card h3 { margin: 0 1.6rem .8rem 0; font-size: 1.05rem; color: var(--navy, #12233A); }
+.week-popup-card ul { margin: 0; padding-left: 1.2rem; }
+.week-popup-card li { margin-bottom: .5rem; font-size: .92rem; color: #33465c; }
+.week-popup-card li.muted { color: #8ea0b3; font-style: italic; }
+.week-range-note { text-align: center; font-size: .8rem; color: #5b6b7c; margin-top: .8rem; }
