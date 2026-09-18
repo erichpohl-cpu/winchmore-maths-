@@ -473,7 +473,8 @@ footer a:hover { text-decoration: underline; }
   background: #fff; color: var(--navy, #12233A); font-weight: 800; font-size: 1.15rem;
   margin: .3rem 0; box-shadow: 0 4px 14px rgba(0,0,0,.25);
 }
-.wheel-slot:hover { transform: scale(1.015); }
+.wheel-slot.clickable { cursor: pointer; }
+.wheel-slot.clickable:hover { transform: scale(1.015); }
 .wheel-info-dot {
   flex-shrink: 0; width: 1.15em; height: 1.15em; border-radius: 50%; font-size: .7rem;
   font-style: italic; font-weight: 700; display: inline-flex; align-items: center; justify-content: center;
@@ -482,6 +483,7 @@ footer a:hover { text-decoration: underline; }
 .wheel-slot.wheel-prev .wheel-info-dot, .wheel-slot.wheel-next .wheel-info-dot {
   background: rgba(255,255,255,.25); color: #fff;
 }
+.week-range-note { text-align: center; font-size: .8rem; color: #5b6b7c; margin-top: .8rem; }
 
 .week-popup {
   position: fixed; inset: 0; background: rgba(10,20,35,.55); z-index: 80;
@@ -500,4 +502,3 @@ footer a:hover { text-decoration: underline; }
 .week-popup-card ul { margin: 0; padding-left: 1.2rem; }
 .week-popup-card li { margin-bottom: .5rem; font-size: .92rem; color: #33465c; }
 .week-popup-card li.muted { color: #8ea0b3; font-style: italic; }
-.week-range-note { text-align: center; font-size: .8rem; color: #5b6b7c; margin-top: .8rem; }

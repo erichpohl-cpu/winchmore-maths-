@@ -1,0 +1,3120 @@
+{
+ "weeks": {
+  "1": {
+   "Fri": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "DMI",
+      "klass": "08wx/Ma4",
+      "room": "09",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "EBY",
+      "klass": "08yz/Ma4",
+      "room": "60",
+      "year": 8
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08wx/Ma1",
+      "room": "69",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "DMI",
+      "klass": "08wx/Ma4",
+      "room": "09",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "EBY",
+      "klass": "08yz/Ma4",
+      "room": "60",
+      "year": 8
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08wx/Ma1",
+      "room": "69",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "3": [
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma2F",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09yz/Ma1",
+      "room": "05",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "63",
+      "year": 10
+     }
+    ],
+    "4": [
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma2F",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "08yz/Ma4",
+      "room": "60",
+      "year": 8
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09wx/Ma4",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "07yz/MaT",
+      "room": "02",
+      "year": 7
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma2F",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "07yz/MaF",
+      "room": "68",
+      "year": 7
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "07yz/MaS",
+      "room": "01",
+      "year": 7
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10x/Ma1",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ]
+   },
+   "Mon": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "09",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13D/Ma2F",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/Ma3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10WX/Ma4",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "09yz/Ma1",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "07wx/MaE",
+      "room": "64",
+      "year": 7
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13D/Ma2F",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "07wx/MaW",
+      "room": "66",
+      "year": 7
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07wx/MaC",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     }
+    ],
+    "3": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "SC6",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "07yz/MaF",
+      "room": "69",
+      "year": 7
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "DNI",
+      "klass": "07wx/MaE",
+      "room": "64",
+      "year": 7
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13A/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "07wx/MaW",
+      "room": "66",
+      "year": 7
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07yz/MaT",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "12q/MR1",
+      "room": "61",
+      "year": 12
+     },
+     {
+      "teacher": "SDI",
+      "klass": "07wx/MaC",
+      "room": "67",
+      "year": 7
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "63",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "07yz/MaS",
+      "room": "11",
+      "year": 7
+     }
+    ],
+    "4": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "SC6",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "07yz/MaF",
+      "room": "68",
+      "year": 7
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11YZ/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13A/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11YZ/Ma4",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07yz/MaT",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "63",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "07yz/MaS",
+      "room": "11",
+      "year": 7
+     }
+    ],
+    "5": [
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08wx/Ma4",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08wx/Ma1",
+      "room": "69",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ]
+   },
+   "Thu": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "63",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "BAT",
+      "klass": "10YZ/Ma4",
+      "room": "68",
+      "year": 10
+     },
+     {
+      "teacher": "CBE",
+      "klass": "10WX/Ma3",
+      "room": "09",
+      "year": 10
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "12q/MR1",
+      "room": "61",
+      "year": 12
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10WX/Ma4",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "63",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "BAT",
+      "klass": "10YZ/Ma4",
+      "room": "68",
+      "year": 10
+     },
+     {
+      "teacher": "CBE",
+      "klass": "10WX/Ma3",
+      "room": "09",
+      "year": 10
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "12q/MR1",
+      "room": "61",
+      "year": 12
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10WX/Ma4",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12C/Ma1",
+      "room": "S3",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "3": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "11YZ/Ma4",
+      "room": "68",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     }
+    ],
+    "4": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "11YZ/Ma4",
+      "room": "68",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "09yz/Ma1",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "CBE",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12B/Mp1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ]
+   },
+   "Tue": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "12B/Ma1",
+      "room": "76",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13B/Mx1",
+      "room": "63",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "07yz/MaF",
+      "room": "68",
+      "year": 7
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10z/Ma1",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12B/Mp1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08wx/Ma3",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07yz/MaT",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08wx/Ma4",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08wx/Ma1",
+      "room": "69",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "07yz/MaS",
+      "room": "11",
+      "year": 7
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "12B/Ma1",
+      "room": "76",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13B/Mx1",
+      "room": "63",
+      "year": 13
+     },
+     {
+      "teacher": "DMI",
+      "klass": "11z/Ma1",
+      "room": "09",
+      "year": 11
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12B/Mp1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "68",
+      "year": 10
+     }
+    ],
+    "3": [
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09yz/Ma1",
+      "room": "05",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "09",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     }
+    ],
+    "4": [
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09yz/Ma1",
+      "room": "05",
+      "year": 9
+     },
+     {
+      "teacher": "RAB",
+      "klass": "12y/MR2",
+      "room": "62",
+      "year": 12
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "09",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "63",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09wx/Ma4",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/Ma3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10WX/Ma4",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ]
+   },
+   "Wed": {
+    "1": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "11YZ/Ma4",
+      "room": "68",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "01",
+      "year": 11
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13D/Ma2F",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "63",
+      "year": 13
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ],
+    "2": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "11YZ/Ma4",
+      "room": "68",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "01",
+      "year": 11
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13D/Ma2F",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "63",
+      "year": 13
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ],
+    "3": [
+     {
+      "teacher": "DNI",
+      "klass": "12C/Ma1",
+      "room": "64",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "07wx/MaW",
+      "room": "66",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "07wx/MaE",
+      "room": "61",
+      "year": 7
+     },
+     {
+      "teacher": "SDI",
+      "klass": "07wx/MaC",
+      "room": "67",
+      "year": 7
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "13C/Ma1",
+      "room": "11",
+      "year": 13
+     }
+    ],
+    "4": [
+     {
+      "teacher": "DNI",
+      "klass": "12C/Ma1",
+      "room": "64",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "07wx/MaW",
+      "room": "66",
+      "year": 7
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07wx/MaC",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "07wx/MaE",
+      "room": "61",
+      "year": 7
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "13C/Ma1",
+      "room": "11",
+      "year": 13
+     }
+    ],
+    "5": [
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "08yz/Ma4",
+      "room": "60",
+      "year": 8
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09wx/Ma4",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ]
+   }
+  },
+  "2": {
+   "Fri": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09wx/Ma4",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10WX/Ma4",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/Ma3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "10WX/Ma5",
+      "room": "61",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "63",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10WX/Ma4",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13A/Ma1",
+      "room": "M3",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/MaE3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "10WX/Ma5",
+      "room": "61",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "63",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "3": [
+     {
+      "teacher": "EPO",
+      "klass": "09yz/Ma1",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "11",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13D/Ma2F",
+      "room": "W6",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "63",
+      "year": 10
+     }
+    ],
+    "4": [
+     {
+      "teacher": "EPO",
+      "klass": "S3P/Ma1",
+      "room": "03",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09wx/Ma4",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "60",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08yz/Ma4",
+      "room": "63",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "08wx/Ma1",
+      "room": "03",
+      "year": 8
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma2F",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "DMI",
+      "klass": "08wx/Ma4",
+      "room": "09",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ]
+   },
+   "Mon": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "63",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "BAT",
+      "klass": "12x/MR1",
+      "room": "68",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10WX/Ma4",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/Ma3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "SDI",
+      "klass": "12B/Mp1",
+      "room": "67",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "12B/Ma1",
+      "room": "03",
+      "year": 12
+     },
+     {
+      "teacher": "AAK",
+      "klass": "07yz/MaF",
+      "room": "69",
+      "year": 7
+     },
+     {
+      "teacher": "BAT",
+      "klass": "12x/MR1",
+      "room": "68",
+      "year": 12
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07yz/MaT",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SDI",
+      "klass": "12B/Mp1",
+      "room": "67",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "07yz/MaS",
+      "room": "11",
+      "year": 7
+     }
+    ],
+    "3": [
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "DMI",
+      "klass": "11x/Ma1",
+      "room": "63",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07wx/MaC",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "07wx/MaE",
+      "room": "61",
+      "year": 7
+     },
+     {
+      "teacher": "SDI",
+      "klass": "07wx/MaW",
+      "room": "67",
+      "year": 7
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12C/Ma1",
+      "room": "11",
+      "year": 12
+     }
+    ],
+    "4": [
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "DMI",
+      "klass": "11x/Ma1",
+      "room": "63",
+      "year": 11
+     },
+     {
+      "teacher": "DNI",
+      "klass": "10YZ/Ma3",
+      "room": "64",
+      "year": 10
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10x/Ma1",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "68",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12C/Ma1",
+      "room": "11",
+      "year": 12
+     }
+    ],
+    "5": [
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "11z/Ma1",
+      "room": "63",
+      "year": 11
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "08yz/Ma4",
+      "room": "60",
+      "year": 8
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09wx/Ma4",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ]
+   },
+   "Thu": {
+    "1": [
+     {
+      "teacher": "EPO",
+      "klass": "07yz/MaT",
+      "room": "63",
+      "year": 7
+     },
+     {
+      "teacher": "AAK",
+      "klass": "07yz/MaF",
+      "room": "69",
+      "year": 7
+     },
+     {
+      "teacher": "CBE",
+      "klass": "10YZ/Ma3",
+      "room": "61",
+      "year": 10
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "DNI",
+      "klass": "12C/Ma1",
+      "room": "64",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "07yz/MaS",
+      "room": "67",
+      "year": 7
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "68",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "13C/Ma1",
+      "room": "11",
+      "year": 13
+     }
+    ],
+    "2": [
+     {
+      "teacher": "EPO",
+      "klass": "08wx/Ma1",
+      "room": "63",
+      "year": 8
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "CBE",
+      "klass": "10YZ/Ma3",
+      "room": "61",
+      "year": 10
+     },
+     {
+      "teacher": "DMI",
+      "klass": "08wx/Ma4",
+      "room": "09",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "12C/Ma1",
+      "room": "64",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10YZ/Ma5",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10YZ/Ma2",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "RAB",
+      "klass": "10YZ/Ma1",
+      "room": "62",
+      "year": 10
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "10YZ/Ma4",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "13C/Ma1",
+      "room": "11",
+      "year": 13
+     }
+    ],
+    "3": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "11YZ/Ma4",
+      "room": "68",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12B/Mp1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "RAB",
+      "klass": "12y/MR2",
+      "room": "62",
+      "year": 12
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     }
+    ],
+    "4": [
+     {
+      "teacher": "EPO",
+      "klass": "09yz/Ma1",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13B/Mx1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "CBE",
+      "klass": "09yz/Ma3",
+      "room": "66",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "63",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12B/Mp1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "RAB",
+      "klass": "12y/MR2",
+      "room": "62",
+      "year": 12
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "12B/Ma1",
+      "room": "69",
+      "year": 12
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "12B/Mp1",
+      "room": "67",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ]
+   },
+   "Tue": {
+    "1": [
+     {
+      "teacher": "AAK",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09wx/Ma4",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "69",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "12B/Mp1",
+      "room": "67",
+      "year": 12
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08yz/Ma4",
+      "room": "63",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "2": [
+     {
+      "teacher": "AAK",
+      "klass": "13B/Mx1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09wx/Ma5",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09wx/Ma4",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "09wx/Ma3",
+      "room": "64",
+      "year": 9
+     },
+     {
+      "teacher": "EBY",
+      "klass": "12B/Ma1",
+      "room": "60",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09wx/Ma2",
+      "room": "69",
+      "year": 9
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08yz/Ma1",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "09wx/Ma1",
+      "room": "62",
+      "year": 9
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08yz/Ma3",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "12B/Mp1",
+      "room": "67",
+      "year": 12
+     },
+     {
+      "teacher": "SSA",
+      "klass": "08yz/Ma4",
+      "room": "63",
+      "year": 8
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "08yz/Ma2",
+      "room": "11",
+      "year": 8
+     }
+    ],
+    "3": [
+     {
+      "teacher": "EPO",
+      "klass": "S3P/Ma1",
+      "room": "T4",
+      "year": 12
+     },
+     {
+      "teacher": "BAT",
+      "klass": "09yz/Ma4",
+      "room": "68",
+      "year": 9
+     },
+     {
+      "teacher": "DMI",
+      "klass": "09yz/Ma5",
+      "room": "09",
+      "year": 9
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "JLU",
+      "klass": "09yz/Ma1",
+      "room": "03",
+      "year": 9
+     },
+     {
+      "teacher": "RAB",
+      "klass": "12y/MR2",
+      "room": "62",
+      "year": 12
+     },
+     {
+      "teacher": "SAL",
+      "klass": "09yz/Ma2",
+      "room": "61",
+      "year": 9
+     },
+     {
+      "teacher": "SDI",
+      "klass": "09yz/Ma3",
+      "room": "67",
+      "year": 9
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "SC1",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12A/Ma1",
+      "room": "W7",
+      "year": 12
+     }
+    ],
+    "4": [
+     {
+      "teacher": "EPO",
+      "klass": "08wx/Ma1",
+      "room": "03",
+      "year": 8
+     },
+     {
+      "teacher": "AAK",
+      "klass": "07yz/MaF",
+      "room": "69",
+      "year": 7
+     },
+     {
+      "teacher": "BAT",
+      "klass": "12x/MR1",
+      "room": "68",
+      "year": 12
+     },
+     {
+      "teacher": "DMI",
+      "klass": "07yz/MaD",
+      "room": "09",
+      "year": 7
+     },
+     {
+      "teacher": "DNI",
+      "klass": "13A/Ma1",
+      "room": "64",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "08wx/Ma3",
+      "room": "66",
+      "year": 8
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07yz/MaT",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08wx/Ma4",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "SC1",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "07yz/MaS",
+      "room": "11",
+      "year": 7
+     }
+    ],
+    "5": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "BAT",
+      "klass": "12x/MR1",
+      "room": "68",
+      "year": 12
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11YZ/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "10z/Ma1",
+      "room": "60",
+      "year": 10
+     },
+     {
+      "teacher": "JLU",
+      "klass": "13A/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11YZ/Ma4",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "12y/MR2",
+      "room": "62",
+      "year": 12
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12A/Ma2F",
+      "room": "63",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12A/Ma1",
+      "room": "11",
+      "year": 12
+     }
+    ]
+   },
+   "Wed": {
+    "1": [
+     {
+      "teacher": "AAK",
+      "klass": "11YZ/Ma1",
+      "room": "69",
+      "year": 11
+     },
+     {
+      "teacher": "CBE",
+      "klass": "11YZ/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11YZ/Ma4",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "11YZ/Ma5",
+      "room": "61",
+      "year": 11
+     },
+     {
+      "teacher": "SDI",
+      "klass": "11YZ/Ma2",
+      "room": "67",
+      "year": 11
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "W7",
+      "year": 13
+     }
+    ],
+    "2": [
+     {
+      "teacher": "AAK",
+      "klass": "13D/Ma2F",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "DNI",
+      "klass": "11WX/Ma3",
+      "room": "64",
+      "year": 11
+     },
+     {
+      "teacher": "EBY",
+      "klass": "11WX/Ma5",
+      "room": "60",
+      "year": 11
+     },
+     {
+      "teacher": "LHM",
+      "klass": "11WX/Ma2",
+      "room": "66",
+      "year": 11
+     },
+     {
+      "teacher": "RAB",
+      "klass": "11WX/Ma4",
+      "room": "62",
+      "year": 11
+     },
+     {
+      "teacher": "SAL",
+      "klass": "12q/MR1",
+      "room": "61",
+      "year": 12
+     },
+     {
+      "teacher": "SSA",
+      "klass": "13D/Ma1",
+      "room": "W7",
+      "year": 13
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "11WX/Ma1",
+      "room": "11",
+      "year": 11
+     }
+    ],
+    "3": [
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "12x/MR1",
+      "room": "68",
+      "year": 12
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07wx/MaC",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "07wx/MaE",
+      "room": "61",
+      "year": 7
+     },
+     {
+      "teacher": "SDI",
+      "klass": "07wx/MaW",
+      "room": "67",
+      "year": 7
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12C/Ma1",
+      "room": "11",
+      "year": 12
+     }
+    ],
+    "4": [
+     {
+      "teacher": "EPO",
+      "klass": "10WX/Ma5",
+      "room": "09",
+      "year": 10
+     },
+     {
+      "teacher": "AAK",
+      "klass": "10WX/Ma2",
+      "room": "69",
+      "year": 10
+     },
+     {
+      "teacher": "DNI",
+      "klass": "12C/Ma1",
+      "room": "W8",
+      "year": 12
+     },
+     {
+      "teacher": "JLU",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "LHM",
+      "klass": "10WX/Ma3",
+      "room": "66",
+      "year": 10
+     },
+     {
+      "teacher": "SAL",
+      "klass": "12q/MR1",
+      "room": "61",
+      "year": 12
+     },
+     {
+      "teacher": "SDI",
+      "klass": "10WX/Ma4",
+      "room": "67",
+      "year": 10
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "10WX/Ma1",
+      "room": "11",
+      "year": 10
+     }
+    ],
+    "5": [
+     {
+      "teacher": "EPO",
+      "klass": "08wx/Ma1",
+      "room": "09",
+      "year": 8
+     },
+     {
+      "teacher": "AAK",
+      "klass": "13C/Ma1",
+      "room": "69",
+      "year": 13
+     },
+     {
+      "teacher": "BAT",
+      "klass": "08wx/Ma3",
+      "room": "68",
+      "year": 8
+     },
+     {
+      "teacher": "DNI",
+      "klass": "07wx/MaE",
+      "room": "64",
+      "year": 7
+     },
+     {
+      "teacher": "EBY",
+      "klass": "07wx/MaH",
+      "room": "60",
+      "year": 7
+     },
+     {
+      "teacher": "LHM",
+      "klass": "07wx/MaW",
+      "room": "66",
+      "year": 7
+     },
+     {
+      "teacher": "RAB",
+      "klass": "07wx/MaC",
+      "room": "62",
+      "year": 7
+     },
+     {
+      "teacher": "SAL",
+      "klass": "08wx/Ma4",
+      "room": "61",
+      "year": 8
+     },
+     {
+      "teacher": "SDI",
+      "klass": "08wx/Ma2",
+      "room": "67",
+      "year": 8
+     },
+     {
+      "teacher": "SSA",
+      "klass": "12C/Mx1",
+      "room": "W7",
+      "year": 12
+     },
+     {
+      "teacher": "ZNG",
+      "klass": "12C/Ma1",
+      "room": "11",
+      "year": 12
+     }
+    ]
+   }
+  }
+ },
+ "teachers": {
+  "AAK": "Ms Ayse Akel",
+  "BAT": "Mr Bertan Ates",
+  "CBE": "Mr Caglar Bektas",
+  "DMI": "Mr David Miller",
+  "DNI": "Ms Despina Nicolaou",
+  "EBY": "Miss Eda Bayir",
+  "EPO": "Mr Erich Pohl",
+  "JLU": "Ms Joanne Lu",
+  "LHM": "Mr Larbi Hamam",
+  "RAB": "Mrs Ratna Abraham",
+  "SAL": "Mr Suleyman Ali",
+  "SDI": "Miss Sultan Degirmen",
+  "SSA": "Miss Saima Satter",
+  "ZNG": "Mr Zung Nguyen",
+  "BJO": "Mr Brian Joyce",
+  "PCU": "Mrs Penny Christodoulou",
+  "UBU": "Mr Ugur Bulbul",
+  "BAS": "Miss Bej Askin",
+  "APA": "APA",
+  "SCO": "SCO"
+ }
+}

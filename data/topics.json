@@ -1740,113 +1740,480 @@
   "weeks": [
    {
     "topic": "Polygons, angles and parallel lines",
-    "subskills": []
+    "subskills": [
+     "Classify quadrilaterals by their geometric properties and distinguish between scalene, isosceles and equilateral triangles",
+     "Understand ‘regular’ and ‘irregular’ as applied to polygons",
+     "Understand the proof that the angle sum of a triangle is 180°, and derive and use the sum of angles in a triangle",
+     "Use symmetry property of an isosceles triangle to show that base angles are equal",
+     "Find missing angles in a triangle using the angle sum in a triangle AND the properties of an isosceles triangle",
+     "Understand a proof of, and use the fact that, the exterior angle of a triangle is equal to the sum of the interior angles at the other two vertices",
+     "Explain why the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of quadrilaterals and the fact that the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of parallel lines and find missing angles using the properties of corresponding and alternate angles, giving reasons",
+     "Use the angle sums of irregular polygons",
+     "Calculate and use the sums of the interior angles of polygons, use the sum of angles in a triangle to deduce and use the angle sum in any polygon and to derive the properties of regular polygons",
+     "Use the sum of the exterior angles of any polygon is 360°",
+     "Use the sum of the interior angles of an n-sided polygon",
+     "Use the sum of the interior angle and the exterior angle is 180°",
+     "Find the size of each interior angle, or the size of each exterior angle, or the number of sides of a regular polygon, and use the sum of angles of irregular polygons",
+     "Calculate the angles of regular polygons and use these to solve problems",
+     "Use the side/angle properties of compound shapes made up of triangles, lines and quadrilaterals, including solving angle and symmetry problems for shapes in the first quadrant, more complex problems and using algebra",
+     "Use angle facts to demonstrate how shapes would ‘fit together’, and work out interior angles of shapes in a pattern."
+    ]
    },
    {
     "topic": "Graphs: the basics and real-life graphs",
-    "subskills": []
+    "subskills": [
+     "Identify and plot points in all four quadrants",
+     "Draw and interpret straight-line graphs for real-life situations, including ready reckoner graphs, conversion graphs, fuel bills, fixed charge and cost per item",
+     "Draw distance–time and velocity–time graphs",
+     "Use graphs to calculate various measures (of individual sections), including: unit price (gradient), average speed, distance, time, acceleration; including using enclosed areas by counting squares or using areas of trapezia, rectangles and triangles",
+     "Find the coordinates of the midpoint of a line segment with a diagram given and coordinates",
+     "Find the coordinates of the midpoint of a line segment from coordinates",
+     "Calculate the length of a line segment given the coordinates of the end points",
+     "Find the coordinates of points identified by geometrical information.",
+     "Find the equation of the line through two given points."
+    ]
    },
    {
     "topic": "Algebra: the basics",
-    "subskills": []
+    "subskills": [
+     "Use algebraic notation and symbols correctly",
+     "Write an expression",
+     "Know the difference between a term, expression, equation, formula and an identity",
+     "Manipulate an expression by collecting like terms",
+     "Substitute positive and negative numbers into expressions such as 3x + 4 and 2x3 and then into expressions involving brackets and powers",
+     "Substitute numbers into formulae from mathematics and other subject using simple linear formulae, e.g. l × w, v = u + at",
+     "Simplify expressions by cancelling, e.g.  = 2x",
+     "Use instances of index laws for positive integer powers",
+     "Use index notation (positive powers) when multiplying or dividing algebraic terms",
+     "Use instances of index laws, including use of zero, fractional and negative powers",
+     "Multiply a single term over a bracket",
+     "Recognise factors of algebraic terms involving single brackets and simplify expressions by factorising, including subsequently collecting like terms",
+     "Expand the product of two linear expressions, i.e. double brackets working up to negatives in both brackets and also similar to (2x + 3y)(3x – y)",
+     "Know that squaring a linear expression is the same as expanding double brackets",
+     "Factorise quadratic expressions of the form ax2 + bx + c",
+     "Factorise quadratic expressions using the difference of two squares."
+    ]
    },
    {
     "topic": "solving equation and rearranging",
-    "subskills": []
+    "subskills": [
+     "Set up simple equations from word problems and derive simple formulae",
+     "Understand the ≠ symbol (not equal), e.g. 6x + 4 ≠ 3(x + 2), and introduce identity ≡ sign",
+     "Solve linear equations, with integer coefficients, in which the unknown appears on either side or on both sides of the equation",
+     "Solve linear equations which contain brackets, including those that have negative signs occurring anywhere in the equation, and those with a negative solution",
+     "Solve linear equations in one unknown, with integer or fractional coefficients",
+     "Set up and solve linear equations to solve to solve a problem",
+     "Derive a formula and set up simple equations from word problems, then solve these equations, interpreting the solution in the context of the problem",
+     "Substitute positive and negative numbers into a formula, solve the resulting equation including brackets, powers or standard form",
+     "Use and substitute formulae from mathematics and other subjects, including the kinematics formulae v = u + at, v2 – u2 = 2as, and s = ut +  at2",
+     "Change the subject of a simple formula, i.e. linear one-step, such as x = 4y",
+     "Change the subject of a formula, including cases where the subject is on both sides of the original formula, or involving fractions and small powers of the subject",
+     "Simple proofs and use of ≡ in “show that” style questions; know the difference between an equation and an identity",
+     "Use iteration to find approximate solutions to equations, for simple equations in the first instance, then quadratic and cubic equations."
+    ]
    },
    {
     "topic": "Sequences",
-    "subskills": []
+    "subskills": [
+     "Recognise simple sequences including at the most basic level odd, even, triangular, square and cube numbers and Fibonacci-type sequences",
+     "Generate sequences of numbers, squared integers and sequences derived from diagrams",
+     "Describe in words a term-to-term sequence and identify which terms cannot be in a sequence",
+     "Generate specific terms in a sequence using the position-to-term rule and term-to-term rule",
+     "Find and use (to generate terms) the nth term of an arithmetic sequence",
+     "Use the nth term of an arithmetic sequence to decide if a given number is a term in the sequence, or find the first term above or below a given number",
+     "Identify which terms cannot be in a sequence by finding the nth term",
+     "Continue a quadratic sequence and use the nth term to generate terms",
+     "Find the nth term of quadratic sequences",
+     "Distinguish between arithmetic and geometric sequences",
+     "Use finite/infinite and ascending/descending to describe sequences",
+     "Recognise and use simple geometric progressions (rn where n is an integer, and r is a rational number > 0 or a surd)",
+     "Continue geometric progression and find term to term rule, including negative, fraction and decimal terms",
+     "Solve problems involving sequences from real life situations."
+    ]
    },
    {
     "topic": "Indices, roots, reciprocals and hierarchy of operations",
-    "subskills": []
+    "subskills": [
+     "Use index notation for integer powers of 10, including negative powers",
+     "Recognise powers of 2, 3, 4, 5",
+     "Use the square, cube and power keys on a calculator and estimate powers and roots of any given positive number, by considering the values it must lie between, e.g. the square root of 42 must be between 6 and 7",
+     "Find the value of calculations using indices including positive, fractional and negative indices",
+     "Recall that n0 = 1 and n–1 =  for positive integers n as well as,  = √n and  = 3√n for any positive number n",
+     "Understand that the inverse operation of raising a positive number to a power n is raising the result of this operation to the power",
+     "Use index laws to simplify and calculate the value of numerical expressions involving multiplication and division of integer powers, fractional and negative powers, and powers of a power",
+     "Solve problems using index laws",
+     "Use brackets and the hierarchy of operations up to and including with powers and roots inside the brackets, or raising brackets to powers or taking roots of brackets",
+     "Use an extended range of calculator functions, including +, –, ×, ÷, x², √x, memory, x y, , brackets",
+     "Use calculators for all calculations: positive and negative numbers, brackets, powers and roots, four operations."
+    ]
    },
    {
     "topic": "Indices, roots, reciprocals and hierarchy of operations: - Include fractional and negative indices",
-    "subskills": []
+    "subskills": [
+     "Use index notation for integer powers of 10, including negative powers",
+     "Recognise powers of 2, 3, 4, 5",
+     "Use the square, cube and power keys on a calculator and estimate powers and roots of any given positive number, by considering the values it must lie between, e.g. the square root of 42 must be between 6 and 7",
+     "Find the value of calculations using indices including positive, fractional and negative indices",
+     "Recall that n0 = 1 and n–1 =  for positive integers n as well as,  = √n and  = 3√n for any positive number n",
+     "Understand that the inverse operation of raising a positive number to a power n is raising the result of this operation to the power",
+     "Use index laws to simplify and calculate the value of numerical expressions involving multiplication and division of integer powers, fractional and negative powers, and powers of a power",
+     "Solve problems using index laws",
+     "Use brackets and the hierarchy of operations up to and including with powers and roots inside the brackets, or raising brackets to powers or taking roots of brackets",
+     "Use an extended range of calculator functions, including +, –, ×, ÷, x², √x, memory, x y, , brackets",
+     "Use calculators for all calculations: positive and negative numbers, brackets, powers and roots, four operations."
+    ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Percentages",
-    "subskills": []
+    "subskills": [
+     "Convert between fractions, decimals and percentages",
+     "Express a given number as a percentage of another number",
+     "Express one quantity as a percentage of another where the percentage is greater than 100%",
+     "Find a percentage of a quantity",
+     "Find the new amount after a percentage increase or decrease",
+     "Work out a percentage increase or decrease, including: simple interest, income tax calculations, value of profit or loss, percentage profit or loss",
+     "Compare two quantities using percentages, including a range of calculations and contexts such as those involving time or money",
+     "Find a percentage of a quantity using a multiplier",
+     "Use a multiplier to increase or decrease by a percentage in any scenario where percentages are used",
+     "Find the original amount given the final amount after a percentage increase or decrease (reverse percentages), including VAT",
+     "Use calculators for reverse percentage calculations by doing an appropriate division",
+     "Use percentages in real-life situations, including percentages greater than 100%",
+     "Describe percentage increase/decrease with fractions, e.g. 150% increase means  times as big",
+     "Understand that fractions are more accurate in calculations than rounded percentage or decimal equivalents, and choose fractions, decimals or percentages appropriately for calculations."
+    ]
    },
    {
     "topic": "Inequalities",
-    "subskills": []
+    "subskills": [
+     "Show inequalities on number lines",
+     "Write down whole number values that satisfy an inequality",
+     "Solve simple linear inequalities in one variable, and represent the solution set on a number line",
+     "Solve two linear inequalities in x, find the solution sets and compare them to see which value of x satisfies both solve linear inequalities in two variables algebraically",
+     "Use the correct notation to show inclusive and exclusive inequalities.",
+     "Write probabilities using fractions, percentages or decimals",
+     "Understand and use experimental and theoretical measures of probability, including relative frequency to include outcomes using dice, spinners, coins, etc",
+     "Estimate the number of times an event will occur, given the probability and the number of trials",
+     "Find the probability of successive events, such as several throws of a single dice",
+     "List all outcomes for single events, and combined events, systematically",
+     "Draw sample space diagrams and use them for adding simple probabilities",
+     "Know that the sum of the probabilities of all outcomes is 1",
+     "Use 1 – p as the probability of an event not occurring where p is the probability of the event occurring",
+     "Work out probabilities from Venn diagrams to represent real-life situations and also ‘abstract’ sets of numbers/values",
+     "Use union and intersection notation",
+     "Find a missing probability from a list or two-way table, including algebraic terms",
+     "Understand conditional probabilities and decide if two events are independent",
+     "Draw a probability tree diagram based on given information, and use this to find probability and expected number of outcome",
+     "Understand selection with or without replacement",
+     "Calculate the probability of independent and dependent combined events",
+     "Use a two-way table to calculate conditional probability",
+     "Use a tree diagram to calculate conditional probability",
+     "Use a Venn diagram to calculate conditional probability",
+     "Compare experimental data and theoretical probabilities",
+     "Compare relative frequencies from samples of different sizes.",
+     "Express a multiplicative relationship between two quantities as a ratio or a fraction, e.g. when A:B are in the ratio 3:5, A is B. When 4a = 7b, then a =  or a:b is 7:4",
+     "Solve proportion problems using the unitary method",
+     "Work out which product offers best value and consider rates of pay",
+     "Work out the multiplier for repeated proportional change as a single decimal number",
+     "Represent repeated proportional change using a multiplier raised to a power, use this to solve problems involving compound interest and depreciation",
+     "Understand and use compound measures and:",
+     "convert between metric speed measures",
+     "convert between density measures",
+     "convert between pressure measures",
+     "Use kinematics formulae from the formulae sheet to calculate speed, acceleration, etc (with variables defined in the question)",
+     "Calculate an unknown quantity from quantities that vary in direct or inverse proportion",
+     "Recognise when values are in direct proportion by reference to the graph form, and use a graph to find the value of k in y = kx",
+     "Set up and use equations to solve word and other problems involving direct proportion (this is covered in more detail in unit 19)",
+     "Relate algebraic solutions to graphical representation of the equations",
+     "Recognise when values are in inverse proportion by reference to the graph form",
+     "Set up and use equations to solve word and other problems involving inverse proportion, and relate algebraic solutions to graphical representation of the equations.",
+     "Understand and use SSS, SAS, ASA and RHS conditions to prove the congruence of triangles using formal arguments, and to verify standard ruler and pair of compasses constructions",
+     "Solve angle problems by first proving congruence",
+     "Understand similarity of triangles and of other plane shapes, and use this to make geometric inferences",
+     "Prove that two shapes are similar by showing that all corresponding angles are equal in size and/or lengths of sides are in the same ratio/one is an enlargement of the other, giving the scale factor",
+     "Use formal geometric proof for the similarity of two given triangles",
+     "Understand the effect of enlargement on angles, perimeter, area and volume of shapes and solids",
+     "Identify the scale factor of an enlargement of a similar shape as the ratio of the lengths of two corresponding sides, using integer or fraction scale factors",
+     "Write the lengths, areas and volumes of two shapes as ratios in their simplest form",
+     "Find missing lengths, areas and volumes in similar 3D solids",
+     "Know the relationships between linear, area and volume scale factors of mathematically similar shapes and solids",
+     "Use the relationship between enlargement and areas and volumes of simple shapes and solids",
+     "Solve problems involving frustums of cones where you have to find missing lengths first using similar triangles."
+    ]
    },
    {
     "topic": "Ratio and proportion",
-    "subskills": []
+    "subskills": [
+     "Express the division of a quantity into a number parts as a ratio",
+     "Write ratios in form 1 : m or m : 1 and to describe a situation",
+     "Write ratios in their simplest form, including three-part ratios",
+     "Divide a given quantity into two or more parts in a given part : part or part : whole ratio",
+     "Use a ratio to find one quantity when the other is known",
+     "Write a ratio as a fraction",
+     "Write a ratio as a linear function",
+     "Identify direct proportion from a table of values, by comparing ratios of values",
+     "Use a ratio to compare a scale model to real-life object",
+     "Use a ratio to convert between measures and currencies, e.g. £1.00 = €1.36",
+     "Scale up recipes",
+     "Convert between currencies."
+    ]
    },
    {
     "topic": "Cumulative frequency, box plots and histograms",
-    "subskills": []
+    "subskills": [
+     "Use statistics found in all graphs/charts in this unit to describe a population",
+     "Know the appropriate uses of cumulative frequency diagrams",
+     "Construct and interpret cumulative frequency tables",
+     "Construct and interpret cumulative frequency graphs/diagrams and from the graph:",
+     "estimate frequency greater/less than a given value",
+     "find the median and quartile values and interquartile range",
+     "Compare the mean and range of two distributions, or median and interquartile range, as appropriate",
+     "Interpret box plots to find median, quartiles, range and interquartile range and draw conclusions",
+     "Produce box plots from raw data and when given quartiles, median and identify any outliers",
+     "Know the appropriate uses of histograms",
+     "Construct and interpret histograms from class intervals with unequal width",
+     "Use and understand frequency density",
+     "From histograms:",
+     "complete a grouped frequency table",
+     "understand and define frequency density",
+     "Estimate the mean from a histogram",
+     "Estimate the median from a histogram with unequal class widths or any other information from a histogram, such as the number of people in a given interval.",
+     "Sketch a graph of a quadratic function, by factorising or by using the formula, identifying roots and y-intercept, turning point",
+     "Be able to identify from a graph if a quadratic equation has any real roots",
+     "Find approximate solutions to quadratic equations using a graph",
+     "Expand the product of more than two linear expressions",
+     "Sketch a graph of a quadratic function and a linear function, identifying intersection points",
+     "Sketch graphs of simple cubic functions, given as three linear expressions",
+     "Solve simultaneous equations graphically:",
+     "find approximate solutions to simultaneous equations formed from one linear function and one quadratic function using a graphical approach",
+     "find graphically the intersection points of a given straight line with a circle",
+     "solve simultaneous equations representing a real-life situation graphically, and interpret the solution in the context of the problem",
+     "Solve quadratic inequalities in one variable, by factorising and sketching the graph to find critical values",
+     "Represent the solution set for inequalities using set notation, i.e. curly brackets and ‘is an element of’ notation",
+     "for problems identifying the solutions to two different inequalities, show this as the intersection of the two solution sets, i.e. solution of x² – 3x – 10 < 0 as {x: –3 < x < 5}",
+     "Solve linear inequalities in two variables graphically",
+     "Show the solution set of several inequalities in two variables on a graph",
+     "Use iteration with simple converging sequences."
+    ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Quadratic, cubic and other graphs",
-    "subskills": []
+    "subskills": [
+     "Recognise a linear, quadratic, cubic, reciprocal and circle graph from its shape",
+     "Generate points and plot graphs of simple quadratic functions, then more general quadratic functions",
+     "Find approximate solutions of a quadratic equation from the graph of the corresponding quadratic function",
+     "Interpret graphs of quadratic functions from real-life problems",
+     "Draw graphs of simple cubic functions using tables of values",
+     "Interpret graphs of simple cubic functions, including finding solutions to cubic equations",
+     "Draw graphs of the reciprocal function  with x ≠ 0 using tables of values",
+     "Draw circles, centre the origin, equation x2 + y2 = r2."
+    ]
    },
    {
-    "topic": "Probability",
+    "topic": "UNIT 10: Probability",
     "subskills": [
      "Probability (10h)"
     ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
-   },
-   {
-    "topic": "Accuracy and bounds",
-    "subskills": []
-   },
-   {
-    "topic": "Quadratic, cubic and other graphs",
-    "subskills": []
-   },
-   {
-    "topic": "Perimeter, area and circles",
-    "subskills": []
-   },
-   {
-    "topic": "Standard form and surds",
-    "subskills": []
-   },
-   {
-    "topic": "3D forms and volume, cylinders, cones and spheres",
     "subskills": [
-     "3D forms and volume, cylinders, cones and spheres (8h)"
+     "Express a given number as a fraction of another",
+     "Find equivalent fractions and compare the size of fractions",
+     "Write a fraction in its simplest form, including using it to simplify a calculation, \ne.g. 50 ÷ 20 =  =  = 2.5",
+     "Find a fraction of a quantity or measurement, including within a context",
+     "Convert a fraction to a decimal to make a calculation easier",
+     "Convert between mixed numbers and improper fractions",
+     "Add, subtract, multiply and divide fractions",
+     "Multiply and divide fractions, including mixed numbers and whole numbers and vice versa",
+     "Add and subtract fractions, including mixed numbers",
+     "Understand and use unit fractions as multiplicative inverses",
+     "By writing the denominator in terms of its prime factors, decide whether fractions can be converted to recurring or terminating decimals",
+     "Convert a fraction to a recurring decimal",
+     "Convert a recurring decimal to a fraction",
+     "Find the reciprocal of an integer, decimal or fraction."
     ]
    },
    {
-    "topic": "Similarity and congruence in 2D and 3D",
+    "topic": "Accuracy and bounds",
+    "subskills": [
+     "Calculate the upper and lowers bounds of numbers given to varying degrees of accuracy",
+     "Calculate the upper and lower bounds of an expression involving the four operations",
+     "Find the upper and lower bounds in real-life situations using measurements given to appropriate degrees of accuracy",
+     "Find the upper and lower bounds of calculations involving perimeters, areas and volumes of 2D and 3D shapes",
+     "Calculate the upper and lower bounds of calculations, particularly when working with measurements",
+     "Use inequality notation to specify an error bound."
+    ]
+   },
+   {
+    "topic": "Quadratic, cubic and other graphs",
+    "subskills": [
+     "Recognise a linear, quadratic, cubic, reciprocal and circle graph from its shape",
+     "Generate points and plot graphs of simple quadratic functions, then more general quadratic functions",
+     "Find approximate solutions of a quadratic equation from the graph of the corresponding quadratic function",
+     "Interpret graphs of quadratic functions from real-life problems",
+     "Draw graphs of simple cubic functions using tables of values",
+     "Interpret graphs of simple cubic functions, including finding solutions to cubic equations",
+     "Draw graphs of the reciprocal function  with x ≠ 0 using tables of values",
+     "Draw circles, centre the origin, equation x2 + y2 = r2."
+    ]
+   },
+   {
+    "topic": "Perimeter, area and circles",
+    "subskills": [
+     "Recall and use the formulae for the area of a triangle, rectangle, trapezium and parallelogram using a variety of metric measures",
+     "Calculate the area of compound shapes made from triangles, rectangles, trapezia and parallelograms using a variety of metric measures",
+     "Find the perimeter of a rectangle, trapezium and parallelogram using a variety of metric measures",
+     "Calculate the perimeter of compound shapes made from triangles and rectangles",
+     "Estimate area and perimeter by rounding measurements to 1 significant figure to check reasonableness of answers.",
+     "Recall the definition of a circle and name and draw parts of a circle",
+     "Recall and use formulae for the circumference of a circle and the area enclosed by a circle (using circumference = 2πr = πd and area of a circle = πr2) using a variety of metric measures",
+     "Use π ≈ 3.142 or use the π button on a calculator",
+     "Calculate perimeters and areas of composite shapes made from circles and parts of circles (including semicircles, quarter-circles, combinations of these and also incorporating other polygons)",
+     "Calculate arc lengths, angles and areas of sectors of circles",
+     "Find radius or diameter, given area or circumference of circles in a variety of metric measures",
+     "Give answers in terms of π",
+     "Form equations involving more complex shapes and solve these equations."
+    ]
+   },
+   {
+    "topic": "Standard form and surds",
+    "subskills": [
+     "Convert large and small numbers into standard form and vice versa",
+     "Add and subtract numbers in standard form",
+     "Multiply and divide numbers in standard form",
+     "Interpret a calculator display using standard form and know how to enter numbers in standard form",
+     "Understand surd notation, e.g. calculator gives answer to sq rt 8 as 4 rt 2",
+     "Simplify surd expressions involving squares (e.g. √12 = √(4 × 3) = √4 × √3 = 2√3)."
+    ]
+   },
+   {
+    "topic": "7b. 3D forms and volume, cylinders, cones and spheres",
+    "subskills": [
+     "Find the surface area of prisms using the formulae for triangles and rectangles, and other (simple) shapes with and without a diagram",
+     "Draw sketches of 3D solids",
+     "Identify planes of symmetry of 3D solids, and sketch planes of symmetry",
+     "Recall and use the formula for the volume of a cuboid or prism made from composite 3D solids using a variety of metric measures",
+     "Convert between metric volume measures",
+     "Convert between metric measures of volume and capacity, e.g. 1 ml = 1 cm3",
+     "Use volume to solve problems",
+     "Estimating surface area, perimeter and volume by rounding measurements to 1 significant figure to check reasonableness of answers.",
+     "Use π ≈ 3.142 or use the π button on a calculator",
+     "Find the volume and surface area of a cylinder",
+     "Recall and use the formula for volume of pyramid",
+     "Find the surface area of a pyramid",
+     "Use the formulae for volume and surface area of spheres and cones",
+     "Solve problems involving more complex shapes and solids, including segments of circles and frustums of cones",
+     "Find the surface area and volumes of compound solids constructed from cubes, cuboids, cones, pyramids, spheres, hemispheres, cylinders",
+     "Give answers in terms of π",
+     "Form equations involving more complex shapes and solve these equations."
+    ]
+   },
+   {
+    "topic": "UNIT 12: Similarity and congruence in 2D and 3D",
     "subskills": [
      "Similarity and congruence in 2D and 3D (8h)"
     ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Further trigonometry",
-    "subskills": []
+    "subskills": [
+     "Know and apply Area = ab sin C to calculate the area, sides or angles of any triangle.",
+     "Know the sine and cosine rules, and use to solve 2D problems (including involving bearings).",
+     "Use the sine and cosine rules to solve 3D problems.",
+     "Understand the language of planes, and recognise the diagonals of a cuboid.",
+     "Solve geometrical problems on coordinate axes.",
+     "Understand, recall and use trigonometric relationships and Pythagoras’ Theorem in right-angled triangles, and use these to solve problems in 3D configurations.",
+     "Calculate the length of a diagonal of a cuboid.",
+     "Find the angle between a line and a plane."
+    ]
    },
    {
     "topic": "Direct and inverse proportion",
-    "subskills": []
+    "subskills": [
+     "Recognise and interpret graphs showing direct and indirect proportion",
+     "Identify direct proportion from a table of values, by comparing ratios of values, for \nx squared and x cubed relationships",
+     "Write statements of proportionality for quantities proportional to the square, cube or other power of another quantity",
+     "Set up and use equations to solve word and other problems involving direct proportion",
+     "Use y = kx to solve direct proportion problems, including questions where students find k, and then use k to find another value",
+     "Solve problems involving inverse proportion using graphs by plotting and reading values from graphs",
+     "Solve problems involving inverse proportionality",
+     "Set up and use equations to solve word and other problems involving direct proportion or inverse proportion."
+    ]
    },
    {
     "topic": "Circle theorems",
-    "subskills": []
+    "subskills": [
+     "Recall the definition of a circle and identify (name) and draw parts of a circle, including sector, tangent, chord, segment",
+     "Prove and use the facts that:",
+     "the angle subtended by an arc at the centre of a circle is twice the angle subtended at any point on the circumference",
+     "the angle in a semicircle is a right angle",
+     "the perpendicular from the centre of a circle to a chord bisects the chord",
+     "angles in the same segment are equal",
+     "alternate segment theorem",
+     "opposite angles of a cyclic quadrilateral sum to 180°",
+     "Understand and use the fact that the tangent at any point on a circle is perpendicular to the radius at that point",
+     "Find and give reasons for missing angles on diagrams using:",
+     "circle theorems",
+     "isosceles triangles (radius properties) in circles",
+     "the fact that the angle between a tangent and radius is 90°",
+     "the fact that tangents from an external point are equal in length."
+    ]
    },
    {
     "topic": "Maths activities",
@@ -1859,49 +2226,96 @@
   "weeks": [
    {
     "topic": "Circle theorems",
-    "subskills": []
+    "subskills": [
+     "Recall the definition of a circle and identify (name) and draw parts of a circle, including sector, tangent, chord, segment",
+     "Prove and use the facts that:",
+     "the angle subtended by an arc at the centre of a circle is twice the angle subtended at any point on the circumference",
+     "the angle in a semicircle is a right angle",
+     "the perpendicular from the centre of a circle to a chord bisects the chord",
+     "angles in the same segment are equal",
+     "alternate segment theorem",
+     "opposite angles of a cyclic quadrilateral sum to 180°",
+     "Understand and use the fact that the tangent at any point on a circle is perpendicular to the radius at that point",
+     "Find and give reasons for missing angles on diagrams using:",
+     "circle theorems",
+     "isosceles triangles (radius properties) in circles",
+     "the fact that the angle between a tangent and radius is 90°",
+     "the fact that tangents from an external point are equal in length."
+    ]
    },
    {
-    "topic": "Probability",
+    "topic": "UNIT 10: Probability",
     "subskills": [
      "Probability (10h)"
     ]
    },
    {
     "topic": "Graphs of trigonometric functions",
-    "subskills": []
+    "subskills": [
+     "Recognise, sketch and interpret graphs of the trigonometric functions (in degrees) \ny = sin x, y = cos x and y = tan x for angles of any size.",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45° , 60° and 90° and exact value of tan θ for θ = 0°, 30°, 45° and 60° and find them from graphs.",
+     "Apply to the graph of y = f(x) the transformations y = –f(x), y = f(–x) for sine, cosine and tan functions f(x).",
+     "Apply to the graph of y = f(x) the transformations y = f(x) + a, y = f(x + a) \nfor sine, cosine and tan functions f(x)."
+    ]
    },
    {
-    "topic": "Changing the subject of formulae (more complex), algebraic fractions, solving equations arising from algebraic fractions, rationalising surds, proof",
+    "topic": "UNIT 17: Changing the subject of formulae (more complex), algebraic fractions, solving equations arising from algebraic fractions, rationalising surds, proof",
     "subskills": [
      "Changing the subject of formulae (more complex), algebraic fractions, solving equations arising from algebraic fractions, rationalising surds, proof (8h)"
     ]
    },
    {
-    "topic": "Quadratics, expanding more than two brackets, sketching graphs, graphs of circles, cubes and quadratics",
+    "topic": "UNIT 15: Quadratics, expanding more than two brackets, sketching graphs, graphs of circles, cubes and quadratics",
     "subskills": [
      "Quadratics, expanding more than two brackets, sketching graphs, graphs of circles, cubes and quadratics (8h)"
     ]
    },
    {
     "topic": "Reciprocal and exponential graphs; Gradient and area under graphs",
-    "subskills": []
+    "subskills": [
+     "Recognise, sketch and interpret graphs of the reciprocal function  with x ≠ 0",
+     "State the value of x for which the equation is not defined",
+     "Recognise, sketch and interpret graphs of exponential functions y = kx for positive values of k and integer values of x",
+     "Use calculators to explore exponential growth and decay",
+     "Set up, solve and interpret the answers in growth and decay problems",
+     "Interpret and analyse transformations of graphs of functions and write the functions algebraically, e.g. write the equation of f(x) + a, or f(x – a):",
+     "apply to the graph of y = f(x) the transformations y = –f(x), y = f(–x) for linear, quadratic, cubic functions",
+     "apply to the graph of y = f(x) the transformations y = f(x) + a, y = f(x + a) \nfor linear, quadratic, cubic functions",
+     "Estimate area under a quadratic or other graph by dividing it into trapezia",
+     "Interpret the gradient of linear or non-linear graphs, and estimate the gradient of a quadratic or non-linear graph at a given point by sketching the tangent and finding its gradient",
+     "Interpret the gradient of non-linear graph in curved distance–time and velocity–time graphs:",
+     "for a non-linear distance–time graph, estimate the speed at one point in time, from the tangent, and the average speed over several seconds by finding the gradient of the chord",
+     "for a non-linear velocity–time graph, estimate the acceleration at one point in time, from the tangent, and the average acceleration over several seconds by finding the gradient of the chord",
+     "Interpret the gradient of a linear or non-linear graph in financial contexts",
+     "Interpret the area under a linear or non-linear graph in real-life contexts",
+     "Interpret the rate of change of graphs of containers filling and emptying",
+     "Interpret the rate of change of unit price in price graphs."
+    ]
    },
    {
-    "topic": "Vectors and geometric proof",
+    "topic": "UNIT 18: Vectors and geometric proof",
     "subskills": [
      "Vectors and geometric proof (10h)"
     ]
    },
    {
-    "topic": "Multiplicative reasoning: direct and inverse proportion, relating to graph form for direct, compound measures, repeated proportional change",
+    "topic": "UNIT 11: Multiplicative reasoning: direct and inverse proportion, relating to graph form for direct, compound measures, repeated proportional change",
     "subskills": [
      "Multiplicative reasoning (8h)"
     ]
    },
    {
     "topic": "Further trigonometry",
-    "subskills": []
+    "subskills": [
+     "Know and apply Area = ab sin C to calculate the area, sides or angles of any triangle.",
+     "Know the sine and cosine rules, and use to solve 2D problems (including involving bearings).",
+     "Use the sine and cosine rules to solve 3D problems.",
+     "Understand the language of planes, and recognise the diagonals of a cuboid.",
+     "Solve geometrical problems on coordinate axes.",
+     "Understand, recall and use trigonometric relationships and Pythagoras’ Theorem in right-angled triangles, and use these to solve problems in 3D configurations.",
+     "Calculate the length of a diagonal of a cuboid.",
+     "Find the angle between a line and a plane."
+    ]
    },
    {
     "topic": "Practise exam papers",
@@ -1909,11 +2323,56 @@
    },
    {
     "topic": "Reciprocal and exponential graphs; Gradient and area under graphs",
-    "subskills": []
+    "subskills": [
+     "Recognise, sketch and interpret graphs of the reciprocal function  with x ≠ 0",
+     "State the value of x for which the equation is not defined",
+     "Recognise, sketch and interpret graphs of exponential functions y = kx for positive values of k and integer values of x",
+     "Use calculators to explore exponential growth and decay",
+     "Set up, solve and interpret the answers in growth and decay problems",
+     "Interpret and analyse transformations of graphs of functions and write the functions algebraically, e.g. write the equation of f(x) + a, or f(x – a):",
+     "apply to the graph of y = f(x) the transformations y = –f(x), y = f(–x) for linear, quadratic, cubic functions",
+     "apply to the graph of y = f(x) the transformations y = f(x) + a, y = f(x + a) \nfor linear, quadratic, cubic functions",
+     "Estimate area under a quadratic or other graph by dividing it into trapezia",
+     "Interpret the gradient of linear or non-linear graphs, and estimate the gradient of a quadratic or non-linear graph at a given point by sketching the tangent and finding its gradient",
+     "Interpret the gradient of non-linear graph in curved distance–time and velocity–time graphs:",
+     "for a non-linear distance–time graph, estimate the speed at one point in time, from the tangent, and the average speed over several seconds by finding the gradient of the chord",
+     "for a non-linear velocity–time graph, estimate the acceleration at one point in time, from the tangent, and the average acceleration over several seconds by finding the gradient of the chord",
+     "Interpret the gradient of a linear or non-linear graph in financial contexts",
+     "Interpret the area under a linear or non-linear graph in real-life contexts",
+     "Interpret the rate of change of graphs of containers filling and emptying",
+     "Interpret the rate of change of unit price in price graphs."
+    ]
    },
    {
     "topic": "Circle geometry",
-    "subskills": []
+    "subskills": [
+     "Select and apply construction techniques and understanding of loci to draw graphs based on circles and perpendiculars of lines",
+     "Find the equation of a tangent to a circle at a given point, by:",
+     "finding the gradient of the radius that meets the circle at that point (circles all centre the origin)",
+     "finding the gradient of the tangent perpendicular to it",
+     "using the given point",
+     "Recognise and construct the graph of a circle using x2 + y2 = r2 for radius r centred at the origin of coordinates.",
+     "Rationalise the denominator involving surds",
+     "Simplify algebraic fractions",
+     "Multiply and divide algebraic fractions",
+     "Solve quadratic equations arising from algebraic fraction equations",
+     "Change the subject of a formula, including cases where the subject occurs on both sides of the formula, or where a power of the subject appears",
+     "Change the subject of a formula such as , where all variables are in the denominators",
+     "Solve ‘Show that’ and proof questions using consecutive integers (n, n + 1), squares a2, b2, even numbers 2n, odd numbers 2n +1",
+     "Use function notation",
+     "Find f(x) + g(x) and f(x) – g(x), 2f(x), f(3x) etc algebraically",
+     "Find the inverse of a linear function",
+     "Know that f –1(x) refers to the inverse function",
+     "For two functions f(x) and g(x), find gf(x).",
+     "Understand and use vector notation, including column notation, and understand and interpret vectors as displacement in the plane with an associated direction.",
+     "Understand that 2a is parallel to a and twice its length, and that a is parallel to –a in the opposite direction.",
+     "Represent vectors, combinations of vectors and scalar multiples in the plane pictorially.",
+     "Calculate the sum of two vectors, the difference of two vectors and a scalar multiple of a vector using column vectors (including algebraic terms).",
+     "Find the length of a vector using Pythagoras’ Theorem.",
+     "Calculate the resultant of two vectors.",
+     "Solve geometric problems in 2D where vectors are divided in a given ratio.",
+     "Produce geometrical proofs to prove points are collinear and vectors/lines are parallel."
+    ]
    },
    {
     "topic": "Exam Preparation",
@@ -1926,93 +2385,460 @@
   "weeks": [
    {
     "topic": "Polygons, angles and parallel lines",
-    "subskills": []
+    "subskills": [
+     "Classify quadrilaterals by their geometric properties and distinguish between scalene, isosceles and equilateral triangles",
+     "Understand ‘regular’ and ‘irregular’ as applied to polygons",
+     "Understand the proof that the angle sum of a triangle is 180°, and derive and use the sum of angles in a triangle",
+     "Use symmetry property of an isosceles triangle to show that base angles are equal",
+     "Find missing angles in a triangle using the angle sum in a triangle AND the properties of an isosceles triangle",
+     "Understand a proof of, and use the fact that, the exterior angle of a triangle is equal to the sum of the interior angles at the other two vertices",
+     "Explain why the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of quadrilaterals and the fact that the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of parallel lines and find missing angles using the properties of corresponding and alternate angles, giving reasons",
+     "Use the angle sums of irregular polygons",
+     "Calculate and use the sums of the interior angles of polygons, use the sum of angles in a triangle to deduce and use the angle sum in any polygon and to derive the properties of regular polygons",
+     "Use the sum of the exterior angles of any polygon is 360°",
+     "Use the sum of the interior angles of an n-sided polygon",
+     "Use the sum of the interior angle and the exterior angle is 180°",
+     "Find the size of each interior angle, or the size of each exterior angle, or the number of sides of a regular polygon, and use the sum of angles of irregular polygons",
+     "Calculate the angles of regular polygons and use these to solve problems",
+     "Use the side/angle properties of compound shapes made up of triangles, lines and quadrilaterals, including solving angle and symmetry problems for shapes in the first quadrant, more complex problems and using algebra",
+     "Use angle facts to demonstrate how shapes would ‘fit together’, and work out interior angles of shapes in a pattern."
+    ]
    },
    {
     "topic": "Graphs: the basics and real-life graphs",
-    "subskills": []
+    "subskills": [
+     "Identify and plot points in all four quadrants",
+     "Draw and interpret straight-line graphs for real-life situations, including ready reckoner graphs, conversion graphs, fuel bills, fixed charge and cost per item",
+     "Draw distance–time and velocity–time graphs",
+     "Use graphs to calculate various measures (of individual sections), including: unit price (gradient), average speed, distance, time, acceleration; including using enclosed areas by counting squares or using areas of trapezia, rectangles and triangles",
+     "Find the coordinates of the midpoint of a line segment with a diagram given and coordinates",
+     "Find the coordinates of the midpoint of a line segment from coordinates",
+     "Calculate the length of a line segment given the coordinates of the end points",
+     "Find the coordinates of points identified by geometrical information.",
+     "Find the equation of the line through two given points."
+    ]
    },
    {
     "topic": "Algebra: the basics",
-    "subskills": []
+    "subskills": [
+     "Use algebraic notation and symbols correctly",
+     "Write an expression",
+     "Know the difference between a term, expression, equation, formula and an identity",
+     "Manipulate an expression by collecting like terms",
+     "Substitute positive and negative numbers into expressions such as 3x + 4 and 2x3 and then into expressions involving brackets and powers",
+     "Substitute numbers into formulae from mathematics and other subject using simple linear formulae, e.g. l × w, v = u + at",
+     "Simplify expressions by cancelling, e.g.  = 2x",
+     "Use instances of index laws for positive integer powers",
+     "Use index notation (positive powers) when multiplying or dividing algebraic terms",
+     "Use instances of index laws, including use of zero, fractional and negative powers",
+     "Multiply a single term over a bracket",
+     "Recognise factors of algebraic terms involving single brackets and simplify expressions by factorising, including subsequently collecting like terms",
+     "Expand the product of two linear expressions, i.e. double brackets working up to negatives in both brackets and also similar to (2x + 3y)(3x – y)",
+     "Know that squaring a linear expression is the same as expanding double brackets",
+     "Factorise quadratic expressions of the form ax2 + bx + c",
+     "Factorise quadratic expressions using the difference of two squares."
+    ]
    },
    {
     "topic": "Solving Equations and rearranging",
-    "subskills": []
+    "subskills": [
+     "Set up simple equations from word problems and derive simple formulae",
+     "Understand the ≠ symbol (not equal), e.g. 6x + 4 ≠ 3(x + 2), and introduce identity ≡ sign",
+     "Solve linear equations, with integer coefficients, in which the unknown appears on either side or on both sides of the equation",
+     "Solve linear equations which contain brackets, including those that have negative signs occurring anywhere in the equation, and those with a negative solution",
+     "Solve linear equations in one unknown, with integer or fractional coefficients",
+     "Set up and solve linear equations to solve to solve a problem",
+     "Derive a formula and set up simple equations from word problems, then solve these equations, interpreting the solution in the context of the problem",
+     "Substitute positive and negative numbers into a formula, solve the resulting equation including brackets, powers or standard form",
+     "Use and substitute formulae from mathematics and other subjects, including the kinematics formulae v = u + at, v2 – u2 = 2as, and s = ut +  at2",
+     "Change the subject of a simple formula, i.e. linear one-step, such as x = 4y",
+     "Change the subject of a formula, including cases where the subject is on both sides of the original formula, or involving fractions and small powers of the subject",
+     "Simple proofs and use of ≡ in “show that” style questions; know the difference between an equation and an identity",
+     "Use iteration to find approximate solutions to equations, for simple equations in the first instance, then quadratic and cubic equations."
+    ]
    },
    {
     "topic": "Sequences",
-    "subskills": []
+    "subskills": [
+     "Recognise simple sequences including at the most basic level odd, even, triangular, square and cube numbers and Fibonacci-type sequences",
+     "Generate sequences of numbers, squared integers and sequences derived from diagrams",
+     "Describe in words a term-to-term sequence and identify which terms cannot be in a sequence",
+     "Generate specific terms in a sequence using the position-to-term rule and term-to-term rule",
+     "Find and use (to generate terms) the nth term of an arithmetic sequence",
+     "Use the nth term of an arithmetic sequence to decide if a given number is a term in the sequence, or find the first term above or below a given number",
+     "Identify which terms cannot be in a sequence by finding the nth term",
+     "Continue a quadratic sequence and use the nth term to generate terms",
+     "Find the nth term of quadratic sequences",
+     "Distinguish between arithmetic and geometric sequences",
+     "Use finite/infinite and ascending/descending to describe sequences",
+     "Recognise and use simple geometric progressions (rn where n is an integer, and r is a rational number > 0 or a surd)",
+     "Continue geometric progression and find term to term rule, including negative, fraction and decimal terms",
+     "Solve problems involving sequences from real life situations."
+    ]
    },
    {
     "topic": "Indices, roots, reciprocals and hierarchy of operations",
-    "subskills": []
+    "subskills": [
+     "Use index notation for integer powers of 10, including negative powers",
+     "Recognise powers of 2, 3, 4, 5",
+     "Use the square, cube and power keys on a calculator and estimate powers and roots of any given positive number, by considering the values it must lie between, e.g. the square root of 42 must be between 6 and 7",
+     "Find the value of calculations using indices including positive, fractional and negative indices",
+     "Recall that n0 = 1 and n–1 =  for positive integers n as well as,  = √n and  = 3√n for any positive number n",
+     "Understand that the inverse operation of raising a positive number to a power n is raising the result of this operation to the power",
+     "Use index laws to simplify and calculate the value of numerical expressions involving multiplication and division of integer powers, fractional and negative powers, and powers of a power",
+     "Solve problems using index laws",
+     "Use brackets and the hierarchy of operations up to and including with powers and roots inside the brackets, or raising brackets to powers or taking roots of brackets",
+     "Use an extended range of calculator functions, including +, –, ×, ÷, x², √x, memory, x y, , brackets",
+     "Use calculators for all calculations: positive and negative numbers, brackets, powers and roots, four operations."
+    ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
+    "subskills": [
+     "Express a given number as a fraction of another",
+     "Find equivalent fractions and compare the size of fractions",
+     "Write a fraction in its simplest form, including using it to simplify a calculation, \ne.g. 50 ÷ 20 =  =  = 2.5",
+     "Find a fraction of a quantity or measurement, including within a context",
+     "Convert a fraction to a decimal to make a calculation easier",
+     "Convert between mixed numbers and improper fractions",
+     "Add, subtract, multiply and divide fractions",
+     "Multiply and divide fractions, including mixed numbers and whole numbers and vice versa",
+     "Add and subtract fractions, including mixed numbers",
+     "Understand and use unit fractions as multiplicative inverses",
+     "By writing the denominator in terms of its prime factors, decide whether fractions can be converted to recurring or terminating decimals",
+     "Convert a fraction to a recurring decimal",
+     "Convert a recurring decimal to a fraction",
+     "Find the reciprocal of an integer, decimal or fraction."
+    ]
    },
    {
     "topic": "Percentages",
-    "subskills": []
+    "subskills": [
+     "Convert between fractions, decimals and percentages",
+     "Express a given number as a percentage of another number",
+     "Express one quantity as a percentage of another where the percentage is greater than 100%",
+     "Find a percentage of a quantity",
+     "Find the new amount after a percentage increase or decrease",
+     "Work out a percentage increase or decrease, including: simple interest, income tax calculations, value of profit or loss, percentage profit or loss",
+     "Compare two quantities using percentages, including a range of calculations and contexts such as those involving time or money",
+     "Find a percentage of a quantity using a multiplier",
+     "Use a multiplier to increase or decrease by a percentage in any scenario where percentages are used",
+     "Find the original amount given the final amount after a percentage increase or decrease (reverse percentages), including VAT",
+     "Use calculators for reverse percentage calculations by doing an appropriate division",
+     "Use percentages in real-life situations, including percentages greater than 100%",
+     "Describe percentage increase/decrease with fractions, e.g. 150% increase means  times as big",
+     "Understand that fractions are more accurate in calculations than rounded percentage or decimal equivalents, and choose fractions, decimals or percentages appropriately for calculations."
+    ]
    },
    {
     "topic": "Inequalities",
-    "subskills": []
+    "subskills": [
+     "Show inequalities on number lines",
+     "Write down whole number values that satisfy an inequality",
+     "Solve simple linear inequalities in one variable, and represent the solution set on a number line",
+     "Solve two linear inequalities in x, find the solution sets and compare them to see which value of x satisfies both solve linear inequalities in two variables algebraically",
+     "Use the correct notation to show inclusive and exclusive inequalities.",
+     "Write probabilities using fractions, percentages or decimals",
+     "Understand and use experimental and theoretical measures of probability, including relative frequency to include outcomes using dice, spinners, coins, etc",
+     "Estimate the number of times an event will occur, given the probability and the number of trials",
+     "Find the probability of successive events, such as several throws of a single dice",
+     "List all outcomes for single events, and combined events, systematically",
+     "Draw sample space diagrams and use them for adding simple probabilities",
+     "Know that the sum of the probabilities of all outcomes is 1",
+     "Use 1 – p as the probability of an event not occurring where p is the probability of the event occurring",
+     "Work out probabilities from Venn diagrams to represent real-life situations and also ‘abstract’ sets of numbers/values",
+     "Use union and intersection notation",
+     "Find a missing probability from a list or two-way table, including algebraic terms",
+     "Understand conditional probabilities and decide if two events are independent",
+     "Draw a probability tree diagram based on given information, and use this to find probability and expected number of outcome",
+     "Understand selection with or without replacement",
+     "Calculate the probability of independent and dependent combined events",
+     "Use a two-way table to calculate conditional probability",
+     "Use a tree diagram to calculate conditional probability",
+     "Use a Venn diagram to calculate conditional probability",
+     "Compare experimental data and theoretical probabilities",
+     "Compare relative frequencies from samples of different sizes.",
+     "Express a multiplicative relationship between two quantities as a ratio or a fraction, e.g. when A:B are in the ratio 3:5, A is B. When 4a = 7b, then a =  or a:b is 7:4",
+     "Solve proportion problems using the unitary method",
+     "Work out which product offers best value and consider rates of pay",
+     "Work out the multiplier for repeated proportional change as a single decimal number",
+     "Represent repeated proportional change using a multiplier raised to a power, use this to solve problems involving compound interest and depreciation",
+     "Understand and use compound measures and:",
+     "convert between metric speed measures",
+     "convert between density measures",
+     "convert between pressure measures",
+     "Use kinematics formulae from the formulae sheet to calculate speed, acceleration, etc (with variables defined in the question)",
+     "Calculate an unknown quantity from quantities that vary in direct or inverse proportion",
+     "Recognise when values are in direct proportion by reference to the graph form, and use a graph to find the value of k in y = kx",
+     "Set up and use equations to solve word and other problems involving direct proportion (this is covered in more detail in unit 19)",
+     "Relate algebraic solutions to graphical representation of the equations",
+     "Recognise when values are in inverse proportion by reference to the graph form",
+     "Set up and use equations to solve word and other problems involving inverse proportion, and relate algebraic solutions to graphical representation of the equations.",
+     "Understand and use SSS, SAS, ASA and RHS conditions to prove the congruence of triangles using formal arguments, and to verify standard ruler and pair of compasses constructions",
+     "Solve angle problems by first proving congruence",
+     "Understand similarity of triangles and of other plane shapes, and use this to make geometric inferences",
+     "Prove that two shapes are similar by showing that all corresponding angles are equal in size and/or lengths of sides are in the same ratio/one is an enlargement of the other, giving the scale factor",
+     "Use formal geometric proof for the similarity of two given triangles",
+     "Understand the effect of enlargement on angles, perimeter, area and volume of shapes and solids",
+     "Identify the scale factor of an enlargement of a similar shape as the ratio of the lengths of two corresponding sides, using integer or fraction scale factors",
+     "Write the lengths, areas and volumes of two shapes as ratios in their simplest form",
+     "Find missing lengths, areas and volumes in similar 3D solids",
+     "Know the relationships between linear, area and volume scale factors of mathematically similar shapes and solids",
+     "Use the relationship between enlargement and areas and volumes of simple shapes and solids",
+     "Solve problems involving frustums of cones where you have to find missing lengths first using similar triangles."
+    ]
    },
    {
     "topic": "Ratio and proportion",
-    "subskills": []
+    "subskills": [
+     "Express the division of a quantity into a number parts as a ratio",
+     "Write ratios in form 1 : m or m : 1 and to describe a situation",
+     "Write ratios in their simplest form, including three-part ratios",
+     "Divide a given quantity into two or more parts in a given part : part or part : whole ratio",
+     "Use a ratio to find one quantity when the other is known",
+     "Write a ratio as a fraction",
+     "Write a ratio as a linear function",
+     "Identify direct proportion from a table of values, by comparing ratios of values",
+     "Use a ratio to compare a scale model to real-life object",
+     "Use a ratio to convert between measures and currencies, e.g. £1.00 = €1.36",
+     "Scale up recipes",
+     "Convert between currencies."
+    ]
    },
    {
     "topic": "Cumulative frequency, box plots and histograms",
-    "subskills": []
+    "subskills": [
+     "Use statistics found in all graphs/charts in this unit to describe a population",
+     "Know the appropriate uses of cumulative frequency diagrams",
+     "Construct and interpret cumulative frequency tables",
+     "Construct and interpret cumulative frequency graphs/diagrams and from the graph:",
+     "estimate frequency greater/less than a given value",
+     "find the median and quartile values and interquartile range",
+     "Compare the mean and range of two distributions, or median and interquartile range, as appropriate",
+     "Interpret box plots to find median, quartiles, range and interquartile range and draw conclusions",
+     "Produce box plots from raw data and when given quartiles, median and identify any outliers",
+     "Know the appropriate uses of histograms",
+     "Construct and interpret histograms from class intervals with unequal width",
+     "Use and understand frequency density",
+     "From histograms:",
+     "complete a grouped frequency table",
+     "understand and define frequency density",
+     "Estimate the mean from a histogram",
+     "Estimate the median from a histogram with unequal class widths or any other information from a histogram, such as the number of people in a given interval.",
+     "Sketch a graph of a quadratic function, by factorising or by using the formula, identifying roots and y-intercept, turning point",
+     "Be able to identify from a graph if a quadratic equation has any real roots",
+     "Find approximate solutions to quadratic equations using a graph",
+     "Expand the product of more than two linear expressions",
+     "Sketch a graph of a quadratic function and a linear function, identifying intersection points",
+     "Sketch graphs of simple cubic functions, given as three linear expressions",
+     "Solve simultaneous equations graphically:",
+     "find approximate solutions to simultaneous equations formed from one linear function and one quadratic function using a graphical approach",
+     "find graphically the intersection points of a given straight line with a circle",
+     "solve simultaneous equations representing a real-life situation graphically, and interpret the solution in the context of the problem",
+     "Solve quadratic inequalities in one variable, by factorising and sketching the graph to find critical values",
+     "Represent the solution set for inequalities using set notation, i.e. curly brackets and ‘is an element of’ notation",
+     "for problems identifying the solutions to two different inequalities, show this as the intersection of the two solution sets, i.e. solution of x² – 3x – 10 < 0 as {x: –3 < x < 5}",
+     "Solve linear inequalities in two variables graphically",
+     "Show the solution set of several inequalities in two variables on a graph",
+     "Use iteration with simple converging sequences."
+    ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Quadratic, cubic and other graphs",
-    "subskills": []
+    "subskills": [
+     "Recognise a linear, quadratic, cubic, reciprocal and circle graph from its shape",
+     "Generate points and plot graphs of simple quadratic functions, then more general quadratic functions",
+     "Find approximate solutions of a quadratic equation from the graph of the corresponding quadratic function",
+     "Interpret graphs of quadratic functions from real-life problems",
+     "Draw graphs of simple cubic functions using tables of values",
+     "Interpret graphs of simple cubic functions, including finding solutions to cubic equations",
+     "Draw graphs of the reciprocal function  with x ≠ 0 using tables of values",
+     "Draw circles, centre the origin, equation x2 + y2 = r2."
+    ]
    },
    {
-    "topic": "Probability",
+    "topic": "UNIT 10: Probability",
     "subskills": [
      "Probability (10h)"
     ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
+    "subskills": [
+     "Express a given number as a fraction of another",
+     "Find equivalent fractions and compare the size of fractions",
+     "Write a fraction in its simplest form, including using it to simplify a calculation, \ne.g. 50 ÷ 20 =  =  = 2.5",
+     "Find a fraction of a quantity or measurement, including within a context",
+     "Convert a fraction to a decimal to make a calculation easier",
+     "Convert between mixed numbers and improper fractions",
+     "Add, subtract, multiply and divide fractions",
+     "Multiply and divide fractions, including mixed numbers and whole numbers and vice versa",
+     "Add and subtract fractions, including mixed numbers",
+     "Understand and use unit fractions as multiplicative inverses",
+     "By writing the denominator in terms of its prime factors, decide whether fractions can be converted to recurring or terminating decimals",
+     "Convert a fraction to a recurring decimal",
+     "Convert a recurring decimal to a fraction",
+     "Find the reciprocal of an integer, decimal or fraction."
+    ]
    },
    {
     "topic": "Pythagoras’ Theorem and trigonometry",
-    "subskills": []
+    "subskills": [
+     "Understand, recall and use Pythagoras’ Theorem in 2D",
+     "Given three sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle (including decimal lengths and a range of units)",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Give an answer to the use of Pythagoras’ Theorem in surd form",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Perimeter, area and circles",
-    "subskills": []
+    "subskills": [
+     "Recall and use the formulae for the area of a triangle, rectangle, trapezium and parallelogram using a variety of metric measures",
+     "Calculate the area of compound shapes made from triangles, rectangles, trapezia and parallelograms using a variety of metric measures",
+     "Find the perimeter of a rectangle, trapezium and parallelogram using a variety of metric measures",
+     "Calculate the perimeter of compound shapes made from triangles and rectangles",
+     "Estimate area and perimeter by rounding measurements to 1 significant figure to check reasonableness of answers.",
+     "Recall the definition of a circle and name and draw parts of a circle",
+     "Recall and use formulae for the circumference of a circle and the area enclosed by a circle (using circumference = 2πr = πd and area of a circle = πr2) using a variety of metric measures",
+     "Use π ≈ 3.142 or use the π button on a calculator",
+     "Calculate perimeters and areas of composite shapes made from circles and parts of circles (including semicircles, quarter-circles, combinations of these and also incorporating other polygons)",
+     "Calculate arc lengths, angles and areas of sectors of circles",
+     "Find radius or diameter, given area or circumference of circles in a variety of metric measures",
+     "Give answers in terms of π",
+     "Form equations involving more complex shapes and solve these equations."
+    ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Cumulative frequency, box plots and histograms",
-    "subskills": []
+    "subskills": [
+     "Use statistics found in all graphs/charts in this unit to describe a population",
+     "Know the appropriate uses of cumulative frequency diagrams",
+     "Construct and interpret cumulative frequency tables",
+     "Construct and interpret cumulative frequency graphs/diagrams and from the graph:",
+     "estimate frequency greater/less than a given value",
+     "find the median and quartile values and interquartile range",
+     "Compare the mean and range of two distributions, or median and interquartile range, as appropriate",
+     "Interpret box plots to find median, quartiles, range and interquartile range and draw conclusions",
+     "Produce box plots from raw data and when given quartiles, median and identify any outliers",
+     "Know the appropriate uses of histograms",
+     "Construct and interpret histograms from class intervals with unequal width",
+     "Use and understand frequency density",
+     "From histograms:",
+     "complete a grouped frequency table",
+     "understand and define frequency density",
+     "Estimate the mean from a histogram",
+     "Estimate the median from a histogram with unequal class widths or any other information from a histogram, such as the number of people in a given interval.",
+     "Sketch a graph of a quadratic function, by factorising or by using the formula, identifying roots and y-intercept, turning point",
+     "Be able to identify from a graph if a quadratic equation has any real roots",
+     "Find approximate solutions to quadratic equations using a graph",
+     "Expand the product of more than two linear expressions",
+     "Sketch a graph of a quadratic function and a linear function, identifying intersection points",
+     "Sketch graphs of simple cubic functions, given as three linear expressions",
+     "Solve simultaneous equations graphically:",
+     "find approximate solutions to simultaneous equations formed from one linear function and one quadratic function using a graphical approach",
+     "find graphically the intersection points of a given straight line with a circle",
+     "solve simultaneous equations representing a real-life situation graphically, and interpret the solution in the context of the problem",
+     "Solve quadratic inequalities in one variable, by factorising and sketching the graph to find critical values",
+     "Represent the solution set for inequalities using set notation, i.e. curly brackets and ‘is an element of’ notation",
+     "for problems identifying the solutions to two different inequalities, show this as the intersection of the two solution sets, i.e. solution of x² – 3x – 10 < 0 as {x: –3 < x < 5}",
+     "Solve linear inequalities in two variables graphically",
+     "Show the solution set of several inequalities in two variables on a graph",
+     "Use iteration with simple converging sequences."
+    ]
    },
    {
     "topic": "Linear graphs and coordinate geometry",
-    "subskills": []
+    "subskills": [
+     "Plot and draw graphs of y = a, x = a, y = x and y = –x, drawing and recognising lines parallel to axes, plus y = x and y = –x",
+     "Identify and interpret the gradient of a line segment",
+     "Recognise that equations of the form y = mx + c correspond to straight-line graphs in the coordinate plane",
+     "Identify and interpret the gradient and y-intercept of a linear graph given by equations of the form y = mx + c",
+     "Find the equation of a straight line from a graph in the form y = mx + c",
+     "Plot and draw graphs of straight lines of the form y = mx + c with and without a table of values",
+     "Sketch a graph of a linear function, using the gradient and y-intercept (i.e. without a table of values)",
+     "Find the equation of the line through one point with a given gradient",
+     "Identify and interpret gradient from an equation ax + by = c",
+     "Find the equation of a straight line from a graph in the form ax + by = c",
+     "Plot and draw graphs of straight lines in the form ax + by = c",
+     "Interpret and analyse information presented in a range of linear graphs:",
+     "use gradients to interpret how one variable changes in relation to another",
+     "find approximate solutions to a linear equation from a graph",
+     "identify direct proportion from a graph",
+     "find the equation of a line of best fit (scatter graphs) to model the relationship between quantities",
+     "Explore the gradients of parallel lines and lines perpendicular to each other",
+     "Interpret and analyse a straight-line graph and generate equations of lines parallel and perpendicular to the given line",
+     "Select and use the fact that when y = mx + c is the equation of a straight line, then the gradient of a line parallel to it will have a gradient of m and a line perpendicular to this line will have a gradient of ."
+    ]
    },
    {
     "topic": "Accuracy and bounds",
-    "subskills": []
+    "subskills": [
+     "Calculate the upper and lowers bounds of numbers given to varying degrees of accuracy",
+     "Calculate the upper and lower bounds of an expression involving the four operations",
+     "Find the upper and lower bounds in real-life situations using measurements given to appropriate degrees of accuracy",
+     "Find the upper and lower bounds of calculations involving perimeters, areas and volumes of 2D and 3D shapes",
+     "Calculate the upper and lower bounds of calculations, particularly when working with measurements",
+     "Use inequality notation to specify an error bound."
+    ]
    },
    {
     "topic": "Pythagoras’ Theorem and trigonometry",
-    "subskills": []
+    "subskills": [
+     "Understand, recall and use Pythagoras’ Theorem in 2D",
+     "Given three sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle (including decimal lengths and a range of units)",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Give an answer to the use of Pythagoras’ Theorem in surd form",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Maths activities",
@@ -2025,45 +2851,197 @@
   "weeks": [
    {
     "topic": "Pythagoras’ Theorem and trigonometry",
-    "subskills": []
+    "subskills": [
+     "Understand, recall and use Pythagoras’ Theorem in 2D",
+     "Given three sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle (including decimal lengths and a range of units)",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Give an answer to the use of Pythagoras’ Theorem in surd form",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Constructions, loci and bearings",
-    "subskills": []
+    "subskills": [
+     "Draw 3D shapes using isometric grids",
+     "Understand and draw front and side elevations and plans of shapes made from simple solids",
+     "Given the front and side elevations and the plan of a solid, draw a sketch of the 3D solid",
+     "Use and interpret maps and scale drawings, using a variety of scales and units",
+     "Read and construct scale drawings, drawing lines and shapes to scale",
+     "Estimate lengths using a scale diagram",
+     "Understand, draw and measure bearings",
+     "Calculate bearings and solve bearings problems, including on scaled maps, and find/mark and measure bearings",
+     "Use the standard ruler and compass constructions:",
+     "bisect a given angle",
+     "construct a perpendicular to a given line from/at a given point",
+     "construct angles of 90°, 45°",
+     "perpendicular bisector of a line segment",
+     "Construct:",
+     "a region bounded by a circle and an intersecting line",
+     "a given distance from a point and a given distance from a line",
+     "equal distances from two points or two line segments",
+     "regions which may be defined by ‘nearer to’ or ‘greater than’",
+     "Find and describe regions satisfying a combination of loci, including in 3D",
+     "Use constructions to solve loci problems including with bearings",
+     "Know that the perpendicular distance from a point to a line is the shortest distance to the line."
+    ]
    },
    {
     "topic": "Percentages",
-    "subskills": []
+    "subskills": [
+     "Convert between fractions, decimals and percentages",
+     "Express a given number as a percentage of another number",
+     "Express one quantity as a percentage of another where the percentage is greater than 100%",
+     "Find a percentage of a quantity",
+     "Find the new amount after a percentage increase or decrease",
+     "Work out a percentage increase or decrease, including: simple interest, income tax calculations, value of profit or loss, percentage profit or loss",
+     "Compare two quantities using percentages, including a range of calculations and contexts such as those involving time or money",
+     "Find a percentage of a quantity using a multiplier",
+     "Use a multiplier to increase or decrease by a percentage in any scenario where percentages are used",
+     "Find the original amount given the final amount after a percentage increase or decrease (reverse percentages), including VAT",
+     "Use calculators for reverse percentage calculations by doing an appropriate division",
+     "Use percentages in real-life situations, including percentages greater than 100%",
+     "Describe percentage increase/decrease with fractions, e.g. 150% increase means  times as big",
+     "Understand that fractions are more accurate in calculations than rounded percentage or decimal equivalents, and choose fractions, decimals or percentages appropriately for calculations."
+    ]
    },
    {
     "topic": "Polygons, angles and parallel lines",
-    "subskills": []
+    "subskills": [
+     "Classify quadrilaterals by their geometric properties and distinguish between scalene, isosceles and equilateral triangles",
+     "Understand ‘regular’ and ‘irregular’ as applied to polygons",
+     "Understand the proof that the angle sum of a triangle is 180°, and derive and use the sum of angles in a triangle",
+     "Use symmetry property of an isosceles triangle to show that base angles are equal",
+     "Find missing angles in a triangle using the angle sum in a triangle AND the properties of an isosceles triangle",
+     "Understand a proof of, and use the fact that, the exterior angle of a triangle is equal to the sum of the interior angles at the other two vertices",
+     "Explain why the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of quadrilaterals and the fact that the angle sum of a quadrilateral is 360°",
+     "Understand and use the angle properties of parallel lines and find missing angles using the properties of corresponding and alternate angles, giving reasons",
+     "Use the angle sums of irregular polygons",
+     "Calculate and use the sums of the interior angles of polygons, use the sum of angles in a triangle to deduce and use the angle sum in any polygon and to derive the properties of regular polygons",
+     "Use the sum of the exterior angles of any polygon is 360°",
+     "Use the sum of the interior angles of an n-sided polygon",
+     "Use the sum of the interior angle and the exterior angle is 180°",
+     "Find the size of each interior angle, or the size of each exterior angle, or the number of sides of a regular polygon, and use the sum of angles of irregular polygons",
+     "Calculate the angles of regular polygons and use these to solve problems",
+     "Use the side/angle properties of compound shapes made up of triangles, lines and quadrilaterals, including solving angle and symmetry problems for shapes in the first quadrant, more complex problems and using algebra",
+     "Use angle facts to demonstrate how shapes would ‘fit together’, and work out interior angles of shapes in a pattern."
+    ]
    },
    {
     "topic": "Sequences",
-    "subskills": []
+    "subskills": [
+     "Recognise simple sequences including at the most basic level odd, even, triangular, square and cube numbers and Fibonacci-type sequences",
+     "Generate sequences of numbers, squared integers and sequences derived from diagrams",
+     "Describe in words a term-to-term sequence and identify which terms cannot be in a sequence",
+     "Generate specific terms in a sequence using the position-to-term rule and term-to-term rule",
+     "Find and use (to generate terms) the nth term of an arithmetic sequence",
+     "Use the nth term of an arithmetic sequence to decide if a given number is a term in the sequence, or find the first term above or below a given number",
+     "Identify which terms cannot be in a sequence by finding the nth term",
+     "Continue a quadratic sequence and use the nth term to generate terms",
+     "Find the nth term of quadratic sequences",
+     "Distinguish between arithmetic and geometric sequences",
+     "Use finite/infinite and ascending/descending to describe sequences",
+     "Recognise and use simple geometric progressions (rn where n is an integer, and r is a rational number > 0 or a surd)",
+     "Continue geometric progression and find term to term rule, including negative, fraction and decimal terms",
+     "Solve problems involving sequences from real life situations."
+    ]
    },
    {
     "topic": "Averages and range",
-    "subskills": []
+    "subskills": [
+     "Design and use two-way tables for discrete and grouped data",
+     "Use information provided to complete a two-way table",
+     "Sort, classify and tabulate data and discrete or continuous quantitative data",
+     "Calculate mean and range, find median and mode from small data set",
+     "Use a spreadsheet to calculate mean and range, and find median and mode",
+     "Recognise the advantages and disadvantages between measures of average",
+     "Construct and interpret stem and leaf diagrams (including back-to-back diagrams):",
+     "find the mode, median, range, as well as the greatest and least values from stem and leaf diagrams, and compare two distributions from stem and leaf diagrams (mode, median, range)",
+     "Calculate the mean, mode, median and range from a frequency table (discrete data)",
+     "Construct and interpret grouped frequency tables for continuous data:",
+     "for grouped data, find the interval which contains the median and the modal class",
+     "estimate the mean with grouped data",
+     "understand that the expression ‘estimate’ will be used where appropriate, when finding the mean of grouped data using mid-interval values."
+    ]
    },
    {
     "topic": "Transformations",
-    "subskills": []
+    "subskills": [
+     "Distinguish properties that are preserved under particular transformations",
+     "Recognise and describe rotations – know that that they are specified by a centre and an angle",
+     "Rotate 2D shapes using the origin or any other point (not necessarily on a coordinate grid)",
+     "Identify the equation of a line of symmetry",
+     "Recognise and describe reflections on a coordinate grid – know to include the mirror line as a simple algebraic equation, x = a, y = a, y = x, y = –x and lines not parallel to the axes",
+     "Reflect 2D shapes using specified mirror lines including lines parallel to the axes and also \ny = x and y = –x",
+     "Recognise and describe single translations using column vectors on a coordinate grid",
+     "Translate a given shape by a vector",
+     "Understand the effect of one translation followed by another, in terms of column vectors (to introduce vectors in a concrete way)",
+     "Enlarge a shape on a grid without a centre specified",
+     "Describe and transform 2D shapes using enlargements by a positive integer, positive fractional, and negative scale factor",
+     "Know that an enlargement on a grid is specified by a centre and a scale factor",
+     "Identify the scale factor of an enlargement of a shape",
+     "Enlarge a given shape using a given centre as the centre of enlargement by counting distances from centre, and find the centre of enlargement by drawing",
+     "Find areas after enlargement and compare with before enlargement, to deduce multiplicative relationship (area scale factor); given the areas of two shapes, one an enlargement of the other, find the scale factor of the enlargement (whole number values only)",
+     "Use congruence to show that translations, rotations and reflections preserve length and angle, so that any figure is congruent to its image under any of these transformations",
+     "Describe and transform 2D shapes using combined rotations, reflections, translations, or enlargements",
+     "Describe the changes and invariance achieved by combinations of rotations, reflections and translations."
+    ]
    },
    {
-    "topic": "3D forms and volume, cylinders, cones and spheres",
+    "topic": "7b. 3D forms and volume, cylinders, cones and spheres",
     "subskills": [
-     "3D forms and volume, cylinders, cones and spheres (8h)"
+     "Find the surface area of prisms using the formulae for triangles and rectangles, and other (simple) shapes with and without a diagram",
+     "Draw sketches of 3D solids",
+     "Identify planes of symmetry of 3D solids, and sketch planes of symmetry",
+     "Recall and use the formula for the volume of a cuboid or prism made from composite 3D solids using a variety of metric measures",
+     "Convert between metric volume measures",
+     "Convert between metric measures of volume and capacity, e.g. 1 ml = 1 cm3",
+     "Use volume to solve problems",
+     "Estimating surface area, perimeter and volume by rounding measurements to 1 significant figure to check reasonableness of answers.",
+     "Use π ≈ 3.142 or use the π button on a calculator",
+     "Find the volume and surface area of a cylinder",
+     "Recall and use the formula for volume of pyramid",
+     "Find the surface area of a pyramid",
+     "Use the formulae for volume and surface area of spheres and cones",
+     "Solve problems involving more complex shapes and solids, including segments of circles and frustums of cones",
+     "Find the surface area and volumes of compound solids constructed from cubes, cuboids, cones, pyramids, spheres, hemispheres, cylinders",
+     "Give answers in terms of π",
+     "Form equations involving more complex shapes and solve these equations."
     ]
    },
    {
     "topic": "Factors, multiples and primes",
-    "subskills": []
+    "subskills": [
+     "Identify factors, multiples and prime numbers",
+     "Find the prime factor decomposition of positive integers – write as a product using index notation",
+     "Find common factors and common multiples of two numbers",
+     "Find the LCM and HCF of two numbers, by listing, Venn diagrams and using prime factors – include finding LCM and HCF given the prime factorisation of two numbers",
+     "Solve problems using HCF and LCM, and prime numbers",
+     "Understand that the prime factor decomposition of a positive integer is unique, whichever factor pair you start with, and that every number can be written as a product of prime factors."
+    ]
    },
    {
     "topic": "Setting up, rearranging and solving equations",
-    "subskills": []
+    "subskills": [
+     "Set up simple equations from word problems and derive simple formulae",
+     "Understand the ≠ symbol (not equal), e.g. 6x + 4 ≠ 3(x + 2), and introduce identity ≡ sign",
+     "Solve linear equations, with integer coefficients, in which the unknown appears on either side or on both sides of the equation",
+     "Solve linear equations which contain brackets, including those that have negative signs occurring anywhere in the equation, and those with a negative solution",
+     "Solve linear equations in one unknown, with integer or fractional coefficients",
+     "Set up and solve linear equations to solve to solve a problem",
+     "Derive a formula and set up simple equations from word problems, then solve these equations, interpreting the solution in the context of the problem",
+     "Substitute positive and negative numbers into a formula, solve the resulting equation including brackets, powers or standard form",
+     "Use and substitute formulae from mathematics and other subjects, including the kinematics formulae v = u + at, v2 – u2 = 2as, and s = ut +  at2",
+     "Change the subject of a simple formula, i.e. linear one-step, such as x = 4y",
+     "Change the subject of a formula, including cases where the subject is on both sides of the original formula, or involving fractions and small powers of the subject",
+     "Simple proofs and use of ≡ in “show that” style questions; know the difference between an equation and an identity",
+     "Use iteration to find approximate solutions to equations, for simple equations in the first instance, then quadratic and cubic equations."
+    ]
    },
    {
     "topic": "Practise exam papers",
@@ -2071,29 +3049,106 @@
    },
    {
     "topic": "Ratio and Proportion",
-    "subskills": []
+    "subskills": [
+     "Express the division of a quantity into a number parts as a ratio",
+     "Write ratios in form 1 : m or m : 1 and to describe a situation",
+     "Write ratios in their simplest form, including three-part ratios",
+     "Divide a given quantity into two or more parts in a given part : part or part : whole ratio",
+     "Use a ratio to find one quantity when the other is known",
+     "Write a ratio as a fraction",
+     "Write a ratio as a linear function",
+     "Identify direct proportion from a table of values, by comparing ratios of values",
+     "Use a ratio to compare a scale model to real-life object",
+     "Use a ratio to convert between measures and currencies, e.g. £1.00 = €1.36",
+     "Scale up recipes",
+     "Convert between currencies."
+    ]
    },
    {
-    "topic": "Probability",
+    "topic": "UNIT 10: Probability",
     "subskills": [
      "Probability (10h)"
     ]
    },
    {
     "topic": "Cumulative frequency, box plots and histograms",
-    "subskills": []
+    "subskills": [
+     "Use statistics found in all graphs/charts in this unit to describe a population",
+     "Know the appropriate uses of cumulative frequency diagrams",
+     "Construct and interpret cumulative frequency tables",
+     "Construct and interpret cumulative frequency graphs/diagrams and from the graph:",
+     "estimate frequency greater/less than a given value",
+     "find the median and quartile values and interquartile range",
+     "Compare the mean and range of two distributions, or median and interquartile range, as appropriate",
+     "Interpret box plots to find median, quartiles, range and interquartile range and draw conclusions",
+     "Produce box plots from raw data and when given quartiles, median and identify any outliers",
+     "Know the appropriate uses of histograms",
+     "Construct and interpret histograms from class intervals with unequal width",
+     "Use and understand frequency density",
+     "From histograms:",
+     "complete a grouped frequency table",
+     "understand and define frequency density",
+     "Estimate the mean from a histogram",
+     "Estimate the median from a histogram with unequal class widths or any other information from a histogram, such as the number of people in a given interval.",
+     "Sketch a graph of a quadratic function, by factorising or by using the formula, identifying roots and y-intercept, turning point",
+     "Be able to identify from a graph if a quadratic equation has any real roots",
+     "Find approximate solutions to quadratic equations using a graph",
+     "Expand the product of more than two linear expressions",
+     "Sketch a graph of a quadratic function and a linear function, identifying intersection points",
+     "Sketch graphs of simple cubic functions, given as three linear expressions",
+     "Solve simultaneous equations graphically:",
+     "find approximate solutions to simultaneous equations formed from one linear function and one quadratic function using a graphical approach",
+     "find graphically the intersection points of a given straight line with a circle",
+     "solve simultaneous equations representing a real-life situation graphically, and interpret the solution in the context of the problem",
+     "Solve quadratic inequalities in one variable, by factorising and sketching the graph to find critical values",
+     "Represent the solution set for inequalities using set notation, i.e. curly brackets and ‘is an element of’ notation",
+     "for problems identifying the solutions to two different inequalities, show this as the intersection of the two solution sets, i.e. solution of x² – 3x – 10 < 0 as {x: –3 < x < 5}",
+     "Solve linear inequalities in two variables graphically",
+     "Show the solution set of several inequalities in two variables on a graph",
+     "Use iteration with simple converging sequences."
+    ]
    },
    {
     "topic": "Standard form and surds",
-    "subskills": []
+    "subskills": [
+     "Convert large and small numbers into standard form and vice versa",
+     "Add and subtract numbers in standard form",
+     "Multiply and divide numbers in standard form",
+     "Interpret a calculator display using standard form and know how to enter numbers in standard form",
+     "Understand surd notation, e.g. calculator gives answer to sq rt 8 as 4 rt 2",
+     "Simplify surd expressions involving squares (e.g. √12 = √(4 × 3) = √4 × √3 = 2√3)."
+    ]
    },
    {
     "topic": "Quadratic, cubic and other graphs",
-    "subskills": []
+    "subskills": [
+     "Recognise a linear, quadratic, cubic, reciprocal and circle graph from its shape",
+     "Generate points and plot graphs of simple quadratic functions, then more general quadratic functions",
+     "Find approximate solutions of a quadratic equation from the graph of the corresponding quadratic function",
+     "Interpret graphs of quadratic functions from real-life problems",
+     "Draw graphs of simple cubic functions using tables of values",
+     "Interpret graphs of simple cubic functions, including finding solutions to cubic equations",
+     "Draw graphs of the reciprocal function  with x ≠ 0 using tables of values",
+     "Draw circles, centre the origin, equation x2 + y2 = r2."
+    ]
    },
    {
     "topic": "Solving quadratics and simultaneous equations",
-    "subskills": []
+    "subskills": [
+     "Factorise quadratic expressions in the form ax2 + bx + c",
+     "Solve quadratic equations by factorisation and completing the square",
+     "Solve quadratic equations that need rearranging",
+     "Set up and solve quadratic equations",
+     "Solve quadratic equations by using the quadratic formula",
+     "Find the exact solutions of two simultaneous equations in two unknowns",
+     "Use elimination or substitution to solve simultaneous equations",
+     "Solve exactly, by elimination of an unknown, two simultaneous equations in two unknowns:",
+     "linear / linear, including where both need multiplying",
+     "linear / quadratic",
+     "linear / x2 + y2 = r2",
+     "Set up and solve a pair of simultaneous equations in two variables for each of the above scenarios, including to represent a situation",
+     "Interpret the solution in the context of the problem"
+    ]
    },
    {
     "topic": "Exam Preparation",
@@ -2106,116 +3161,550 @@
   "weeks": [
    {
     "topic": "Properties of shapes, parallel lines and angle facts",
-    "subskills": []
+    "subskills": [
+     "Estimate sizes of angles",
+     "Measure angles using a protractor",
+     "Use geometric language appropriately",
+     "Use letters to identify points, lines and angles",
+     "Use two-letter notation for a line and three-letter notation for an angle",
+     "Describe angles as turns and in degrees",
+     "Understand clockwise and anticlockwise",
+     "Know that there are 360° in a full turn, 180° in a half turn and 90° in a quarter turn",
+     "Identify a line perpendicular to a given line",
+     "Mark perpendicular lines on a diagram and use their properties",
+     "Identify parallel lines",
+     "Mark parallel lines on a diagram and use their properties",
+     "Recall the properties and definitions of special types of quadrilaterals, including symmetry properties",
+     "List the properties of each special type of quadrilateral, or identify (name) a given shape",
+     "Draw sketches of shapes",
+     "Name all quadrilaterals that have a specific property",
+     "Identify quadrilaterals from everyday usage",
+     "Given some information about a shape on coordinate axes, complete the shape",
+     "Classify quadrilaterals by their geometric properties",
+     "Understand and use the angle properties of quadrilaterals",
+     "Use the fact that angle sum of a quadrilateral is 360°",
+     "Use geometrical language appropriately and give reasons for angle calculations",
+     "Recall and use properties of angles at a point, angles at a point on a straight line, right angles, and vertically opposite angles",
+     "Distinguish between scalene, equilateral, isosceles and right-angled triangles",
+     "Derive and use the sum of angles in a triangle",
+     "Find a missing angle in a triangle, using the angle sum of a triangle is 180°",
+     "Understand and use the angle properties of triangles, use the symmetry property of isosceles triangle to show that base angles are equal",
+     "Use the side/angle properties of isosceles and equilateral triangles",
+     "Show step-by-step deduction when solving problems",
+     "Understand and use the angle properties of intersecting lines",
+     "Understand a proof that the exterior angle of a triangle is equal to the sum of the interior angles at the other two vertices",
+     "Find missing angles using properties of corresponding and alternate angles",
+     "Understand and use the angle properties of parallel lines."
+    ]
    },
    {
     "topic": "Real-life graphs",
-    "subskills": []
+    "subskills": [
+     "Use input/output diagrams",
+     "Use axes and coordinates to specify points in all four quadrants in 2D",
+     "Identify points with given coordinates and coordinates of a given point in all four quadrants",
+     "Find the coordinates of points identified by geometrical information in 2D (all four quadrants)",
+     "Find the coordinates of the midpoint of a line segment",
+     "Draw, label and scale axes",
+     "Read values from straight-line graphs for real-life situations",
+     "Draw straight line graphs for real-life situations, including ready reckoner graphs, conversion graphs, fuel bills graphs, fixed charge and cost per unit",
+     "Draw distance–time graphs and velocity–time graphs",
+     "Work out time intervals for graph scales",
+     "Interpret distance–time graphs, and calculate: the speed of individual sections, total distance and total time",
+     "Interpret information presented in a range of linear and non-linear graphs",
+     "Interpret graphs with negative values on axes",
+     "Interpret gradient as the rate of change in distance–time and speed–time graphs, graphs of containers filling and emptying, and unit price graphs."
+    ]
    },
    {
     "topic": "Expressions and substitution into formulae",
-    "subskills": []
+    "subskills": [
+     "Write expressions to solve problems representing a situation",
+     "Substitute numbers in simple algebraic expressions",
+     "Substitute numbers into expressions involving brackets and powers",
+     "Substitute positive and negative numbers into expressions",
+     "Derive a simple formula, including those with squares, cubes and roots",
+     "Substitute numbers into a word formula",
+     "Substitute numbers into a formula."
+    ]
    },
    {
     "topic": "Sequences",
-    "subskills": []
+    "subskills": [
+     "Recognise sequences of odd and even numbers, and other sequences including Fibonacci sequences",
+     "Use function machines to find terms of a sequence",
+     "Write the term-to-term definition of a sequence in words",
+     "Find a specific term in the sequence using position-to-term or term-to-term rules",
+     "Generate arithmetic sequences of numbers, triangular number, square and cube integers and sequences derived from diagrams",
+     "Recognise such sequences from diagrams and draw the next term in a pattern sequence",
+     "Find the next term in a sequence, including negative values",
+     "Find the nth term for a pattern sequence",
+     "Find the nth term of a linear sequence",
+     "Find the nth term of an arithmetic sequence",
+     "Use the nth term of an arithmetic sequence to generate terms",
+     "Use the nth term of an arithmetic sequence to decide if a given number is a term in the sequence, or find the first term over a certain number",
+     "Use the nth term of an arithmetic sequence to find the first term greater/less than a certain number",
+     "Continue a geometric progression and find the term-to-term rule, including negatives, fraction and decimal terms",
+     "Continue a quadratic sequence and use the nth term to generate terms",
+     "Distinguish between arithmetic and geometric sequences."
+    ]
    },
    {
     "topic": "Scatter graphs",
-    "subskills": []
+    "subskills": [
+     "Draw scatter graphs",
+     "Interpret points on a scatter graph",
+     "Identify outliers and ignore them on scatter graphs",
+     "Draw the line of best fit on a scatter diagram by eye, and understand what it represents",
+     "Use the line of best fit make predictions; interpolate and extrapolate apparent trends whilst knowing the dangers of so doing",
+     "Distinguish between positive, negative and no correlation using lines of best fit",
+     "Use a line of best fit to predict values of a variable given values of the other variable",
+     "Interpret scatter graphs in terms of the relationship between two variables",
+     "Interpret correlation in terms of the problem",
+     "Understand that correlation does not imply causality",
+     "State how reliable their predictions are, i.e. not reliable if extrapolated."
+    ]
    },
    {
     "topic": "Ratio",
-    "subskills": []
+    "subskills": [
+     "Understand and express the division of a quantity into a of number parts as a ratio",
+     "Write ratios in their simplest form",
+     "Write/interpret a ratio to describe a situation",
+     "Share a quantity in a given ratio including three-part ratios",
+     "Solve a ratio problem in context:",
+     "use a ratio to find one quantity when the other is known",
+     "use a ratio to compare a scale model to a real-life object",
+     "use a ratio to convert between measures and currencies",
+     "problems involving mixing, e.g. paint colours, cement and drawn conclusions",
+     "Compare ratios",
+     "Write ratios in form 1 : m or m : 1",
+     "Write a ratio as a fraction",
+     "Write a ratio as a linear function",
+     "Write lengths, areas and volumes of two shapes as ratios in simplest form",
+     "Express a multiplicative relationship between two quantities as a ratio or a fraction."
+    ]
    },
    {
     "topic": "Proportion",
-    "subskills": []
+    "subskills": [
+     "Understand and use proportion as equality of ratios",
+     "Solve word problems involving direct and indirect proportion",
+     "Work out which product is the better buy",
+     "Scale up recipes",
+     "Convert between currencies",
+     "Find amounts for 3 people when amount for 1 given",
+     "Solve proportion problems using the unitary method",
+     "Recognise when values are in direct proportion by reference to the graph form",
+     "Understand inverse proportion: as x increases, y decreases (inverse graphs done in later unit)",
+     "Understand direct proportion ---> relationship y = kx.",
+     "Understand, recall and use Pythagoras’ Theorem in 2D, including leaving answers in surd form",
+     "Given 3 sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle, including decimal lengths and a range of units",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Apply Pythagoras’ Theorem with a triangle drawn on a coordinate grid",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Round answers to appropriate degree of accuracy, either to a given number of significant figures or decimal places, or make a sensible decision on rounding in context of question",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Percentages",
-    "subskills": []
+    "subskills": [
+     "Express a given number as a percentage of another number",
+     "Find a percentage of a quantity without a calculator: 50%, 25% and multiples of 10% and 5%",
+     "Find a percentage of a quantity or measurement (use measurements they should know from Key Stage 3 only)",
+     "Calculate amount of increase/decrease",
+     "Use percentages to solve problems, including comparisons of two quantities using percentages",
+     "Percentages over 100%",
+     "Use percentages in real-life situations, including percentages greater than 100%:",
+     "Price after VAT (not price before VAT)",
+     "Value of profit or loss",
+     "Simple interest",
+     "Income tax calculations",
+     "Use decimals to find quantities",
+     "Find a percentage of a quantity, including using a multiplier",
+     "Use a multiplier to increase or decrease by a percentage in any scenario where percentages are used",
+     "Understand the multiplicative nature of percentages as operators."
+    ]
    },
    {
     "topic": "Equations",
-    "subskills": []
+    "subskills": [
+     "Select an expression/equation/formula/identity from a list",
+     "Write expressions and set up simple equations",
+     "Use function machines",
+     "Solve simple equations",
+     "Solve linear equations, with integer coefficients, in which the unknown appears on either side or on both sides of the equation",
+     "Solve linear equations which contain brackets, including those that have negative signs occurring anywhere in the equation, and those with a negative solution",
+     "Solve linear equations in one unknown, with integer or fractional coefficients",
+     "Rearrange simple equations",
+     "Substitute into a formula, and solve the resulting equation",
+     "Find an approximate solution to a linear equation using a graph",
+     "Solve angle or perimeter problems using algebra.",
+     "Write an equation to solve a word problem."
+    ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
+    "subskills": [
+     "Add and subtract mixed number fractions",
+     "Multiply mixed number fractions",
+     "Divide mixed numbers by whole numbers and vice versa",
+     "Find the reciprocal of an integer, decimal or fraction",
+     "Understand ‘reciprocal’ as multiplicative inverse, knowing that any non-zero number multiplied by its reciprocal is 1 (and that zero has no reciprocal because division by zero is not defined)."
+    ]
    },
    {
     "topic": "Probability II",
-    "subskills": []
+    "subskills": [
+     "Find the probability of an event happening using relative frequency",
+     "Estimate the number of times an event will occur, given the probability and the number of trials – for both experimental and theoretical probabilities",
+     "List all outcomes for combined events systematically",
+     "Use and draw sample space diagrams",
+     "Work out probabilities from Venn diagrams to represent real-life situations and also ‘abstract’ sets of numbers/values",
+     "Use union and intersection notation",
+     "Compare experimental data and theoretical probabilities",
+     "Compare relative frequencies from samples of different sizes",
+     "Find the probability of successive events, such as several throws of a single dice",
+     "Use tree diagrams to calculate the probability of two independent events",
+     "Use tree diagrams to calculate the probability of two dependent events.",
+     "Understand and use compound measures:",
+     "density",
+     "pressure",
+     "speed:",
+     "convert between metric speed measures",
+     "read values in km/h and mph from a speedometer",
+     "calculate average speed, distance, time – in miles per hour as well as metric measures",
+     "use kinematics formulae from the formulae sheet to calculate speed, acceleration (with variables defined in the question)",
+     "change d/t in m/s to a formula in km/h, i.e. d/t × (60 × 60)/1000 – with support",
+     "Express a given number as a percentage of another number in more complex situations",
+     "Calculate percentage profit or loss",
+     "Make calculations involving repeated percentage change, not using the formula",
+     "Find the original amount given the final amount after a percentage increase or decrease",
+     "Use compound interest",
+     "Use a variety of measures in ratio and proportion problems:",
+     "currency conversion",
+     "rates of pay",
+     "best value",
+     "Set up, solve and interpret the answers in growth and decay problems",
+     "Understand that X is inversely proportional to Y is equivalent to X is proportional to",
+     "Interpret equations that describe direct and inverse proportion."
+    ]
    },
    {
     "topic": "Real-life graphs",
-    "subskills": []
+    "subskills": [
+     "Use input/output diagrams",
+     "Use axes and coordinates to specify points in all four quadrants in 2D",
+     "Identify points with given coordinates and coordinates of a given point in all four quadrants",
+     "Find the coordinates of points identified by geometrical information in 2D (all four quadrants)",
+     "Find the coordinates of the midpoint of a line segment",
+     "Draw, label and scale axes",
+     "Read values from straight-line graphs for real-life situations",
+     "Draw straight line graphs for real-life situations, including ready reckoner graphs, conversion graphs, fuel bills graphs, fixed charge and cost per unit",
+     "Draw distance–time graphs and velocity–time graphs",
+     "Work out time intervals for graph scales",
+     "Interpret distance–time graphs, and calculate: the speed of individual sections, total distance and total time",
+     "Interpret information presented in a range of linear and non-linear graphs",
+     "Interpret graphs with negative values on axes",
+     "Interpret gradient as the rate of change in distance–time and speed–time graphs, graphs of containers filling and emptying, and unit price graphs."
+    ]
    },
    {
     "topic": "Equations",
-    "subskills": []
+    "subskills": [
+     "Select an expression/equation/formula/identity from a list",
+     "Write expressions and set up simple equations",
+     "Use function machines",
+     "Solve simple equations",
+     "Solve linear equations, with integer coefficients, in which the unknown appears on either side or on both sides of the equation",
+     "Solve linear equations which contain brackets, including those that have negative signs occurring anywhere in the equation, and those with a negative solution",
+     "Solve linear equations in one unknown, with integer or fractional coefficients",
+     "Rearrange simple equations",
+     "Substitute into a formula, and solve the resulting equation",
+     "Find an approximate solution to a linear equation using a graph",
+     "Solve angle or perimeter problems using algebra.",
+     "Write an equation to solve a word problem."
+    ]
    },
    {
     "topic": "Expressions and substitution into formulae",
-    "subskills": []
+    "subskills": [
+     "Write expressions to solve problems representing a situation",
+     "Substitute numbers in simple algebraic expressions",
+     "Substitute numbers into expressions involving brackets and powers",
+     "Substitute positive and negative numbers into expressions",
+     "Derive a simple formula, including those with squares, cubes and roots",
+     "Substitute numbers into a word formula",
+     "Substitute numbers into a formula."
+    ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
+    "subskills": [
+     "Add and subtract mixed number fractions",
+     "Multiply mixed number fractions",
+     "Divide mixed numbers by whole numbers and vice versa",
+     "Find the reciprocal of an integer, decimal or fraction",
+     "Understand ‘reciprocal’ as multiplicative inverse, knowing that any non-zero number multiplied by its reciprocal is 1 (and that zero has no reciprocal because division by zero is not defined)."
+    ]
    },
    {
     "topic": "Perimeter and area",
-    "subskills": []
+    "subskills": [
+     "Indicate given values on a scale, including decimal value",
+     "Know that measurements using real numbers depend upon the choice of unit",
+     "Convert between units of measure within one system, including time",
+     "Convert metric units to metric units",
+     "Make sensible estimates of a range of measures in everyday settings",
+     "Measure shapes to find perimeters and areas using a range of scales",
+     "Find the perimeter of rectangles and triangles",
+     "Find the perimeter of parallelograms and trapezia",
+     "Find the perimeter of compound shapes",
+     "Recall and use the formulae for the area of a triangle and rectangle",
+     "Find the area of a rectangle and triangle",
+     "Find the area of a trapezium and recall the formula",
+     "Find the area of a parallelogram",
+     "Calculate areas and perimeters of compound shapes made from triangles and rectangles",
+     "Estimate surface areas by rounding measurements to 1 significant figure",
+     "Find the surface area of a prism",
+     "Find surface area using rectangles and triangles",
+     "Convert between metric area measures."
+    ]
    },
    {
     "topic": "Quadratic equations: graphs",
-    "subskills": []
+    "subskills": [
+     "Generate points and plot graphs of simple quadratic functions, then more general quadratic functions",
+     "Identify the line of symmetry of a quadratic graph",
+     "Find approximate solutions to quadratic equations using a graph",
+     "Interpret graphs of quadratic functions from real-life problems",
+     "Identify and interpret roots, intercepts and turning points of quadratic graphs.",
+     "Recall the definition of a circle",
+     "Identify, name and draw parts of a circle including tangent, chord and segment",
+     "Recall and use formulae for the circumference of a circle and the area enclosed by a circle circumference of a circle = 2πr = πd, area of a circle = πr2",
+     "Find circumferences and areas enclosed by circles",
+     "Use π ≈ 3.142 or use the π button on a calculator",
+     "Give an answer to a question involving the circumference or area of a circle in terms of π",
+     "Find radius or diameter, given area or perimeter of a circles",
+     "Find the perimeters and areas of semicircles and quarter-circles",
+     "Calculate perimeters and areas of composite shapes made from circles and parts of circles",
+     "Calculate arc lengths, angles and areas of sectors of circles",
+     "Find the surface area of a cylinder",
+     "Find the volume of a cylinder",
+     "Find the surface area and volume of spheres, pyramids, cones and composite solids",
+     "Round answers to a given degree of accuracy."
+    ]
    },
    {
     "topic": "Indices and standard form",
-    "subskills": []
+    "subskills": [
+     "Use index laws to simplify and calculate the value of numerical expressions involving multiplication and division of integer powers, fractions and powers of a power",
+     "Use numbers raised to the power zero, including the zero power of 10",
+     "Convert large and small numbers into standard form and vice versa",
+     "Add and subtract numbers in standard form",
+     "Multiply and divide numbers in standard form",
+     "Interpret a calculator display using standard form and know how to enter numbers in standard form."
+    ]
    },
    {
     "topic": "Transformations I: rotations and translations",
-    "subskills": []
+    "subskills": [
+     "Identify congruent shapes by eye",
+     "Understand clockwise and anticlockwise",
+     "Understand that rotations are specified by a centre, an angle and a direction of rotation",
+     "Find the centre of rotation, angle and direction of rotation and describe rotations",
+     "Describe a rotation fully using the angle, direction of turn, and centre",
+     "Rotate a shape about the origin or any other point on a coordinate grid",
+     "Draw the position of a shape after rotation about a centre (not on a coordinate grid)",
+     "Identify correct rotations from a choice of diagrams",
+     "Understand that translations are specified by a distance and direction using a vector",
+     "Translate a given shape by a vector",
+     "Describe and transform 2D shapes using single translations on a coordinate grid",
+     "Use column vectors to describe translations",
+     "Understand that distances and angles are preserved under rotations and translations, so that any figure is congruent under either of these transformations."
+    ]
    },
    {
     "topic": "Transformations II: reflections and enlargements",
-    "subskills": []
+    "subskills": [
+     "Understand that reflections are specified by a mirror line",
+     "Identify correct reflections from a choice of diagrams",
+     "Identify the equation of a line of symmetry",
+     "Transform 2D shapes using single reflections (including those not on coordinate grids) with vertical, horizontal and diagonal mirror lines",
+     "Describe reflections on a coordinate grid",
+     "Scale a shape on a grid (without a centre specified)",
+     "Understand that an enlargement is specified by a centre and a scale factor",
+     "Enlarge a given shape using (0, 0) as the centre of enlargement, and enlarge shapes with a centre other than (0, 0)",
+     "Find the centre of enlargement by drawing",
+     "Describe and transform 2D shapes using enlargements by:",
+     "a positive integer scale factor",
+     "a fractional scale factor",
+     "Identify the scale factor of an enlargement of a shape as the ratio of the lengths of two corresponding sides, simple integer scale factors, or simple fractions",
+     "Understand that distances and angles are preserved under reflections, so that any figure is congruent under this transformation",
+     "Understand that similar shapes are enlargements of each other and angles are preserved – define similar in this unit",
+     "Describe and transform 2D shapes using combined rotations, reflections, translations, or enlargements."
+    ]
    },
    {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "topic": "UNIT 17: Perimeter, area and volume 2: circles, cylinders, cones and spheres",
     "subskills": [
      "Circles, cylinders, cones and spheres (7h)"
     ]
    },
    {
     "topic": "Properties of shapes, parallel lines and angle facts",
-    "subskills": []
+    "subskills": [
+     "Estimate sizes of angles",
+     "Measure angles using a protractor",
+     "Use geometric language appropriately",
+     "Use letters to identify points, lines and angles",
+     "Use two-letter notation for a line and three-letter notation for an angle",
+     "Describe angles as turns and in degrees",
+     "Understand clockwise and anticlockwise",
+     "Know that there are 360° in a full turn, 180° in a half turn and 90° in a quarter turn",
+     "Identify a line perpendicular to a given line",
+     "Mark perpendicular lines on a diagram and use their properties",
+     "Identify parallel lines",
+     "Mark parallel lines on a diagram and use their properties",
+     "Recall the properties and definitions of special types of quadrilaterals, including symmetry properties",
+     "List the properties of each special type of quadrilateral, or identify (name) a given shape",
+     "Draw sketches of shapes",
+     "Name all quadrilaterals that have a specific property",
+     "Identify quadrilaterals from everyday usage",
+     "Given some information about a shape on coordinate axes, complete the shape",
+     "Classify quadrilaterals by their geometric properties",
+     "Understand and use the angle properties of quadrilaterals",
+     "Use the fact that angle sum of a quadrilateral is 360°",
+     "Use geometrical language appropriately and give reasons for angle calculations",
+     "Recall and use properties of angles at a point, angles at a point on a straight line, right angles, and vertically opposite angles",
+     "Distinguish between scalene, equilateral, isosceles and right-angled triangles",
+     "Derive and use the sum of angles in a triangle",
+     "Find a missing angle in a triangle, using the angle sum of a triangle is 180°",
+     "Understand and use the angle properties of triangles, use the symmetry property of isosceles triangle to show that base angles are equal",
+     "Use the side/angle properties of isosceles and equilateral triangles",
+     "Show step-by-step deduction when solving problems",
+     "Understand and use the angle properties of intersecting lines",
+     "Understand a proof that the exterior angle of a triangle is equal to the sum of the interior angles at the other two vertices",
+     "Find missing angles using properties of corresponding and alternate angles",
+     "Understand and use the angle properties of parallel lines."
+    ]
    },
    {
     "topic": "Inequalities",
-    "subskills": []
+    "subskills": [
+     "Show inequalities on number lines",
+     "Write down whole number values that satisfy an inequality",
+     "Solve an inequality such as –3 < 2x + 1 <7 and show the solution set on a number line",
+     "Solve two inequalities in x, find the solution sets and compare them to see which value of x satisfies both",
+     "Use the correct notation to show inclusive and exclusive inequalities",
+     "Construct inequalities to represent a set shown on a number line",
+     "Solve simple linear inequalities in one variable, and represent the solution set on a number line",
+     "Round answers to a given degree of accuracy."
+    ]
    },
    {
     "topic": "Perimeter and area",
-    "subskills": []
+    "subskills": [
+     "Indicate given values on a scale, including decimal value",
+     "Know that measurements using real numbers depend upon the choice of unit",
+     "Convert between units of measure within one system, including time",
+     "Convert metric units to metric units",
+     "Make sensible estimates of a range of measures in everyday settings",
+     "Measure shapes to find perimeters and areas using a range of scales",
+     "Find the perimeter of rectangles and triangles",
+     "Find the perimeter of parallelograms and trapezia",
+     "Find the perimeter of compound shapes",
+     "Recall and use the formulae for the area of a triangle and rectangle",
+     "Find the area of a rectangle and triangle",
+     "Find the area of a trapezium and recall the formula",
+     "Find the area of a parallelogram",
+     "Calculate areas and perimeters of compound shapes made from triangles and rectangles",
+     "Estimate surface areas by rounding measurements to 1 significant figure",
+     "Find the surface area of a prism",
+     "Find surface area using rectangles and triangles",
+     "Convert between metric area measures."
+    ]
    },
    {
     "topic": "Proportion",
-    "subskills": []
+    "subskills": [
+     "Understand and use proportion as equality of ratios",
+     "Solve word problems involving direct and indirect proportion",
+     "Work out which product is the better buy",
+     "Scale up recipes",
+     "Convert between currencies",
+     "Find amounts for 3 people when amount for 1 given",
+     "Solve proportion problems using the unitary method",
+     "Recognise when values are in direct proportion by reference to the graph form",
+     "Understand inverse proportion: as x increases, y decreases (inverse graphs done in later unit)",
+     "Understand direct proportion ---> relationship y = kx.",
+     "Understand, recall and use Pythagoras’ Theorem in 2D, including leaving answers in surd form",
+     "Given 3 sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle, including decimal lengths and a range of units",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Apply Pythagoras’ Theorem with a triangle drawn on a coordinate grid",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Round answers to appropriate degree of accuracy, either to a given number of significant figures or decimal places, or make a sensible decision on rounding in context of question",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Plans and elevations",
-    "subskills": []
+    "subskills": [
+     "Understand clockwise and anticlockwise",
+     "Draw circles and arcs to a given radius or given the diameter",
+     "Measure and draw lines, to the nearest mm",
+     "Measure and draw angles, to the nearest degree",
+     "Know and use compass directions",
+     "Draw sketches of 3D solids",
+     "Know the terms face, edge and vertex",
+     "Identify and sketch planes of symmetry of 3D solids",
+     "Use isometric grids to draw 2D representations of 3D solids",
+     "Make accurate drawings of triangles and other 2D shapes using a ruler and a protractor",
+     "Construct diagrams of everyday 2D situations involving rectangles, triangles, perpendicular and parallel lines",
+     "Understand and draw front and side elevations and plans of shapes made from simple solids",
+     "Given the front and side elevations and the plan of a solid, draw a sketch of the 3D solid."
+    ]
    },
    {
     "topic": "Constructions, loci and bearings",
-    "subskills": []
+    "subskills": [
+     "Understand congruence, as two shapes that are the same size and shape",
+     "Visually identify shapes which are congruent",
+     "Use straight edge and a pair of compasses to do standard constructions:",
+     "understand, from the experience of constructing them, that triangles satisfying SSS, SAS, ASA and RHS are unique, but SSA triangles are not",
+     "construct the perpendicular bisector of a given line",
+     "construct the perpendicular from a point to a line",
+     "construct the bisector of a given angle",
+     "construct angles of 90°, 45°",
+     "Draw and construct diagrams from given instructions, including the following:",
+     "a region bounded by a circle and an intersecting line",
+     "a given distance from a point and a given distance from a line",
+     "equal distances from two points or two line segments",
+     "regions may be defined by ‘nearer to’ or ‘greater than’",
+     "Find and describe regions satisfying a combination of loci",
+     "Use constructions to solve loci problems (2D only)",
+     "Use and interpret maps and scale drawings",
+     "Estimate lengths using a scale diagram",
+     "Make an accurate scale drawing from a diagram",
+     "Use three-figure bearings to specify direction",
+     "Mark on a diagram the position of point B given its bearing from point A",
+     "Give a bearing between the points on a map or scaled plan",
+     "Given the bearing of a point A from point B, work out the bearing of B from A",
+     "Use accurate drawing to solve bearings problems",
+     "Solve locus problems including bearings."
+    ]
    },
    {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "topic": "UNIT 17: Perimeter, area and volume 2: circles, cylinders, cones and spheres",
     "subskills": [
      "Circles, cylinders, cones and spheres (7h)"
     ]
@@ -2231,96 +3720,370 @@
   "weeks": [
    {
     "topic": "Proportion",
-    "subskills": []
+    "subskills": [
+     "Understand and use proportion as equality of ratios",
+     "Solve word problems involving direct and indirect proportion",
+     "Work out which product is the better buy",
+     "Scale up recipes",
+     "Convert between currencies",
+     "Find amounts for 3 people when amount for 1 given",
+     "Solve proportion problems using the unitary method",
+     "Recognise when values are in direct proportion by reference to the graph form",
+     "Understand inverse proportion: as x increases, y decreases (inverse graphs done in later unit)",
+     "Understand direct proportion ---> relationship y = kx.",
+     "Understand, recall and use Pythagoras’ Theorem in 2D, including leaving answers in surd form",
+     "Given 3 sides of a triangle, justify if it is right-angled or not",
+     "Calculate the length of the hypotenuse in a right-angled triangle, including decimal lengths and a range of units",
+     "Find the length of a shorter side in a right-angled triangle",
+     "Apply Pythagoras’ Theorem with a triangle drawn on a coordinate grid",
+     "Calculate the length of a line segment AB given pairs of points",
+     "Understand, use and recall the trigonometric ratios sine, cosine and tan, and apply them to find angles and lengths in general triangles in 2D figures",
+     "Use the trigonometric ratios to solve 2D problems",
+     "Find angles of elevation and depression",
+     "Round answers to appropriate degree of accuracy, either to a given number of significant figures or decimal places, or make a sensible decision on rounding in context of question",
+     "Know the exact values of sin θ and cos θ for θ = 0°, 30°, 45°, 60° and 90°; know the exact value of tan θ for θ = 0°, 30°, 45° and 60°."
+    ]
    },
    {
     "topic": "Interior and exterior angles of polygons",
-    "subskills": []
+    "subskills": [
+     "Recognise and name pentagons, hexagons, heptagons, octagons and decagons",
+     "Understand ‘regular’ and ‘irregular’ as applied to polygons",
+     "Use the sum of angles of irregular polygons",
+     "Calculate and use the sums of the interior angles of polygons",
+     "Calculate and use the angles of regular polygons",
+     "Use the sum of the interior angles of an n-sided polygon",
+     "Use the sum of the exterior angles of any polygon is 360°",
+     "Use the sum of the interior angle and the exterior angle is 180°",
+     "Identify shapes which are congruent (by eye)",
+     "Explain why some polygons fit together and others do not"
+    ]
    },
    {
     "topic": "Probability II",
-    "subskills": []
+    "subskills": [
+     "Find the probability of an event happening using relative frequency",
+     "Estimate the number of times an event will occur, given the probability and the number of trials – for both experimental and theoretical probabilities",
+     "List all outcomes for combined events systematically",
+     "Use and draw sample space diagrams",
+     "Work out probabilities from Venn diagrams to represent real-life situations and also ‘abstract’ sets of numbers/values",
+     "Use union and intersection notation",
+     "Compare experimental data and theoretical probabilities",
+     "Compare relative frequencies from samples of different sizes",
+     "Find the probability of successive events, such as several throws of a single dice",
+     "Use tree diagrams to calculate the probability of two independent events",
+     "Use tree diagrams to calculate the probability of two dependent events.",
+     "Understand and use compound measures:",
+     "density",
+     "pressure",
+     "speed:",
+     "convert between metric speed measures",
+     "read values in km/h and mph from a speedometer",
+     "calculate average speed, distance, time – in miles per hour as well as metric measures",
+     "use kinematics formulae from the formulae sheet to calculate speed, acceleration (with variables defined in the question)",
+     "change d/t in m/s to a formula in km/h, i.e. d/t × (60 × 60)/1000 – with support",
+     "Express a given number as a percentage of another number in more complex situations",
+     "Calculate percentage profit or loss",
+     "Make calculations involving repeated percentage change, not using the formula",
+     "Find the original amount given the final amount after a percentage increase or decrease",
+     "Use compound interest",
+     "Use a variety of measures in ratio and proportion problems:",
+     "currency conversion",
+     "rates of pay",
+     "best value",
+     "Set up, solve and interpret the answers in growth and decay problems",
+     "Understand that X is inversely proportional to Y is equivalent to X is proportional to",
+     "Interpret equations that describe direct and inverse proportion."
+    ]
    },
    {
     "topic": "Similarity and congruence in 2D",
-    "subskills": []
+    "subskills": [
+     "Use the basic congruence criteria for triangles (SSS, SAS, ASA and RHS)",
+     "Solve angle problems involving congruence",
+     "Identify shapes which are similar; including all circles or all regular polygons with equal number of sides",
+     "Understand similarity of triangles and of other plane shapes, use this to make geometric inferences, and solve angle problems using similarity",
+     "Identify the scale factor of an enlargement of a shape as the ratio of the lengths of two corresponding sides",
+     "Understand the effect of enlargement on perimeter of shapes",
+     "Solve problems to find missing lengths in similar shapes",
+     "Know that scale diagrams, including bearings and maps are ‘similar’ to the real-life examples."
+    ]
    },
    {
     "topic": "Algebra: the basics",
-    "subskills": []
+    "subskills": [
+     "Use notation and symbols correctly",
+     "Write an expression",
+     "Select an expression/equation/formula/identity from a list",
+     "Manipulate and simplify algebraic expressions by collecting ‘like’ terms",
+     "Multiply together two simple algebraic expressions, e.g. 2a × 3b",
+     "Simplify expressions by cancelling, e.g.  = 2x",
+     "Use index notation when multiplying or dividing algebraic terms",
+     "Use index laws in algebra",
+     "Use index notation in algebra.",
+     "Understand the ≠ symbol and introduce the identity ≡ sign"
+    ]
    },
    {
     "topic": "Probability II",
-    "subskills": []
+    "subskills": [
+     "Find the probability of an event happening using relative frequency",
+     "Estimate the number of times an event will occur, given the probability and the number of trials – for both experimental and theoretical probabilities",
+     "List all outcomes for combined events systematically",
+     "Use and draw sample space diagrams",
+     "Work out probabilities from Venn diagrams to represent real-life situations and also ‘abstract’ sets of numbers/values",
+     "Use union and intersection notation",
+     "Compare experimental data and theoretical probabilities",
+     "Compare relative frequencies from samples of different sizes",
+     "Find the probability of successive events, such as several throws of a single dice",
+     "Use tree diagrams to calculate the probability of two independent events",
+     "Use tree diagrams to calculate the probability of two dependent events.",
+     "Understand and use compound measures:",
+     "density",
+     "pressure",
+     "speed:",
+     "convert between metric speed measures",
+     "read values in km/h and mph from a speedometer",
+     "calculate average speed, distance, time – in miles per hour as well as metric measures",
+     "use kinematics formulae from the formulae sheet to calculate speed, acceleration (with variables defined in the question)",
+     "change d/t in m/s to a formula in km/h, i.e. d/t × (60 × 60)/1000 – with support",
+     "Express a given number as a percentage of another number in more complex situations",
+     "Calculate percentage profit or loss",
+     "Make calculations involving repeated percentage change, not using the formula",
+     "Find the original amount given the final amount after a percentage increase or decrease",
+     "Use compound interest",
+     "Use a variety of measures in ratio and proportion problems:",
+     "currency conversion",
+     "rates of pay",
+     "best value",
+     "Set up, solve and interpret the answers in growth and decay problems",
+     "Understand that X is inversely proportional to Y is equivalent to X is proportional to",
+     "Interpret equations that describe direct and inverse proportion."
+    ]
    },
    {
     "topic": "Constructions, loci and bearings",
-    "subskills": []
+    "subskills": [
+     "Understand congruence, as two shapes that are the same size and shape",
+     "Visually identify shapes which are congruent",
+     "Use straight edge and a pair of compasses to do standard constructions:",
+     "understand, from the experience of constructing them, that triangles satisfying SSS, SAS, ASA and RHS are unique, but SSA triangles are not",
+     "construct the perpendicular bisector of a given line",
+     "construct the perpendicular from a point to a line",
+     "construct the bisector of a given angle",
+     "construct angles of 90°, 45°",
+     "Draw and construct diagrams from given instructions, including the following:",
+     "a region bounded by a circle and an intersecting line",
+     "a given distance from a point and a given distance from a line",
+     "equal distances from two points or two line segments",
+     "regions may be defined by ‘nearer to’ or ‘greater than’",
+     "Find and describe regions satisfying a combination of loci",
+     "Use constructions to solve loci problems (2D only)",
+     "Use and interpret maps and scale drawings",
+     "Estimate lengths using a scale diagram",
+     "Make an accurate scale drawing from a diagram",
+     "Use three-figure bearings to specify direction",
+     "Mark on a diagram the position of point B given its bearing from point A",
+     "Give a bearing between the points on a map or scaled plan",
+     "Given the bearing of a point A from point B, work out the bearing of B from A",
+     "Use accurate drawing to solve bearings problems",
+     "Solve locus problems including bearings."
+    ]
    },
    {
-    "topic": "Right-angled triangles: Pythagoras and trigonometry",
+    "topic": "UNIT 12: Right-angled triangles: Pythagoras and trigonometry",
     "subskills": [
      "Right-angled triangles: Pythagoras and trigonometry (6h)"
     ]
    },
    {
     "topic": "Algebra: the basics",
-    "subskills": []
+    "subskills": [
+     "Use notation and symbols correctly",
+     "Write an expression",
+     "Select an expression/equation/formula/identity from a list",
+     "Manipulate and simplify algebraic expressions by collecting ‘like’ terms",
+     "Multiply together two simple algebraic expressions, e.g. 2a × 3b",
+     "Simplify expressions by cancelling, e.g.  = 2x",
+     "Use index notation when multiplying or dividing algebraic terms",
+     "Use index laws in algebra",
+     "Use index notation in algebra.",
+     "Understand the ≠ symbol and introduce the identity ≡ sign"
+    ]
    },
    {
     "topic": "Indices and standard form",
-    "subskills": []
+    "subskills": [
+     "Use index laws to simplify and calculate the value of numerical expressions involving multiplication and division of integer powers, fractions and powers of a power",
+     "Use numbers raised to the power zero, including the zero power of 10",
+     "Convert large and small numbers into standard form and vice versa",
+     "Add and subtract numbers in standard form",
+     "Multiply and divide numbers in standard form",
+     "Interpret a calculator display using standard form and know how to enter numbers in standard form."
+    ]
    },
    {
     "topic": "Expressions and substitution into formulae",
-    "subskills": []
+    "subskills": [
+     "Write expressions to solve problems representing a situation",
+     "Substitute numbers in simple algebraic expressions",
+     "Substitute numbers into expressions involving brackets and powers",
+     "Substitute positive and negative numbers into expressions",
+     "Derive a simple formula, including those with squares, cubes and roots",
+     "Substitute numbers into a word formula",
+     "Substitute numbers into a formula."
+    ]
    },
    {
     "topic": "Practise exam papers",
     "subskills": []
    },
    {
-    "topic": "3D forms and volume",
+    "topic": "8b. 3D forms and volume",
     "subskills": [
-     "3D forms and volume (6h)"
+     "Identify and name common solids: cube, cuboid, cylinder, prism, pyramid, sphere and cone",
+     "Sketch nets of cuboids and prisms",
+     "Recall and use the formula for the volume of a cuboid",
+     "Find the volume of a prism, including a triangular prism, cube and cuboid",
+     "Calculate volumes of right prisms and shapes made from cubes and cuboids",
+     "Estimate volumes etc by rounding measurements to 1 significant figure",
+     "Convert between metric volume measures",
+     "Convert between metric measures of volume and capacity e.g. 1ml = 1cm3."
     ]
    },
    {
     "topic": "Fractions",
-    "subskills": []
+    "subskills": [
+     "Use diagrams to find equivalent fractions or compare fractions",
+     "Write fractions to describe shaded parts of diagrams",
+     "Express a given number as a fraction of another, using very simple numbers, some cancelling, and where the fraction is both < 1 and > 1",
+     "Write a fraction in its simplest form and find equivalent fractions",
+     "Order fractions, by using a common denominator",
+     "Compare fractions, use inequality signs, compare unit fractions",
+     "Convert between mixed numbers and improper fractions",
+     "Add and subtract fractions",
+     "Add fractions and write the answer as a mixed number",
+     "Multiply and divide an integer by a fraction",
+     "Multiply and divide a fraction by an integer, including finding fractions of quantities or measurements, and apply this by finding the size of each category from a pie chart using fractions",
+     "Understand and use unit fractions as multiplicative inverses",
+     "Multiply fractions: simplify calculations by cancelling first",
+     "Divide a fraction by a whole number",
+     "Divide fractions by fractions."
+    ]
    },
    {
     "topic": "Constructions, loci and bearings",
-    "subskills": []
+    "subskills": [
+     "Understand congruence, as two shapes that are the same size and shape",
+     "Visually identify shapes which are congruent",
+     "Use straight edge and a pair of compasses to do standard constructions:",
+     "understand, from the experience of constructing them, that triangles satisfying SSS, SAS, ASA and RHS are unique, but SSA triangles are not",
+     "construct the perpendicular bisector of a given line",
+     "construct the perpendicular from a point to a line",
+     "construct the bisector of a given angle",
+     "construct angles of 90°, 45°",
+     "Draw and construct diagrams from given instructions, including the following:",
+     "a region bounded by a circle and an intersecting line",
+     "a given distance from a point and a given distance from a line",
+     "equal distances from two points or two line segments",
+     "regions may be defined by ‘nearer to’ or ‘greater than’",
+     "Find and describe regions satisfying a combination of loci",
+     "Use constructions to solve loci problems (2D only)",
+     "Use and interpret maps and scale drawings",
+     "Estimate lengths using a scale diagram",
+     "Make an accurate scale drawing from a diagram",
+     "Use three-figure bearings to specify direction",
+     "Mark on a diagram the position of point B given its bearing from point A",
+     "Give a bearing between the points on a map or scaled plan",
+     "Given the bearing of a point A from point B, work out the bearing of B from A",
+     "Use accurate drawing to solve bearings problems",
+     "Solve locus problems including bearings."
+    ]
    },
    {
     "topic": "Transformations I: rotations and translations",
-    "subskills": []
+    "subskills": [
+     "Identify congruent shapes by eye",
+     "Understand clockwise and anticlockwise",
+     "Understand that rotations are specified by a centre, an angle and a direction of rotation",
+     "Find the centre of rotation, angle and direction of rotation and describe rotations",
+     "Describe a rotation fully using the angle, direction of turn, and centre",
+     "Rotate a shape about the origin or any other point on a coordinate grid",
+     "Draw the position of a shape after rotation about a centre (not on a coordinate grid)",
+     "Identify correct rotations from a choice of diagrams",
+     "Understand that translations are specified by a distance and direction using a vector",
+     "Translate a given shape by a vector",
+     "Describe and transform 2D shapes using single translations on a coordinate grid",
+     "Use column vectors to describe translations",
+     "Understand that distances and angles are preserved under rotations and translations, so that any figure is congruent under either of these transformations."
+    ]
    },
    {
     "topic": "Charts and graphs",
-    "subskills": []
+    "subskills": [
+     "Plotting coordinates in first quadrant and read graph scales in multiples",
+     "Produce:",
+     "pictograms",
+     "composite bar charts",
+     "dual/comparative bar charts for categorical and ungrouped discrete data",
+     "bar-line charts",
+     "vertical line charts",
+     "line graphs",
+     "line graphs for time–series data",
+     "histograms with equal class intervals",
+     "stem and leaf (including back-to-back)",
+     "Interpret data shown in",
+     "dual/comparative bar charts",
+     "stem and leaf",
+     "Calculate total population from a bar chart or table",
+     "Find greatest and least values from a bar chart or table",
+     "Find the mode from a stem and leaf diagram",
+     "Identify the mode from a bar chart",
+     "Recognise simple patterns, characteristics, relationships in bar charts and line graphs."
+    ]
    },
    {
     "topic": "The averages",
-    "subskills": []
+    "subskills": [
+     "Calculate the mean, mode, median and range for discrete data",
+     "Can interpret and find a range of averages as follows:",
+     "median, mean and range from a (discrete) frequency table",
+     "range, modal class, interval containing the median, and estimate of the mean from a grouped data frequency table",
+     "mode and range from a bar chart",
+     "median, mode and range from stem and leaf diagrams",
+     "mean from a bar chart",
+     "Understand that the expression 'estimate' will be used where appropriate, when finding the mean of grouped data using mid-interval values",
+     "Compare the mean, median, mode and range (as appropriate) of two distributions using bar charts, dual bar charts, pictograms and back-to-back stem and leaf",
+     "Recognise the advantages and disadvantages between measures of average."
+    ]
    },
    {
     "topic": "Algebra: the basics",
-    "subskills": []
+    "subskills": [
+     "Use notation and symbols correctly",
+     "Write an expression",
+     "Select an expression/equation/formula/identity from a list",
+     "Manipulate and simplify algebraic expressions by collecting ‘like’ terms",
+     "Multiply together two simple algebraic expressions, e.g. 2a × 3b",
+     "Simplify expressions by cancelling, e.g.  = 2x",
+     "Use index notation when multiplying or dividing algebraic terms",
+     "Use index laws in algebra",
+     "Use index notation in algebra.",
+     "Understand the ≠ symbol and introduce the identity ≡ sign"
+    ]
    },
    {
     "topic": "Exam Preparation",
     "subskills": []
    },
    {
-    "topic": "Rearranging equations, graphs of cubic and reciprocal functions and simultaneous equations",
+    "topic": "UNIT 20: Rearranging equations, graphs of cubic and reciprocal functions and simultaneous equations",
     "subskills": [
      "Rearranging equations, graphs of cubic and reciprocal functions and simultaneous equations (5h)"
     ]
    },
    {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "topic": "UNIT 17: Perimeter, area and volume 2: circles, cylinders, cones and spheres",
     "subskills": [
      "Circles, cylinders, cones and spheres (7h)"
     ]
@@ -2335,179 +4098,193 @@
   "label": "Year 10 — OCR Foundation",
   "weeks": [
    {
-    "topic": "Properties of shapes, parallel lines and angle facts",
+    "topic": "8.03a/8.03b Properties of shapes, parallel lines and angle facts",
     "subskills": [
-     "Angles / Angles at a point & on a line (Know the terms acute, obtuse, right and reflex angles.\nKnow and use the sum of the angles at a point is 360° and at a point on a line is 180°.)",
-     "Angles / Angles at a point & on a line (Know the terms acute, obtuse, right and reflex angles.\nKnow and use the sum of the angles at a point is 360° and at a point on a line is 180°.)"
+     "Know the terms acute, obtuse, right and reflex angles.",
+     "Know and use the sum of the angles at a point is 360° and at a point on a line is 180°.",
+     "Apply these angle facts to find angles in rectilinear figures, and to justify results in simple proofs."
     ]
    },
    {
-    "topic": "Real-life graphs",
+    "topic": "7.03a Real-life graphs",
     "subskills": [
-     "Graphs of real-world contexts (Construct and interpret graphs in real-world contexts eg. distance–time, money conversion, temperature conversion)"
+     "Construct and interpret graphs in real-world contexts eg. distance–time, money conversion, temperature conversion"
     ]
    },
    {
-    "topic": "Expressions and substitution into formulae",
+    "topic": "6.02a Expressions and substitution into formulae",
     "subskills": [
-     "Formulate algebraic expressions (-)"
+     "Formulate simple formulae and expressions from real-world contexts eg. cost of car hire at £50 per day plus 10p per mile"
     ]
    },
    {
-    "topic": "Sequences",
+    "topic": "6.06a Sequences",
     "subskills": [
-     "Sequences (Generate a sequence by spotting a pattern or using a term-to-term rule given algebraically or in words. Generate a sequence from a formula for the nth term.\nFind a formula for the nth term of an arithmetic sequence.)"
+     "Generate a sequence by spotting a pattern or using a term-to-term rule given algebraically or in words. Generate a sequence from a formula for the nth term.",
+     "Find a formula for the nth term of an arithmetic sequence."
     ]
    },
    {
-    "topic": "Scatter graphs",
+    "topic": "12.03c/12.03d Scatter graphs",
     "subskills": [
-     "Bivariate data & Outliers (Plot and interpret scatter diagrams for bivariate data.\nRecognise correlation. Interpret correlation within the context of the variables.\nDraw a line of best fit by eye, and use it to make predictions.\nInterpolate and extrapolate from data, and be aware of the limitations of these techniques.\nIdentify an outlier in simple cases.)",
-     "Bivariate data & Outliers (Plot and interpret scatter diagrams for bivariate data.\nRecognise correlation. Interpret correlation within the context of the variables.\nDraw a line of best fit by eye, and use it to make predictions.\nInterpolate and extrapolate from data, and be aware of the limitations of these techniques.\nIdentify an outlier in simple cases.)"
+     "Plot and interpret scatter diagrams for bivariate data.",
+     "Recognise correlation. Interpret correlation within the context of the variables.",
+     "Draw a line of best fit by eye, and use it to make predictions.",
+     "Interpolate and extrapolate from data, and be aware of the limitations of these techniques.",
+     "Identify an outlier in simple cases.",
+     "Appreciate there may be errors in data from values (outliers) that do not ‘fit’."
     ]
    },
    {
-    "topic": "Ratio",
+    "topic": "5.01a Ratio",
     "subskills": [
-     "Equivalent ratios (Find the ratio of quantities in the form a : b and simplify. Find the ratio of quantities in the form 1 : n.)"
+     "Find the ratio of quantities in the form a : b and simplify. Find the ratio of quantities in the form 1 : n."
     ]
    },
    {
-    "topic": "Proportion",
+    "topic": "5.02a Proportion",
     "subskills": [
-     "Direct proportion (Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems)"
+     "Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems",
+     "Solve more formal problems involving quantities in direct proportion and recognise that if y = kx, where k is a constant, then y is proportional to x"
     ]
    },
    {
-    "topic": "Percentages",
+    "topic": "2.03b Percentages",
     "subskills": [
-     "Percentage calculations (Understand percentage is ‘number of parts per hundred’.\nCalculate a percentage of an amount (non-calculator) Calculate a percentage of an amount using multipliers (calculator))"
+     "Understand percentage is ‘number of parts per hundred’.",
+     "Calculate a percentage of an amount (non-calculator) Calculate a percentage of an amount using multipliers (calculator)"
     ]
    },
    {
-    "topic": "Equations",
+    "topic": "6.03a Equations",
     "subskills": [
-     "Linear equations in one unknown (Solve linear equations in one unknown algebraically. e.g. Solve 3x - 1 = 5)"
+     "Solve linear equations in one unknown algebraically. e.g. Solve 3x - 1 = 5",
+     "Set up and solve linear equations in mathematical and non-mathematical contexts, including those with the unknown on both sides of the equation. Interpret solutions in context"
     ]
    },
    {
-    "topic": "Fractions",
+    "topic": "2.01b Fractions",
     "subskills": [
-     "Calculations with fractions (Add and subtract fractions (proper and improper) Multiply and divide fractions (proper and improper) Add, subtract, multiply and divide fractions including mixed numbers)"
+     "Add and subtract fractions (proper and improper) Multiply and divide fractions (proper and improper) Add, subtract, multiply and divide fractions including mixed numbers"
     ]
    },
    {
-    "topic": "Probability II",
+    "topic": "11.02 Probability II",
     "subskills": [
-     "Sample spaces (Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.\nUse sample spaces for more complex combinations of events.)"
+     "Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.",
+     "Use sample spaces for more complex combinations of events."
     ]
    },
    {
-    "topic": "Real-life graphs",
+    "topic": "7.03a Real-life graphs",
     "subskills": [
-     "Graphs of real-world contexts (Construct and interpret graphs in real-world contexts eg. distance–time, money conversion, temperature conversion)"
+     "Construct and interpret graphs in real-world contexts eg. distance–time, money conversion, temperature conversion"
     ]
    },
    {
-    "topic": "Equations",
+    "topic": "6.03a Equations",
     "subskills": [
-     "Linear equations in one unknown (Solve linear equations in one unknown algebraically. e.g. Solve 3x - 1 = 5)"
+     "Solve linear equations in one unknown algebraically. e.g. Solve 3x - 1 = 5",
+     "Set up and solve linear equations in mathematical and non-mathematical contexts, including those with the unknown on both sides of the equation. Interpret solutions in context"
     ]
    },
    {
-    "topic": "Expressions and substitution into formulae",
+    "topic": "6.02a Expressions and substitution into formulae",
     "subskills": [
-     "Formulate algebraic expressions (-)"
+     "Formulate simple formulae and expressions from real-world contexts eg. cost of car hire at £50 per day plus 10p per mile"
     ]
    },
    {
-    "topic": "Fractions",
+    "topic": "2.01b Fractions",
     "subskills": [
-     "Calculations with fractions (Add and subtract fractions (proper and improper) Multiply and divide fractions (proper and improper) Add, subtract, multiply and divide fractions including mixed numbers)"
+     "Add and subtract fractions (proper and improper) Multiply and divide fractions (proper and improper) Add, subtract, multiply and divide fractions including mixed numbers"
     ]
    },
    {
-    "topic": "Perimeter and area",
+    "topic": "10.02a/10.02b/10.2c Perimeter and area",
     "subskills": [
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)",
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)",
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)"
+     "Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.",
+     "Know and apply the formula to calculate the circumference of a circle."
     ]
    },
    {
-    "topic": "Quadratic equations: graphs",
+    "topic": "7.01b Quadratic equations: graphs",
     "subskills": [
-     "Graphs of equations & functions (Use a table of values to plot graphs of linear functions. Use a table of values to plot graphs of quadratic functions.)"
+     "Use a table of values to plot graphs of linear functions. Use a table of values to plot graphs of quadratic functions.",
+     "Recognise and interpret graphs that illustrate direct and inverse proportion. Use a table of values to plot other polynomial graphs and reciprocals."
     ]
    },
    {
-    "topic": "Indices and standard form",
+    "topic": "3.02a Indices and standard form",
     "subskills": [
-     "Standard Form (Interpret and order numbers expressed in standard form.\nConvert numbers to and from standard form.)"
+     "Interpret and order numbers expressed in standard form.",
+     "Convert numbers to and from standard form."
     ]
    },
    {
-    "topic": "Transformations I: rotations and translations",
+    "topic": "9.01a/9.01b Transformations I: rotations and translations",
     "subskills": [
-     "Reflection & Rotation (Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.\nRotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation.)",
-     "Reflection & Rotation (Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.\nRotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation.)"
+     "Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.",
+     "Rotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation."
     ]
    },
    {
-    "topic": "Transformations II: reflections and enlargements",
+    "topic": "9.04b Transformations II: reflections and enlargements",
     "subskills": [
-     "Enlargement (Enlarge a simple shape from a given centre using a whole number scale factor and identify the scale factor of an enlargement. Identify the centre and scale factor (including fractional scale factors) of an enlargement of a simple shape.)"
+     "Enlarge a simple shape from a given centre using a whole number scale factor and identify the scale factor of an enlargement. Identify the centre and scale factor (including fractional scale factors) of an enlargement of a simple shape."
     ]
    },
    {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "topic": "10.03 Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "subskills": []
+   },
+   {
+    "topic": "8.03a/8.03b Properties of shapes, parallel lines and angle facts",
     "subskills": [
-     "Area calculations (Area of a triangle, parallelogram, trapezium, circle, composite shapes)"
+     "Know the terms acute, obtuse, right and reflex angles.",
+     "Know and use the sum of the angles at a point is 360° and at a point on a line is 180°.",
+     "Apply these angle facts to find angles in rectilinear figures, and to justify results in simple proofs."
     ]
    },
    {
-    "topic": "Properties of shapes, parallel lines and angle facts",
+    "topic": "6.04a Inequalities",
     "subskills": [
-     "Angles / Angles at a point & on a line (Know the terms acute, obtuse, right and reflex angles.\nKnow and use the sum of the angles at a point is 360° and at a point on a line is 180°.)",
-     "Angles / Angles at a point & on a line (Know the terms acute, obtuse, right and reflex angles.\nKnow and use the sum of the angles at a point is 360° and at a point on a line is 180°.)"
+     "Understand and use the symbols <, ≤, > and ≥",
+     "Represent inequalities on a number line. Solve linear inequalities in one variable, expressing solutions on a number line using the conventional notation"
     ]
    },
    {
-    "topic": "Inequalities",
+    "topic": "10.02a/10.02b/10.2c Perimeter and area",
     "subskills": [
-     "Inequalities (Understand and use the symbols <, ≤, > and ≥\nRepresent inequalities on a number line. Solve linear inequalities in one variable, expressing solutions on a number line using the conventional notation)"
+     "Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.",
+     "Know and apply the formula to calculate the circumference of a circle."
     ]
    },
    {
-    "topic": "Perimeter and area",
+    "topic": "5.02a Proportion",
     "subskills": [
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)",
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)",
-     "Perimeter of rectilinear and composite shapes / Circumference of a circle (Calculate the perimeter of rectilinear shapes. Apply perimeter formulae in calculations involving the perimeter of composite 2D shapes.\nKnow and apply the formula to calculate the circumference of a circle.)"
+     "Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems",
+     "Solve more formal problems involving quantities in direct proportion and recognise that if y = kx, where k is a constant, then y is proportional to x"
     ]
    },
    {
-    "topic": "Proportion",
+    "topic": "8.06a Plans and elevations",
     "subskills": [
-     "Direct proportion (Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems)"
+     "Recognise and know the properties of cube, cuboid, prism, cylinder, pyramid, cone and sphere"
     ]
    },
    {
-    "topic": "Plans and elevations",
+    "topic": "8.02 Constructions, loci and bearings",
     "subskills": [
-     "3-dimensional shapes (Recognise and know the properties of cube, cuboid, prism, cylinder, pyramid, cone and sphere)"
+     "Construct: perpendicular bisector, angle bisector and perpendicular from a point to a line.",
+     "Apply ruler and compass constructions to construct figures and identify the loci of points, to include real-world problems. Understand the term ‘equidistant’."
     ]
    },
    {
-    "topic": "Constructions, loci and bearings",
+    "topic": "10.03 Perimeter, area and volume 2: circles, cylinders, cones and spheres",
     "subskills": [
-     "Ruler and compass constructions / Loci (-)"
-    ]
-   },
-   {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
-    "subskills": [
-     "Area calculations (Area of a triangle, parallelogram, trapezium, circle, composite shapes)"
+     "Area of a triangle, parallelogram, trapezium, circle, composite shapes",
+     "Calculate the area of a sector of a circle given its angle and radius."
     ]
    },
    {
@@ -2520,70 +4297,81 @@
   "label": "Year 11 — OCR Foundation",
   "weeks": [
    {
-    "topic": "Proportion",
+    "topic": "5.02a Proportion",
     "subskills": [
-     "Direct proportion (Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems)"
+     "Solve simple problems involving quantities in direct proportion including algebraic proportions (using equality of ratios). Currency conversion problems",
+     "Solve more formal problems involving quantities in direct proportion and recognise that if y = kx, where k is a constant, then y is proportional to x"
     ]
    },
    {
-    "topic": "Interior and exterior angles of polygons",
+    "topic": "8.03d Interior and exterior angles of polygons",
     "subskills": [
-     "Angles in polygons (Derive and use the sum of the exterior angles of a polygon is 360°. Find the sum of the interior angles of a polygon.\nFind the interior angle of a regular polygon.)"
+     "Derive and use the sum of the exterior angles of a polygon is 360°. Find the sum of the interior angles of a polygon.",
+     "Find the interior angle of a regular polygon."
     ]
    },
    {
-    "topic": "Probability II",
+    "topic": "11.02 Probability II",
     "subskills": [
-     "Sample spaces (Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.\nUse sample spaces for more complex combinations of events.)"
+     "Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.",
+     "Use sample spaces for more complex combinations of events."
     ]
    },
    {
-    "topic": "Similarity and congruence in 2D",
+    "topic": "9.02a/9.02b Similarity and congruence in 2D",
     "subskills": [
-     "Congruent Triangles (Identify congruent triangles)",
-     "Congruent Triangles (Identify congruent triangles)"
+     "Identify congruent triangles",
+     "Prove that two triangles are congruent using the cases SSS, ASA, SAS, RHS.",
+     "Apply congruent triangles in calculations and simple proofs."
     ]
    },
    {
-    "topic": "Algebra: the basics",
+    "topic": "6.01a Algebra: the basics",
     "subskills": [
-     "Algebraic terminology and proofs (Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.)"
+     "Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.",
+     "Recognise the difference between an equation and an identity, and show algebraic expressions are equivalent.",
+     "Use algebra to construct arguments."
     ]
    },
    {
-    "topic": "Probability II",
+    "topic": "11.02 Probability II",
     "subskills": [
-     "Sample spaces (Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.\nUse sample spaces for more complex combinations of events.)"
+     "Use tables and grids to list the outcomes of single events and simple combinations of events, and to calculate theoretical probabilities.",
+     "Use sample spaces for more complex combinations of events."
     ]
    },
    {
-    "topic": "Constructions, loci and bearings",
+    "topic": "8.02 Constructions, loci and bearings",
     "subskills": [
-     "Ruler and compass constructions / Loci (-)"
+     "Construct: perpendicular bisector, angle bisector and perpendicular from a point to a line.",
+     "Apply ruler and compass constructions to construct figures and identify the loci of points, to include real-world problems. Understand the term ‘equidistant’."
     ]
    },
    {
-    "topic": "Right-angled triangles: Pythagoras and trigonometry",
+    "topic": "10.5 Right-angled triangles: Pythagoras and trigonometry",
     "subskills": [
-     "Triangle mensuration (-)"
+     "Pythagoras' theorem, trigonometry in right-angled triangles and exact trig ratios"
     ]
    },
    {
-    "topic": "Algebra: the basics",
+    "topic": "6.01a Algebra: the basics",
     "subskills": [
-     "Algebraic terminology and proofs (Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.)"
+     "Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.",
+     "Recognise the difference between an equation and an identity, and show algebraic expressions are equivalent.",
+     "Use algebra to construct arguments."
     ]
    },
    {
-    "topic": "Indices and standard form",
+    "topic": "3.02a Indices and standard form",
     "subskills": [
-     "Standard Form (Interpret and order numbers expressed in standard form.\nConvert numbers to and from standard form.)"
+     "Interpret and order numbers expressed in standard form.",
+     "Convert numbers to and from standard form."
     ]
    },
    {
-    "topic": "Expressions and substitution into formulae",
+    "topic": "6.02a Expressions and substitution into formulae",
     "subskills": [
-     "Formulate algebraic expressions (-)"
+     "Formulate simple formulae and expressions from real-world contexts eg. cost of car hire at £50 per day plus 10p per mile"
     ]
    },
    {
@@ -2591,47 +4379,53 @@
     "subskills": []
    },
    {
-    "topic": "3D forms and volume",
+    "topic": "10.04a 3D forms and volume",
     "subskills": [
-     "Polyhedra (Calculate the surface area of cuboids and other right prisms (including cylinders). Calculate the volume of cuboids and other right prisms (including cylinders).)"
+     "Calculate the surface area of cuboids and other right prisms (including cylinders). Calculate the volume of cuboids and other right prisms (including cylinders).",
+     "Calculate the surface area and volume of spheres, cones and simple composite solids (formulae will be given) and of a pyramid."
     ]
    },
    {
-    "topic": "Fractions",
+    "topic": "2.01a Fractions",
     "subskills": [
-     "Equivalent fractions (Recognise and use equivalence between simple fractions and mixed numbers.)"
+     "Recognise and use equivalence between simple fractions and mixed numbers."
     ]
    },
    {
-    "topic": "Constructions, loci and bearings",
+    "topic": "8.02 Constructions, loci and bearings",
     "subskills": [
-     "Ruler and compass constructions / Loci (-)"
+     "Construct: perpendicular bisector, angle bisector and perpendicular from a point to a line.",
+     "Apply ruler and compass constructions to construct figures and identify the loci of points, to include real-world problems. Understand the term ‘equidistant’."
     ]
    },
    {
-    "topic": "Transformations I: rotations and translations",
+    "topic": "9.01a/9.01b Transformations I: rotations and translations",
     "subskills": [
-     "Reflection & Rotation (Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.\nRotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation.)",
-     "Reflection & Rotation (Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.\nRotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation.)"
+     "Reflect a simple shape in a given mirror line and identify the mirror line from a shape and its image. Identify a mirror line x = a, y = b or y = x from a simple shape and its image under reflection.",
+     "Rotate a simple shape clockwise or anti-clockwise through a multiple of 90° about a given centre of rotation."
     ]
    },
    {
-    "topic": "Charts and graphs",
+    "topic": "12.02a/12.03b Charts and graphs",
     "subskills": [
-     "Categorical and numerical data / Misrepresenting data (Draw and interpret frequency tables and pictograms.\nDraw and interpret bar charts and composite bar charts. Draw and interpret pie charts.\nRecognise graphical misrepresentation through incorrect scales, labels, etc.)",
-     "Categorical and numerical data / Misrepresenting data (Draw and interpret frequency tables and pictograms.\nDraw and interpret bar charts and composite bar charts. Draw and interpret pie charts.\nRecognise graphical misrepresentation through incorrect scales, labels, etc.)"
+     "Draw and interpret frequency tables and pictograms.",
+     "Draw and interpret bar charts and composite bar charts. Draw and interpret pie charts.",
+     "Recognise graphical misrepresentation through incorrect scales, labels, etc."
     ]
    },
    {
-    "topic": "The averages",
+    "topic": "12.03a The averages",
     "subskills": [
-     "Summary statistics (Calculate the mean, mode, median and range for ungrouped data. Find the modal class, and calculate estimates of the range for grouped data. Find the mean and median and calculate estimates for grouped data)"
+     "Calculate the mean, mode, median and range for ungrouped data. Find the modal class, and calculate estimates of the range for grouped data. Find the mean and median and calculate estimates for grouped data",
+     "Define the population in a study, and understand the difference between population and sample. Infer properties of populations or distributions from a sample. Understand simple random sampling and bias in sampling."
     ]
    },
    {
-    "topic": "Algebra: the basics",
+    "topic": "6.01a Algebra: the basics",
     "subskills": [
-     "Algebraic terminology and proofs (Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.)"
+     "Understand and use the concepts and vocabulary of expressions, equations, formulae, inequalities, terms and factors.",
+     "Recognise the difference between an equation and an identity, and show algebraic expressions are equivalent.",
+     "Use algebra to construct arguments."
     ]
    },
    {
@@ -2639,15 +4433,17 @@
     "subskills": []
    },
    {
-    "topic": "Rearranging equations, graphs of cubic and reciprocal functions and simultaneous equations",
+    "topic": "6.02c Rearranging equations, graphs of cubic and reciprocal functions and simultaneous equations",
     "subskills": [
-     "Change subject of the formula (Rearrange formulae to change the subject, where the subject appears once only. e.g. Make d the subject of the formula 3d = e)"
+     "Rearrange formulae to change the subject, where the subject appears once only. e.g. Make d the subject of the formula 3d = e",
+     "Rearrange formulae to change the subject, including cases where the subject appears twice, or where a power or reciprocal of the subject appears."
     ]
    },
    {
-    "topic": "Perimeter, area and volume 2: circles, cylinders, cones and spheres",
+    "topic": "10.03 Perimeter, area and volume 2: circles, cylinders, cones and spheres",
     "subskills": [
-     "Area calculations (Area of a triangle, parallelogram, trapezium, circle, composite shapes)"
+     "Area of a triangle, parallelogram, trapezium, circle, composite shapes",
+     "Calculate the area of a sector of a circle given its angle and radius."
     ]
    },
    {

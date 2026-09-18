@@ -31,11 +31,10 @@
 
   var CALENDAR = []; // [{label, monday: Date}]
   TERM_BLOCKS.forEach(function (block) {
-    var label = block[0];
     var m = mondayOf(new Date(block[1] + 'T00:00:00'));
     var endM = mondayOf(new Date(block[2] + 'T00:00:00'));
     while (m <= endM) {
-      CALENDAR.push({ label: label, monday: new Date(m) });
+      CALENDAR.push({ label: block[0], monday: new Date(m) });
       m = new Date(m);
       m.setDate(m.getDate() + 7);
     }
@@ -98,6 +97,7 @@
     tabsEl.innerHTML = '';
     GROUPS.forEach(function (g, i) {
       var btn = document.createElement('button');
+      btn.type = 'button';
       btn.className = 'week-tab' + (i === state.yearIdx ? ' active' : '');
       btn.textContent = g.year;
       btn.addEventListener('click', function () {
@@ -115,6 +115,7 @@
       pillsEl.style.display = 'flex';
       group.sets.forEach(function (s) {
         var btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'week-pill' + (s.key === state.setKey ? ' active' : '');
         btn.textContent = s.label;
         btn.addEventListener('click', function () {
@@ -129,7 +130,7 @@
     }
   }
 
-  function slotHTML(entry, kind) {
+  function slotHTML(entry) {
     if (!entry) {
       return '<span class="wheel-topic-text">—</span>';
     }
@@ -179,20 +180,21 @@
       var role = el.getAttribute('data-role');
       var entry = entries[role];
       if (entry) {
-        el.style.cursor = 'pointer';
+        el.classList.add('clickable');
         el.addEventListener('click', function () {
-          openPopup((data.label || '') + (role === 'current' ? ' — this week' : role === 'prev' ? ' — last week' : ' — next week') + ': ' + entry.topic, entry.subskills);
+          var roleLabel = role === 'current' ? ' — this week' : role === 'prev' ? ' — last week' : ' — next week';
+          openPopup((data.label || '') + roleLabel + ': ' + entry.topic, entry.subskills);
         });
       }
     });
 
-    if (rangeEl && CALENDAR[idx]) {
+    if (rangeEl) {
       rangeEl.textContent = data ? data.label : '';
     }
   }
 
   function init() {
-    fetch('data/topics.json')
+    fetch('data/topics.json?v=' + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (json) {
         topicsData = json;

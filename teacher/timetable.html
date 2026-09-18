@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Timetable — Teacher Section — Winchmore Maths</title>
+  <link rel="stylesheet" href="../style.css?v=20260918d"/>
+  <link rel="stylesheet" href="tracker.css"/>
+  <script src="auth.js"></script>
+  <script>window.WM_AUTH.guard("login.html");</script>
+  <style>
+    .tt-status {
+      display: flex; flex-direction: column; align-items: center; gap: .25rem;
+      background: #12233A; color: #fff; border-radius: 14px;
+      padding: 1.1rem 1.4rem; text-align: center; margin-bottom: 1.4rem;
+    }
+    .tt-status strong { font-size: 1.15rem; font-family: 'Space Grotesk', sans-serif; }
+    .tt-live {
+      font-size: .7rem; text-transform: uppercase; letter-spacing: .12em;
+      font-weight: 700; color: #26de81;
+    }
+    .tt-time { font-size: .82rem; color: rgba(255,255,255,.7); }
+    .tt-status-off { background: #5b6b7c; }
+    .tt-status-off strong { font-size: 1.05rem; }
+
+    .tt-controls {
+      display: flex; flex-wrap: wrap; gap: .8rem; align-items: center;
+      justify-content: center; margin-bottom: 1.2rem;
+    }
+    .tt-controls select, .tt-controls button {
+      font-family: inherit; font-size: .88rem; font-weight: 600;
+      padding: .45rem .9rem; border-radius: 50px;
+      border: 1.5px solid #9fb0c3; background: #fff; color: #33465c; cursor: pointer;
+    }
+    #tt-now { background: #26de81; border-color: #26de81; color: #0b3323; font-weight: 700; }
+
+    #tt-slots { display: flex; flex-wrap: wrap; gap: .4rem; justify-content: center; margin-bottom: 1.6rem; }
+    .tt-slot-btn {
+      font-family: inherit; cursor: pointer; display: flex; flex-direction: column;
+      align-items: center; line-height: 1.2; padding: .4rem .75rem;
+      border-radius: 10px; border: 1.5px solid #dde3ea; background: #fff; color: #33465c;
+    }
+    .tt-slot-btn small { font-size: .68rem; color: #8ea0b3; }
+    .tt-slot-btn.active { background: #12233A; border-color: #12233A; color: #fff; }
+    .tt-slot-btn.active small { color: rgba(255,255,255,.7); }
+    .tt-slot-btn.tt-slot-break { background: #f3f6f9; font-style: italic; }
+    .tt-slot-btn.tt-slot-break.active { background: #5b6b7c; border-color: #5b6b7c; color: #fff; font-style: normal; }
+
+    /* ── the corridor ── */
+    .corridor { margin-bottom: 2rem; }
+    .corridor-side { display: grid; gap: .6rem; }
+    .corridor-top { grid-template-columns: repeat(4, 1fr); }
+    .corridor-bottom { grid-template-columns: repeat(5, 1fr); }
+    .corridor-hall {
+      margin: .7rem 0; height: 40px; border-radius: 8px;
+      background: repeating-linear-gradient(90deg, #e8edf3 0 28px, #dde3ea 28px 56px);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .corridor-hall span {
+      font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
+      font-weight: 700; color: #8ea0b3;
+    }
+
+    .room {
+      border-radius: 12px; padding: .7rem .6rem; text-align: center;
+      border: 1.5px solid #dde3ea; background: #fff; min-height: 96px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem;
+    }
+    .room-no {
+      font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+      font-size: 1.15rem; color: #12233A;
+    }
+    .room-free { background: #f7f9fb; border-style: dashed; }
+    .room-empty { font-size: .78rem; color: #b3c0cd; font-style: italic; }
+    .room-class { font-size: .88rem; font-weight: 700; color: #12233A; }
+    .room-teacher { font-size: .72rem; color: #5b6b7c; }
+
+    /* year-group colours — KS5 stands out most */
+    .room-busy { border-width: 2px; }
+    .room-ks5  { background: #efeaff; border-color: #7C83FD; }
+    .room-ks5 .room-no { color: #4b45b8; }
+    .room-y7   { background: #eafaf2; border-color: #26de81; }
+    .room-y8   { background: #e7f7f6; border-color: #4ECDC4; }
+    .room-y9   { background: #e8f4fb; border-color: #45B7D1; }
+    .room-y10  { background: #fff5e3; border-color: #F7B731; }
+    .room-y11  { background: #fdeee9; border-color: #e0563f; }
+
+    .tt-elsewhere-title {
+      font-family: 'Space Grotesk', sans-serif; font-size: .95rem;
+      color: #12233A; margin: 0 0 .8rem;
+    }
+    .tt-elsewhere { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px,1fr)); gap: .6rem; }
+    .tt-break-msg {
+      text-align: center; padding: 3rem 1rem; color: #5b6b7c;
+      background: #f7f9fb; border-radius: 14px; font-size: 1rem;
+    }
+
+    .tt-key { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-top: 1.6rem; }
+    .tt-key span { display: flex; align-items: center; gap: .35rem; font-size: .76rem; color: #5b6b7c; }
+    .tt-key i { width: 14px; height: 14px; border-radius: 4px; border: 2px solid; display: inline-block; }
+
+    @media (max-width: 720px) {
+      .corridor-top, .corridor-bottom { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-brand" aria-label="Winchmore Maths home">
+    <img src="../winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
+    <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="index.html">Teacher Section</a></li>
+    <li><a href="timetable.html" class="active">Faculty Timetable</a></li>
+    <li><a href="#" id="logout-link">Log out</a></li>
+  </ul>
+</nav>
+
+<div class="tagline-strip">Learning to Realise Potential</div>
+<header class="page-hero" style="border-top:5px solid #12233A;">
+  <p class="page-hero-eyebrow">Staff only &middot; Live view</p>
+  <h1>Faculty <em>Timetable</em></h1>
+  <p>Where every maths class is right now. The view follows the clock &mdash; reload at any point in the day and it moves with you.</p>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span>&rsaquo;</span>
+  <a href="index.html">Teacher Section</a> <span>&rsaquo;</span> Faculty Timetable
+</nav>
+
+<section class="section">
+ <div class="container">
+
+  <div class="tt-status" id="tt-status">Loading&hellip;</div>
+
+  <div id="tt-controls">
+    <div class="tt-controls">
+      <button type="button" id="tt-now">&#9679; Now</button>
+      <select id="tt-day" aria-label="Day"></select>
+      <select id="tt-week" aria-label="Week">
+        <option value="1">Week 1</option>
+        <option value="2">Week 2</option>
+      </select>
+    </div>
+    <div id="tt-slots"></div>
+  </div>
+
+  <div id="tt-grid"></div>
+
+  <div class="tt-key">
+    <span><i style="background:#efeaff;border-color:#7C83FD;"></i> Year 12 &amp; 13</span>
+    <span><i style="background:#fdeee9;border-color:#e0563f;"></i> Year 11</span>
+    <span><i style="background:#fff5e3;border-color:#F7B731;"></i> Year 10</span>
+    <span><i style="background:#e8f4fb;border-color:#45B7D1;"></i> Year 9</span>
+    <span><i style="background:#e7f7f6;border-color:#4ECDC4;"></i> Year 8</span>
+    <span><i style="background:#eafaf2;border-color:#26de81;"></i> Year 7</span>
+    <span><i style="background:#f7f9fb;border-color:#dde3ea;"></i> Free</span>
+  </div>
+
+  <div class="callout" style="margin-top:2rem;">
+    &#128736; <strong>Maintenance.</strong> Lesson data lives in
+    <code>teacher/data/timetable.json</code>. Bell times, term dates and the
+    Week&nbsp;1/Week&nbsp;2 anchor date are all at the top of
+    <code>teacher/timetable.js</code> &mdash; if the wrong week is showing,
+    shift <code>WEEK1_MONDAY</code> by seven days.
+  </div>
+
+ </div>
+</section>
+
+<footer>
+  <p>Winchmore School Maths Department &mdash;
+    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
+  <p style="margin-top:.4rem;">Staff section &mdash; not linked from the student site.</p>
+</footer>
+
+<script src="timetable.js?v=20260918d"></script>
+<script>
+  document.getElementById("logout-link").addEventListener("click", function(e){
+    e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
+  });
+</script>
+</body>
+</html>
