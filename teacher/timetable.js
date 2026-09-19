@@ -162,20 +162,27 @@
     var today = new Date(now);
     today.setHours(0, 0, 0, 0);
 
-    var term = termFor(today);
-    var closed = CLOSURES.indexOf(iso(today)) !== -1;
     var dayIdx = now.getDay() - 1;         // 0 = Mon
     var isWeekday = dayIdx >= 0 && dayIdx <= 4;
+
+    // On a weekend the "live" view previews the coming Monday, so the
+    // term check, closures and Week 1/2 must all be worked out for THAT day.
+    var ref = new Date(today);
+    if (!isWeekday) ref.setDate(ref.getDate() + (now.getDay() === 6 ? 2 : 1));
+    var term = termFor(ref);
+    var closed = CLOSURES.indexOf(iso(ref)) !== -1;
 
     // If the user hasn't picked anything, follow the clock
     if (state.live) {
       state.day = isWeekday ? DAYS[dayIdx] : 'Mon';
-      state.week = weekNumber(today);
+      state.week = weekNumber(ref);
       var slots = slotsFor(state.day);
       var mins = now.getHours() * 60 + now.getMinutes();
       state.slotIdx = 0;
-      for (var i = 0; i < slots.length; i++) {
-        if (mins >= minutes(slots[i].start)) state.slotIdx = i;
+      if (isWeekday) {
+        for (var i = 0; i < slots.length; i++) {
+          if (mins >= minutes(slots[i].start)) state.slotIdx = i;
+        }
       }
     }
 
@@ -188,8 +195,9 @@
 
     if (!term || closed) {
       statusEl.className = 'tt-status tt-status-off';
-      statusEl.innerHTML = '<strong>No lessons this week.</strong> ' +
-        (closed ? 'School is closed today.' : 'It\'s the school holidays — enjoy it.');
+      statusEl.innerHTML = '<strong>No lessons ' + (isWeekday ? 'this week' : 'on Monday') + '.</strong> ' +
+        (closed ? 'School is closed ' + (isWeekday ? 'today' : 'on Monday') + '.'
+                : 'It\'s the school holidays — enjoy it.');
       gridEl.style.display = 'none';
       document.getElementById('tt-controls').style.display = 'none';
       return;
@@ -204,7 +212,8 @@
       else if (mins2 >= minutes(slots[slots.length - 1].end)) liveNote = 'After school';
       else liveNote = 'Happening now';
     } else if (state.live) {
-      liveNote = 'Weekend — showing Monday';
+      liveNote = 'Weekend — no lessons today · preview of Monday ' +
+        ref.getDate() + ' ' + ref.toLocaleDateString('en-GB', { month: 'short' });
     }
 
     statusEl.className = 'tt-status';
