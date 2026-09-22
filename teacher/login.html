@@ -17,7 +17,13 @@
   <ul class="nav-links" role="list">
     <li><a href="../index.html">Home</a></li>
   </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-menu" id="mobile-nav">
+  <a href="../index.html">Home</a>
+</div>
 
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #12233A;">
@@ -46,6 +52,7 @@
 </footer>
 
 <script src="auth.js"></script>
+  <script src="../nav.js"></script>
 <script>
   (function(){
     // if already logged in, go straight to the hub

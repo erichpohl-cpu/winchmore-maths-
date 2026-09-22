@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../style.css"/>
   <link rel="stylesheet" href="tracker.css"/>
   <script src="auth.js"></script>
+  <script src="../nav.js"></script>
   <script>window.WM_AUTH.guard("login.html");</script>
 </head>
 <body>
@@ -22,7 +23,16 @@
     <li><a href="trackers.html" class="active">Trackers</a></li>
     <li><a href="#" id="logout-link">Log out</a></li>
   </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-menu" id="mobile-nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">Teacher Tools</a>
+  <a href="trackers.html">Trackers</a>
+  <a href="#" class="logout-link-m">Log out</a>
+</div>
 
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #26de81;">
@@ -128,6 +138,11 @@
 <script>
   document.getElementById("logout-link").addEventListener("click", function(e){
     e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
+  });
+</script>
+<script>
+  Array.prototype.forEach.call(document.querySelectorAll(".logout-link-m"), function(a){
+    a.addEventListener("click", function(e){ e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html"); });
   });
 </script>
 </body>
