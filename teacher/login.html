@@ -36,9 +36,10 @@
  <div class="container" style="max-width:440px;">
   <div class="login-box-card">
     <h2 style="font-family:inherit;">Sign in</h2>
-    <p>Use your <b>@winchmore.enfield.sch.uk</b> Google account. The planner has your lessons, the schemes of work and a <b>Teacher links</b> tab with the trackers, cover work builder and other tools.</p>
+    <p>Use your <b>@winchmore.enfield.sch.uk</b> Google account. The planner has your lessons, the schemes of work and a <b>Teacher links</b> tab with the trackers, faculty timetable, cover work builder and other tools.</p>
     <a id="planner-btn" class="btn-primary" href="#" style="width:100%;margin-top:1rem;justify-content:center;">Open the Lesson Planner</a>
     <p class="tool-status" id="redirect-msg" role="status" aria-live="polite">Opening the planner&hellip;</p>
+    <p style="margin-top:1rem;font-size:.9rem;"><a href="index.html" id="tools-link">Go to the Teacher Tools page instead</a> (faculty timetable, trackers and other tools).</p>
   </div>
  </div>
 </section>
@@ -54,9 +55,14 @@
   (function () {
     // The planner link is written here too, so an old cached auth.js can never break the redirect.
     var url = (window.WM_AUTH && window.WM_AUTH.plannerUrl) || "https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec", btn = document.getElementById("planner-btn");
+    // Tell the planner where this website lives, so its Teacher links tab can open the trackers and timetable.
+    var site = location.href.split("?")[0].replace(/teacher\/[^\/]*$/, "");
+    if (/^https:/.test(site)) url += (url.indexOf("?") < 0 ? "?" : "&") + "site=" + encodeURIComponent(site);
     btn.href = url;
     // straight to the planner (Google asks for the school login if needed)
-    setTimeout(function () { location.replace(url); }, 400);
+    var stay = false;
+    document.getElementById("tools-link").addEventListener("click", function () { stay = true; });
+    setTimeout(function () { if (!stay) location.replace(url); }, 1500);
   })();
 </script>
 </body>
