@@ -48,11 +48,12 @@
     <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
 </footer>
 
-<script src="auth.js"></script>
+<script src="auth.js?v=20261005"></script>
 <script src="../nav.js"></script>
 <script>
   (function () {
-    var url = window.WM_AUTH.plannerUrl, btn = document.getElementById("planner-btn");
+    // The planner link is written here too, so an old cached auth.js can never break the redirect.
+    var url = (window.WM_AUTH && window.WM_AUTH.plannerUrl) || "https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec", btn = document.getElementById("planner-btn");
     btn.href = url;
     // straight to the planner (Google asks for the school login if needed)
     setTimeout(function () { location.replace(url); }, 400);
