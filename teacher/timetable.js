@@ -128,6 +128,17 @@
     return map;
   }
 
+  function freeStaff(week, day, periodKey) {
+    // Maths staff with no lesson at all this period. Occupancy counts
+    // every subject, so someone teaching a computing class is not "free";
+    // staff who never teach maths are left out entirely.
+    if (!data || !/^[1-5]$/.test(periodKey)) return [];
+    var all = data.maths_staff || [];
+    var wk = data.weeks[String(week)] || {};
+    var busy = (wk[day] && wk[day].busy && wk[day].busy[periodKey]) || [];
+    return all.filter(function (code) { return busy.indexOf(code) === -1; });
+  }
+
   function teacherName(code) {
     return (data.teachers && data.teachers[code]) || code;
   }
@@ -269,16 +280,34 @@
     var others = Object.keys(map).filter(function (r) { return used[r]; }).sort();
     var othersHTML = others.map(function (r) { return roomHTML(r, map[r]); }).join('');
 
+    var free = freeStaff(week, day, slot.key);
+    var freeHTML =
+      '<div class="tt-free">' +
+        '<h3>Free this period</h3>' +
+        (free.length
+          ? '<ul>' + free.map(function (code) {
+              return '<li>' + esc(teacherName(code)) + '</li>';
+            }).join('') + '</ul>'
+          : '<p class="tt-free-none">Every maths teacher is teaching.</p>') +
+        '<p class="tt-free-note">Maths staff only. Anyone taking a computing ' +
+        'or media lesson counts as teaching.</p>' +
+      '</div>';
+
     gridEl.innerHTML =
       '<div class="corridor">' +
         '<div class="corridor-side corridor-top">' + topHTML + '</div>' +
         '<div class="corridor-hall"><span>Maths corridor</span></div>' +
         '<div class="corridor-side corridor-bottom">' + botHTML + '</div>' +
       '</div>' +
-      (othersHTML
-        ? '<h3 class="tt-elsewhere-title">Maths lessons elsewhere in school</h3>' +
-          '<div class="tt-elsewhere">' + othersHTML + '</div>'
-        : '');
+      '<div class="tt-below">' +
+        freeHTML +
+        (othersHTML
+          ? '<div class="tt-elsewhere-wrap">' +
+              '<h3 class="tt-elsewhere-title">Maths lessons elsewhere in school</h3>' +
+              '<div class="tt-elsewhere">' + othersHTML + '</div>' +
+            '</div>'
+          : '<div></div>') +
+      '</div>';
   }
 
   // ---------- init ----------

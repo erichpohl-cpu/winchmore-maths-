@@ -86,6 +86,28 @@
     .room-y10  { background: #fff5e3; border-color: #F7B731; }
     .room-y11  { background: #fdeee9; border-color: #e0563f; }
 
+    /* bottom row: free staff on the left, other rooms on the right */
+    .tt-below {
+      display: grid; grid-template-columns: minmax(220px, 1fr) 2fr;
+      gap: 1.4rem; align-items: start;
+    }
+    .tt-free {
+      background: #f7f9fb; border: 1.5px solid #dde3ea;
+      border-left: 4px solid #26de81; border-radius: 12px; padding: 1rem 1.1rem;
+    }
+    .tt-free h3 {
+      font-family: 'Space Grotesk', sans-serif; font-size: .95rem;
+      color: #12233A; margin: 0 0 .6rem;
+    }
+    .tt-free ul { list-style: none; padding: 0; margin: 0; }
+    .tt-free li {
+      font-size: .86rem; color: #33465c; padding: .3rem 0;
+      border-bottom: 1px solid #e8edf3;
+    }
+    .tt-free li:last-child { border-bottom: none; }
+    .tt-free-none { font-size: .85rem; color: #5b6b7c; font-style: italic; margin: 0; }
+    .tt-free-note { font-size: .72rem; color: #8ea0b3; margin: .7rem 0 0; line-height: 1.4; }
+
     .tt-elsewhere-title {
       font-family: 'Space Grotesk', sans-serif; font-size: .95rem;
       color: #12233A; margin: 0 0 .8rem;
@@ -102,6 +124,7 @@
 
     @media (max-width: 720px) {
       .corridor-top, .corridor-bottom { grid-template-columns: repeat(2, 1fr); }
+      .tt-below { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -188,7 +211,7 @@
   <p style="margin-top:.4rem;">Staff section &mdash; not linked from the student site.</p>
 </footer>
 
-<script src="timetable.js?v=20260919a"></script>
+<script src="timetable.js?v=20261007a"></script>
 <script>
   document.getElementById("logout-link").addEventListener("click", function(e){
     e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
