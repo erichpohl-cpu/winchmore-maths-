@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teacher Section — Staff Tools — Winchmore Maths</title>
+  <title>Maths Staff Interface — Winchmore Maths</title>
   <link rel="stylesheet" href="../style.css"/>
   <link rel="stylesheet" href="tracker.css"/>
-  <script src="auth.js?v=20261005"></script>
-  
+  <script src="auth.js"></script>
+  <script>window.WM_AUTH.guard("login.html");</script>
   <script src="../nav.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
   </a>
   <ul class="nav-links" role="list">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="index.html" class="active">Teacher Tools</a></li>
+    <li><a href="index.html" class="active">Staff Tools</a></li>
     <li><a href="trackers.html">Trackers</a></li>
     <li><a href="#" id="logout-link">Log out</a></li>
   </ul>
@@ -29,7 +29,7 @@
 </nav>
 <div class="mobile-menu" id="mobile-nav">
   <a href="../index.html">Home</a>
-  <a href="index.html">Teacher Tools</a>
+  <a href="index.html">Staff Tools</a>
   <a href="trackers.html">Trackers</a>
   <a href="#" class="logout-link-m">Log out</a>
 </div>
@@ -37,11 +37,11 @@
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #12233A;">
   <p class="page-hero-eyebrow">Staff only</p>
-  <h1>Teacher <em>Tools</em></h1>
-  <p>Everyday tools for the maths faculty. Your lessons and all of these links are also in the <a href="login.html" style="color:inherit;text-decoration:underline;">DNEP Lesson Planner</a> (Teacher links tab).</p>
+  <h1>Maths Staff <em>Interface</em></h1>
+  <p>Everyday tools for the maths faculty. The A level PLC trackers are on the <a href="trackers.html" style="color:inherit;text-decoration:underline;">Trackers</a> tab.</p>
 </header>
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="../index.html">Home</a> <span>&rsaquo;</span> Teacher Section
+  <a href="../index.html">Home</a> <span>&rsaquo;</span> Maths Staff Interface
 </nav>
 
 <section class="section">
@@ -53,11 +53,6 @@
   </div>
 
   <div class="info-grid">
-    <a href="login.html" class="info-card" style="border-top:4px solid #F5AF19;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128197;</div>
-      <h3>DNEP Lesson Planner</h3>
-      <p>Your week, every lesson with its resources, classes, students and PGCE timetables.</p>
-    </a>
     <a href="timetable.html" class="info-card" style="border-top:4px solid #7C83FD;text-decoration:none;color:inherit;">
       <div class="info-icon">&#128506;</div>
       <h3>Faculty Timetable</h3>
@@ -78,7 +73,11 @@
       <h3>Laptop Trolley Booking</h3>
       <p>Book the laptop trolley for a period, up to two weeks ahead.</p>
     </a>
-    
+    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
+      <div class="info-icon">&#128197;</div>
+      <h3>Teacher Planner Interactive</h3>
+      <p>Plan your lessons week by week in the interactive planner.</p>
+    </a>
     <a href="https://www.mathslinks.co.uk/resource-organiser" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #45B7D1;text-decoration:none;color:inherit;">
       <div class="info-icon">&#128279;</div>
       <h3>Maths Links</h3>

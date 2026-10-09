@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teacher Login — Winchmore Maths</title>
+  <title>Staff Login — Maths Staff Interface — Winchmore Maths</title>
   <link rel="stylesheet" href="../style.css"/>
   <link rel="stylesheet" href="tracker.css"/>
 </head>
@@ -28,18 +28,20 @@
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #12233A;">
   <p class="page-hero-eyebrow">Staff only</p>
-  <h1>Teacher <em>Section</em></h1>
-  <p>The teacher tools are now in the DNEP Lesson Planner. Sign in with your school Google account &mdash; it opens your own timetable.</p>
+  <h1>Maths Staff <em>Interface</em></h1>
+  <p>Sign in to reach the staff tools and A level trackers. This area is for maths staff &mdash; students don't have access to it.</p>
 </header>
 
 <section class="section">
  <div class="container" style="max-width:440px;">
   <div class="login-box-card">
     <h2 style="font-family:inherit;">Sign in</h2>
-    <p>Use your <b>@winchmore.enfield.sch.uk</b> Google account. The planner has your lessons, the schemes of work and a <b>Teacher links</b> tab with the trackers, faculty timetable, cover work builder and other tools.</p>
-    <a id="planner-btn" class="btn-primary" href="#" style="width:100%;margin-top:1rem;justify-content:center;">Open the Lesson Planner</a>
-    <p class="tool-status" id="redirect-msg" role="status" aria-live="polite">Opening the planner&hellip;</p>
-    <p style="margin-top:1rem;font-size:.9rem;"><a href="index.html" id="tools-link">Go to the Teacher Tools page instead</a> (faculty timetable, trackers and other tools).</p>
+    <label for="u">Username</label>
+    <input type="text" id="u" autocomplete="username" autocapitalize="off" spellcheck="false"/>
+    <label for="p">Password</label>
+    <input type="password" id="p" autocomplete="current-password"/>
+    <button id="login-btn" class="btn-primary" style="width:100%;margin-top:1rem;justify-content:center;">Sign in</button>
+    <p id="login-err" class="tool-status" role="status" aria-live="polite"></p>
   </div>
  </div>
 </section>
@@ -49,20 +51,26 @@
     <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
 </footer>
 
-<script src="auth.js?v=20261005"></script>
-<script src="../nav.js"></script>
+<script src="auth.js"></script>
+  <script src="../nav.js"></script>
 <script>
-  (function () {
-    // The planner link is written here too, so an old cached auth.js can never break the redirect.
-    var url = (window.WM_AUTH && window.WM_AUTH.plannerUrl) || "https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec", btn = document.getElementById("planner-btn");
-    // Tell the planner where this website lives, so its Teacher links tab can open the trackers and timetable.
-    var site = location.href.split("?")[0].replace(/teacher\/[^\/]*$/, "");
-    if (/^https:/.test(site)) url += (url.indexOf("?") < 0 ? "?" : "&") + "site=" + encodeURIComponent(site);
-    btn.href = url;
-    // straight to the planner (Google asks for the school login if needed)
-    var stay = false;
-    document.getElementById("tools-link").addEventListener("click", function () { stay = true; });
-    setTimeout(function () { if (!stay) location.replace(url); }, 1500);
+  (function(){
+    // if already logged in, go straight to the hub
+    if (window.WM_AUTH.isLoggedIn()) { location.replace("index.html"); return; }
+    var params = new URLSearchParams(location.search);
+    var next = params.get("next") || "index.html";
+    // basic safety: only allow local targets
+    if (/^https?:|\/\//i.test(next)) next = "index.html";
+    function attempt(){
+      var u=document.getElementById("u").value.trim();
+      var p=document.getElementById("p").value;
+      var err=document.getElementById("login-err");
+      if (window.WM_AUTH.login(u,p)) { location.replace(next); }
+      else { err.textContent="Incorrect username or password."; err.className="tool-status err"; }
+    }
+    document.getElementById("login-btn").addEventListener("click", attempt);
+    document.getElementById("p").addEventListener("keydown", function(e){ if(e.key==="Enter") attempt(); });
+    document.getElementById("u").addEventListener("keydown", function(e){ if(e.key==="Enter") document.getElementById("p").focus(); });
   })();
 </script>
 </body>
