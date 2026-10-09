@@ -329,7 +329,94 @@
       "room": "11",
       "year": 11
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "PCU",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "2": [
+      "APA",
+      "BAS",
+      "BAT",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "PCU",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SDI",
+      "SSA",
+      "UBU"
+     ],
+     "4": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ]
+    }
    },
    "Mon": {
     "1": [
@@ -647,7 +734,90 @@
       "room": "11",
       "year": 11
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "APA",
+      "BAS",
+      "EPO",
+      "JLU",
+      "LHM",
+      "SCO",
+      "SDI",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU"
+     ],
+     "3": [
+      "AAK",
+      "APA",
+      "BAS",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "4": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAT",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ]
+    }
    },
    "Thu": {
     "1": [
@@ -959,7 +1129,88 @@
       "room": "11",
       "year": 11
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "CBE",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "CBE",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "CBE",
+      "EBY",
+      "EPO",
+      "JLU",
+      "SAL",
+      "SDI",
+      "UBU"
+     ],
+     "4": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "CBE",
+      "EBY",
+      "EPO",
+      "JLU",
+      "SAL",
+      "SCO",
+      "SDI"
+     ],
+     "5": [
+      "BAS",
+      "BAT",
+      "CBE",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "ZNG"
+     ]
+    }
    },
    "Tue": {
     "1": [
@@ -1265,7 +1516,87 @@
       "room": "11",
       "year": 10
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "APA",
+      "BAT",
+      "BJO",
+      "DMI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "APA",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SCO",
+      "SSA",
+      "UBU"
+     ],
+     "3": [
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "JLU",
+      "PCU",
+      "SAL",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "4": [
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "JLU",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "DMI",
+      "DNI",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ]
+    }
    },
    "Wed": {
     "1": [
@@ -1571,7 +1902,86 @@
       "room": "11",
       "year": 8
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "CBE",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "CBE",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "3": [
+      "BAS",
+      "BJO",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "4": [
+      "BJO",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "UBU",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ]
+    }
    }
   },
   "2": {
@@ -1909,7 +2319,89 @@
       "room": "11",
       "year": 11
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "BAT",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SSA",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "BAS",
+      "BJO",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "SAL",
+      "SCO",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SDI",
+      "SSA",
+      "UBU"
+     ],
+     "4": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SSA",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "RAB",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ]
+    }
    },
    "Mon": {
     "1": [
@@ -2191,7 +2683,79 @@
       "room": "11",
       "year": 8
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "BAT",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "APA",
+      "BAT",
+      "DMI",
+      "EPO",
+      "JLU",
+      "PCU",
+      "RAB",
+      "SCO",
+      "SDI",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "BAS",
+      "BJO",
+      "DMI",
+      "EBY",
+      "JLU",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "ZNG"
+     ],
+     "4": [
+      "AAK",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "DMI",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ]
+    }
    },
    "Thu": {
     "1": [
@@ -2485,7 +3049,89 @@
       "room": "11",
       "year": 11
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "BAS",
+      "BJO",
+      "CBE",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SCO",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "2": [
+      "BAS",
+      "BAT",
+      "BJO",
+      "CBE",
+      "DMI",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "APA",
+      "BAT",
+      "BJO",
+      "CBE",
+      "EBY",
+      "JLU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU"
+     ],
+     "4": [
+      "AAK",
+      "APA",
+      "BAT",
+      "BJO",
+      "CBE",
+      "DMI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "UBU"
+     ],
+     "5": [
+      "APA",
+      "BAS",
+      "BJO",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ]
+    }
    },
    "Tue": {
     "1": [
@@ -2833,7 +3479,96 @@
       "room": "11",
       "year": 12
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "2": [
+      "AAK",
+      "APA",
+      "BAS",
+      "BAT",
+      "DMI",
+      "DNI",
+      "EBY",
+      "JLU",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ],
+     "3": [
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EPO",
+      "JLU",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "4": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DMI",
+      "DNI",
+      "EPO",
+      "LHM",
+      "PCU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "DNI",
+      "EBY",
+      "EPO",
+      "JLU",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SDI",
+      "SSA",
+      "ZNG"
+     ]
+    }
    },
    "Wed": {
     "1": [
@@ -3091,7 +3826,78 @@
       "room": "11",
       "year": 12
      }
-    ]
+    ],
+    "busy": {
+     "1": [
+      "AAK",
+      "APA",
+      "BJO",
+      "CBE",
+      "LHM",
+      "PCU",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA"
+     ],
+     "2": [
+      "AAK",
+      "APA",
+      "BJO",
+      "DNI",
+      "EBY",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SSA",
+      "ZNG"
+     ],
+     "3": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "EBY",
+      "JLU",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "4": [
+      "AAK",
+      "BAS",
+      "BJO",
+      "DNI",
+      "EPO",
+      "JLU",
+      "LHM",
+      "SAL",
+      "SCO",
+      "SDI",
+      "UBU",
+      "ZNG"
+     ],
+     "5": [
+      "AAK",
+      "BAS",
+      "BAT",
+      "BJO",
+      "DNI",
+      "EBY",
+      "EPO",
+      "LHM",
+      "RAB",
+      "SAL",
+      "SCO",
+      "SDI",
+      "SSA",
+      "UBU",
+      "ZNG"
+     ]
+    }
    }
   }
  },
@@ -3116,5 +3922,21 @@
   "BAS": "Miss Bej Askin",
   "APA": "APA",
   "SCO": "SCO"
- }
+ },
+ "maths_staff": [
+  "AAK",
+  "BAT",
+  "CBE",
+  "DMI",
+  "DNI",
+  "EBY",
+  "EPO",
+  "JLU",
+  "LHM",
+  "RAB",
+  "SAL",
+  "SDI",
+  "SSA",
+  "ZNG"
+ ]
 }
