@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maths Staff Interface — Winchmore Maths</title>
+  <meta name="robots" content="noindex, nofollow"/>
   <link rel="stylesheet" href="../style.css?v=20260918d"/>
   <link rel="stylesheet" href="tracker.css"/>
   <script src="auth.js"></script>
@@ -11,28 +12,25 @@
   <script src="../nav.js"></script>
   <style>
     .wm-launch {
-      display: flex; flex-direction: column; align-items: center; gap: .9rem;
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
       background: #12233A; color: #fff; border-radius: 16px;
-      padding: 2rem 1.4rem; text-align: center; margin-bottom: 2rem;
+      padding: 2.6rem 1.4rem; text-align: center;
     }
     .wm-launch h2 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem;
-      margin: 0; color: #fff;
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; margin: 0; color: #fff;
     }
-    .wm-launch p { margin: 0; font-size: .9rem; color: rgba(255,255,255,.78); max-width: 46ch; }
+    .wm-launch p { margin: 0; font-size: .9rem; color: rgba(255,255,255,.78); max-width: 44ch; }
     .wm-spinner {
       width: 34px; height: 34px; border-radius: 50%;
       border: 3px solid rgba(255,255,255,.25); border-top-color: #26de81;
       animation: wm-spin .8s linear infinite;
     }
     @keyframes wm-spin { to { transform: rotate(360deg); } }
-    .wm-launch-btns { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-top: .3rem; }
-    .wm-launch-btns a, .wm-launch-btns button {
-      font-family: inherit; font-size: .85rem; font-weight: 700; cursor: pointer;
-      padding: .5rem 1.1rem; border-radius: 50px; text-decoration: none;
-      border: 1.5px solid rgba(255,255,255,.45); background: transparent; color: #fff;
+    .wm-launch a.wm-go {
+      font-family: inherit; font-size: .88rem; font-weight: 700; text-decoration: none;
+      padding: .55rem 1.3rem; border-radius: 50px;
+      background: #26de81; border: 1.5px solid #26de81; color: #0b3323;
     }
-    .wm-launch-btns a.wm-go { background: #26de81; border-color: #26de81; color: #0b3323; }
     .wm-launch-done { background: #5b6b7c; }
     .wm-launch-done .wm-spinner { display: none; }
   </style>
@@ -46,7 +44,7 @@
   </a>
   <ul class="nav-links" role="list">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="tools.html">Staff Tools</a></li>
+    <li><a href="index.html" class="active">Planner</a></li>
     <li><a href="trackers.html">Trackers</a></li>
     <li><a href="timetable.html">Faculty Timetable</a></li>
     <li><a href="#" id="logout-link">Log out</a></li>
@@ -57,7 +55,7 @@
 </nav>
 <div class="mobile-menu" id="mobile-nav">
   <a href="../index.html">Home</a>
-  <a href="tools.html">Staff Tools</a>
+  <a href="index.html">Planner</a>
   <a href="trackers.html">Trackers</a>
   <a href="timetable.html">Faculty Timetable</a>
   <a href="#" class="logout-link-m">Log out</a>
@@ -67,68 +65,16 @@
 <header class="page-hero" style="border-top:5px solid #12233A;">
   <p class="page-hero-eyebrow">Staff only</p>
   <h1>Maths Staff <em>Interface</em></h1>
-  <p>Signing you straight into the interactive planner. Every other staff tool is below.</p>
+  <p>Signing you into the interactive planner. Every staff tool lives inside it.</p>
 </header>
 
 <section class="section">
  <div class="container">
-
   <div class="wm-launch" id="wm-launch">
     <div class="wm-spinner" aria-hidden="true"></div>
     <h2 id="wm-launch-title">Opening the Teacher Planner&hellip;</h2>
     <p id="wm-launch-msg">If it doesn&rsquo;t open by itself, use the button below.</p>
-    <div class="wm-launch-btns">
-      <a class="wm-go" href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" id="wm-planner-link">Open the planner</a>
-      <button type="button" id="wm-stay">Stay on this page</button>
-    </div>
-  </div>
-
-  <div class="section-header">
-    <p class="section-eyebrow">Staff tools</p>
-    <h2>Everything else</h2>
-  </div>
-
-<div class="info-grid">
-    <a href="timetable.html" class="info-card" style="border-top:4px solid #7C83FD;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128506;</div>
-      <h3>Faculty Timetable</h3>
-      <p>Live corridor view &mdash; which class is in which room right now.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycby8yBpQETF4vDRPHvhKy-0plVYlMy7fkRSUHn25IdokG6JfNBHNG40R859KuNq0ooz_Rg/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #e0563f;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128203;</div>
-      <h3>Cover Work Builder</h3>
-      <p>Pick your dates and build the cover sheet for the lessons you&rsquo;ll miss.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbyuBBtmJ_BhpsSLZ2oZJnlxLStW9SLMCummmZcm9nk1VoOBEPdjb3j9xfQjml9Ylh8n/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #F7B731;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128179;</div>
-      <h3>Video Pay Manager</h3>
-      <p>Opens the video pay Google tool in a new tab.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbwG182d97d1TYr_AYCyFJ3-34ESKg-Rz_Rw86OO_GaKA1CSSawbdifZ1GKKF-qU4tp_/exec" target="_blank" rel="noopener noreferrer" class="info-card" id="trolley-card" style="border-top:4px solid #12233A;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128187;</div>
-      <h3>Laptop Trolley Booking</h3>
-      <p>Book the laptop trolley for a period, up to two weeks ahead.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128197;</div>
-      <h3>Teacher Planner Interactive</h3>
-      <p>Plan your lessons week by week in the interactive planner.</p>
-    </a>
-    <a href="https://www.mathslinks.co.uk/resource-organiser" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #45B7D1;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128279;</div>
-      <h3>Maths Links</h3>
-      <p>Resource organiser &mdash; teaching resources sorted by topic.</p>
-    </a>
-    <a href="https://www.yesterdaysmathsexam.com/" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #4ECDC4;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128221;</div>
-      <h3>Yesterday&rsquo;s Maths Exam</h3>
-      <p>Recent GCSE papers and questions ready to use in class.</p>
-    </a>
-    <a href="trackers.html" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128202;</div>
-      <h3>A Level Trackers</h3>
-      <p>PLC trackers for Core Pure, AS and A level Pure &amp; Applied.</p>
-    </a>
+    <a class="wm-go" href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" id="wm-planner-link">Open the planner</a>
   </div>
  </div>
 </section>
@@ -146,48 +92,35 @@
   var box = document.getElementById("wm-launch");
   var title = document.getElementById("wm-launch-title");
   var msg = document.getElementById("wm-launch-msg");
-  var timer = null;
 
-  function settle(text, note) {
-    if (timer) { clearTimeout(timer); timer = null; }
-    box.className = "wm-launch wm-launch-done";
-    title.textContent = text;
-    msg.textContent = note;
-  }
-
-  // Only suppress the auto-open for a minute, so pressing Back from the
-  // planner lands here instead of bouncing straight out again -- but a
-  // deliberate visit later on still opens the planner as normal.
+  // Suppress the auto-open for a minute so pressing Back from the planner
+  // lands here instead of bouncing straight out again. A deliberate visit
+  // later on still opens the planner as normal.
   var last = 0;
   try { last = parseInt(sessionStorage.getItem(KEY), 10) || 0; } catch (e) { last = 0; }
 
   if (Date.now() - last < 60000) {
-    settle("Teacher Planner", "Just opened. Use the button to go back to it.");
+    box.className = "wm-launch wm-launch-done";
+    title.textContent = "Teacher Planner";
+    msg.textContent = "Just opened. Use the button to go back to it.";
     return;
   }
 
-  document.getElementById("wm-stay").addEventListener("click", function () {
-    settle("Teacher Planner", "Staying put. Open it whenever you like.");
-  });
-
-  timer = setTimeout(function () {
+  setTimeout(function () {
     try { sessionStorage.setItem(KEY, String(Date.now())); } catch (e) {}
     window.location.href = PLANNER;
-  }, 1500);
+  }, 1200);
 })();
 </script>
 <script>
-  document.getElementById("logout-link").addEventListener("click", function(e){
+  function wmLogout(e) {
     e.preventDefault();
     try { sessionStorage.removeItem("wm_planner_opened"); } catch (err) {}
     window.WM_AUTH.logout(); location.replace("login.html");
-  });
+  }
+  document.getElementById("logout-link").addEventListener("click", wmLogout);
   Array.prototype.forEach.call(document.querySelectorAll(".logout-link-m"), function(a){
-    a.addEventListener("click", function(e){
-      e.preventDefault();
-      try { sessionStorage.removeItem("wm_planner_opened"); } catch (err) {}
-      window.WM_AUTH.logout(); location.replace("login.html");
-    });
+    a.addEventListener("click", wmLogout);
   });
 </script>
 </body>
