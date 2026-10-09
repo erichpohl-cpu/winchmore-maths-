@@ -3,39 +3,12 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maths Staff Interface — Winchmore Maths</title>
+  <title>Staff Tools — Maths Staff Interface — Winchmore Maths</title>
   <link rel="stylesheet" href="../style.css?v=20260918d"/>
   <link rel="stylesheet" href="tracker.css"/>
   <script src="auth.js"></script>
   <script>window.WM_AUTH.guard("login.html");</script>
   <script src="../nav.js"></script>
-  <style>
-    .wm-launch {
-      display: flex; flex-direction: column; align-items: center; gap: .9rem;
-      background: #12233A; color: #fff; border-radius: 16px;
-      padding: 2rem 1.4rem; text-align: center; margin-bottom: 2rem;
-    }
-    .wm-launch h2 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem;
-      margin: 0; color: #fff;
-    }
-    .wm-launch p { margin: 0; font-size: .9rem; color: rgba(255,255,255,.78); max-width: 46ch; }
-    .wm-spinner {
-      width: 34px; height: 34px; border-radius: 50%;
-      border: 3px solid rgba(255,255,255,.25); border-top-color: #26de81;
-      animation: wm-spin .8s linear infinite;
-    }
-    @keyframes wm-spin { to { transform: rotate(360deg); } }
-    .wm-launch-btns { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-top: .3rem; }
-    .wm-launch-btns a, .wm-launch-btns button {
-      font-family: inherit; font-size: .85rem; font-weight: 700; cursor: pointer;
-      padding: .5rem 1.1rem; border-radius: 50px; text-decoration: none;
-      border: 1.5px solid rgba(255,255,255,.45); background: transparent; color: #fff;
-    }
-    .wm-launch-btns a.wm-go { background: #26de81; border-color: #26de81; color: #0b3323; }
-    .wm-launch-done { background: #5b6b7c; }
-    .wm-launch-done .wm-spinner { display: none; }
-  </style>
 </head>
 <body>
 
@@ -46,7 +19,7 @@
   </a>
   <ul class="nav-links" role="list">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="tools.html">Staff Tools</a></li>
+    <li><a href="tools.html" class="active">Staff Tools</a></li>
     <li><a href="trackers.html">Trackers</a></li>
     <li><a href="timetable.html">Faculty Timetable</a></li>
     <li><a href="#" id="logout-link">Log out</a></li>
@@ -66,29 +39,22 @@
 <div class="tagline-strip">Learning to Realise Potential</div>
 <header class="page-hero" style="border-top:5px solid #12233A;">
   <p class="page-hero-eyebrow">Staff only</p>
-  <h1>Maths Staff <em>Interface</em></h1>
-  <p>Signing you straight into the interactive planner. Every other staff tool is below.</p>
+  <h1>Staff <em>Tools</em></h1>
+  <p>Every tool for the maths faculty in one place. The A level PLC trackers are on the <a href="trackers.html" style="color:inherit;text-decoration:underline;">Trackers</a> tab.</p>
 </header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span>&rsaquo;</span> Maths Staff Interface <span>&rsaquo;</span> Staff Tools
+</nav>
 
 <section class="section">
  <div class="container">
 
-  <div class="wm-launch" id="wm-launch">
-    <div class="wm-spinner" aria-hidden="true"></div>
-    <h2 id="wm-launch-title">Opening the Teacher Planner&hellip;</h2>
-    <p id="wm-launch-msg">If it doesn&rsquo;t open by itself, use the button below.</p>
-    <div class="wm-launch-btns">
-      <a class="wm-go" href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" id="wm-planner-link">Open the planner</a>
-      <button type="button" id="wm-stay">Stay on this page</button>
-    </div>
-  </div>
-
   <div class="section-header">
     <p class="section-eyebrow">Staff tools</p>
-    <h2>Everything else</h2>
+    <h2>Teacher tools</h2>
   </div>
 
-<div class="info-grid">
+  <div class="info-grid">
     <a href="timetable.html" class="info-card" style="border-top:4px solid #7C83FD;text-decoration:none;color:inherit;">
       <div class="info-icon">&#128506;</div>
       <h3>Faculty Timetable</h3>
@@ -140,54 +106,13 @@
 </footer>
 
 <script>
-(function () {
-  var PLANNER = "https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec";
-  var KEY = "wm_planner_opened";
-  var box = document.getElementById("wm-launch");
-  var title = document.getElementById("wm-launch-title");
-  var msg = document.getElementById("wm-launch-msg");
-  var timer = null;
-
-  function settle(text, note) {
-    if (timer) { clearTimeout(timer); timer = null; }
-    box.className = "wm-launch wm-launch-done";
-    title.textContent = text;
-    msg.textContent = note;
-  }
-
-  // Only suppress the auto-open for a minute, so pressing Back from the
-  // planner lands here instead of bouncing straight out again -- but a
-  // deliberate visit later on still opens the planner as normal.
-  var last = 0;
-  try { last = parseInt(sessionStorage.getItem(KEY), 10) || 0; } catch (e) { last = 0; }
-
-  if (Date.now() - last < 60000) {
-    settle("Teacher Planner", "Just opened. Use the button to go back to it.");
-    return;
-  }
-
-  document.getElementById("wm-stay").addEventListener("click", function () {
-    settle("Teacher Planner", "Staying put. Open it whenever you like.");
+  document.getElementById("logout-link").addEventListener("click", function(e){
+    e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
   });
-
-  timer = setTimeout(function () {
-    try { sessionStorage.setItem(KEY, String(Date.now())); } catch (e) {}
-    window.location.href = PLANNER;
-  }, 1500);
-})();
 </script>
 <script>
-  document.getElementById("logout-link").addEventListener("click", function(e){
-    e.preventDefault();
-    try { sessionStorage.removeItem("wm_planner_opened"); } catch (err) {}
-    window.WM_AUTH.logout(); location.replace("login.html");
-  });
   Array.prototype.forEach.call(document.querySelectorAll(".logout-link-m"), function(a){
-    a.addEventListener("click", function(e){
-      e.preventDefault();
-      try { sessionStorage.removeItem("wm_planner_opened"); } catch (err) {}
-      window.WM_AUTH.logout(); location.replace("login.html");
-    });
+    a.addEventListener("click", function(e){ e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html"); });
   });
 </script>
 </body>
