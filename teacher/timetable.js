@@ -128,14 +128,42 @@
     return map;
   }
 
+  var mathsStaffCache = null;
+
+  function mathsStaff() {
+    // Prefer the list saved in the data file. If it isn't there (older
+    // timetable.json), work it out from the maths lessons themselves so
+    // the panel still fills in.
+    if (data && data.maths_staff && data.maths_staff.length) return data.maths_staff;
+    if (mathsStaffCache) return mathsStaffCache;
+    var set = {};
+    Object.keys((data && data.weeks) || {}).forEach(function (wkKey) {
+      var wk = data.weeks[wkKey];
+      Object.keys(wk).forEach(function (day) {
+        Object.keys(wk[day]).forEach(function (k) {
+          if (k === 'busy') return;
+          (wk[day][k] || []).forEach(function (e) { set[e.teacher] = true; });
+        });
+      });
+    });
+    mathsStaffCache = Object.keys(set).sort();
+    return mathsStaffCache;
+  }
+
   function freeStaff(week, day, periodKey) {
     // Maths staff with no lesson at all this period. Occupancy counts
-    // every subject, so someone teaching a computing class is not "free";
-    // staff who never teach maths are left out entirely.
+    // every subject where the data records it, so someone teaching a
+    // computing class is not "free"; staff who never teach maths are
+    // left out entirely.
     if (!data || !/^[1-5]$/.test(periodKey)) return [];
-    var all = data.maths_staff || [];
+    var all = mathsStaff();
     var wk = data.weeks[String(week)] || {};
-    var busy = (wk[day] && wk[day].busy && wk[day].busy[periodKey]) || [];
+    var dayData = wk[day] || {};
+    var busy = (dayData.busy && dayData.busy[periodKey]) || null;
+    if (!busy) {
+      // No occupancy list in the data -- fall back to the maths lessons
+      busy = (dayData[periodKey] || []).map(function (e) { return e.teacher; });
+    }
     return all.filter(function (code) { return busy.indexOf(code) === -1; });
   }
 
