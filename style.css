@@ -319,14 +319,14 @@ footer a:hover { text-decoration: underline; }
   100% { background-position: 0% 50%, 100% 50%, 0 0; }
 }
 
-/* Watermark crest motif (echoes school site tree watermark) */
+/* Watermark crest removed */
 .page-hero::before, .hero::before {
+  display: none;
   content: "";
   position: absolute;
   top: 50%; right: -60px;
   width: 360px; height: 360px;
   transform: translateY(-50%);
-  background: url('winchmore_maths_logo.png') center/contain no-repeat;
   opacity: .05;
   animation: watermarkFloat 12s ease-in-out infinite;
   pointer-events: none;
