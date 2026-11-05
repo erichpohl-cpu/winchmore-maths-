@@ -46,8 +46,8 @@ nav {
   font-family: 'Space Grotesk', sans-serif; font-weight: 700;
   color: var(--navy); font-size: 1.1rem; flex-shrink: 0;
 }
-.nav-brand-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--white); line-height: 1.2; }
-.nav-brand-text span { display: block; font-size: .68rem; font-weight: 400; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; }
+.nav-brand-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--white); line-height: 1.2; white-space: nowrap; }
+.nav-brand-text span { display: block; font-size: .68rem; font-weight: 400; color: var(--teal); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
 .nav-links { display: flex; gap: .2rem; list-style: none; align-items: center; }
 .nav-links > li { position: relative; }
 .nav-links a, .nav-links button {
@@ -278,7 +278,7 @@ footer a:hover { text-decoration: underline; }
 
 /* Real logo image in nav */
 .nav-logo-img {
-  width: 44px; height: 44px; border-radius: 8px;
+  width: 44px; height: 44px; border-radius: 50%;
   object-fit: cover; flex-shrink: 0;
 }
 
@@ -365,8 +365,12 @@ footer a:hover { text-decoration: underline; }
 
 /* ── Logo: ensure always visible, add subtle hover ── */
 .nav-logo-img {
-  width: 46px; height: 46px; border-radius: 10px;
+  /* The PNG is a square of royal blue (#1a387e) with a round crest inside --
+     as a rounded square it reads as a mismatched blue tile on the darker navy
+     bar. Round it fully and ring it so it matches .hero-logo. */
+  width: 44px; height: 44px; border-radius: 50%;
   object-fit: cover; flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,.22);
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
   transition: transform .3s cubic-bezier(.34,1.56,.64,1);
 }
