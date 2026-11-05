@@ -207,22 +207,6 @@ nav {
 .login-box strong { color: var(--teal); }
 .login-box code { background: rgba(255,255,255,.1); padding: .1rem .4rem; border-radius: 4px; font-size: .85rem; }
 
-/* ── GAMES GRID ── */
-.games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; }
-.game-card {
-  background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
-  padding: 1.4rem 1.2rem; text-align: center;
-  text-decoration: none; color: inherit;
-  border: 1px solid rgba(0,0,0,.06);
-  transition: transform .2s, box-shadow .2s;
-  display: flex; flex-direction: column; align-items: center; gap: .6rem;
-}
-.game-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(11,31,58,.16); }
-.game-card .game-icon { font-size: 2.4rem; }
-.game-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: .95rem; font-weight: 700; color: var(--navy); }
-.game-card p  { font-size: .8rem; color: var(--muted); }
-.teacher-rec { font-size: .72rem; font-weight: 700; color: var(--teal-dk); background: var(--slate); padding: .2rem .5rem; border-radius: 50px; }
-
 /* ── TIPS STRIP ── */
 .tips-strip { background: var(--navy); padding: 3rem 2rem; }
 .tips-grid  { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
@@ -276,26 +260,6 @@ footer a:hover { text-decoration: underline; }
   * { animation: none !important; transition: none !important; }
 }
 
-/* Real logo image in nav */
-.nav-logo-img {
-  width: 44px; height: 44px; border-radius: 50%;
-  object-fit: cover; flex-shrink: 0;
-}
-
-/* A Level logo */
-.alevel-logo {
-  width: 80px; height: 80px; object-fit: contain;
-  border-radius: 50%; margin: 0 auto 1rem; display: block;
-}
-
-/* Hero logo overlay */
-.hero-logo {
-  width: 110px; height: 110px; object-fit: contain;
-  border-radius: 50%; margin: 0 auto 1.5rem; display: block;
-  border: 3px solid rgba(255,255,255,.2);
-  position: relative; z-index: 1;
-}
-
 /* ═══════════════════════════════════════════════
    SCHOOL-MATCHED STYLE + BANNER ANIMATIONS (v2)
    Matches winchmore.enfield.sch.uk design language
@@ -317,24 +281,6 @@ footer a:hover { text-decoration: underline; }
   0%   { background-position: 0% 50%, 100% 50%, 0 0; }
   50%  { background-position: 100% 50%, 0% 50%, 0 0; }
   100% { background-position: 0% 50%, 100% 50%, 0 0; }
-}
-
-/* Watermark crest removed */
-.page-hero::before, .hero::before {
-  display: none;
-  content: "";
-  position: absolute;
-  top: 50%; right: -60px;
-  width: 360px; height: 360px;
-  transform: translateY(-50%);
-  opacity: .05;
-  animation: watermarkFloat 12s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes watermarkFloat {
-  0%,100% { transform: translateY(-50%) rotate(0deg); }
-  50%     { transform: translateY(-54%) rotate(4deg); }
 }
 
 /* Hero content fade-up on load */
@@ -363,37 +309,21 @@ footer a:hover { text-decoration: underline; }
 }
 @keyframes lineGrow { to { width: 90px; } }
 
-/* ── Logo: ensure always visible, add subtle hover ── */
-.nav-logo-img {
-  /* The PNG is a square of royal blue (#1a387e) with a round crest inside --
-     as a rounded square it reads as a mismatched blue tile on the darker navy
-     bar. Round it fully and ring it so it matches .hero-logo. */
-  width: 44px; height: 44px; border-radius: 50%;
-  object-fit: cover; flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,.22);
-  box-shadow: 0 2px 8px rgba(0,0,0,.25);
-  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
-}
-.nav-brand:hover .nav-logo-img { transform: rotate(-6deg) scale(1.08); }
-
 /* ── Card entrance animations on scroll (via IntersectionObserver in nav.js) ── */
-.card, .info-card, .hw-card, .game-card, .resource-link, .platform-section, .term-block {
+.card, .info-card, .hw-card, .resource-link, .platform-section, .term-block {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity .6s ease, transform .6s cubic-bezier(.22,1,.36,1);
 }
-.card.in-view, .info-card.in-view, .hw-card.in-view, .game-card.in-view,
+.card.in-view, .info-card.in-view, .hw-card.in-view,
 .resource-link.in-view, .platform-section.in-view, .term-block.in-view {
   opacity: 1; transform: translateY(0);
 }
 
 /* Stagger helper — applied via nth-child for grids */
 .card-grid .card:nth-child(2), .info-grid .info-card:nth-child(2),
-.games-grid .game-card:nth-child(2) { transition-delay: .08s; }
 .card-grid .card:nth-child(3), .info-grid .info-card:nth-child(3),
-.games-grid .game-card:nth-child(3) { transition-delay: .16s; }
 .card-grid .card:nth-child(4), .info-grid .info-card:nth-child(4),
-.games-grid .game-card:nth-child(4) { transition-delay: .24s; }
 .card-grid .card:nth-child(5), .info-grid .info-card:nth-child(5) { transition-delay: .32s; }
 .card-grid .card:nth-child(6), .info-grid .info-card:nth-child(6) { transition-delay: .40s; }
 
@@ -428,7 +358,7 @@ footer a:hover { text-decoration: underline; }
   .page-hero::before, .hero::before { animation: none; }
   .page-hero > *, .hero > * { animation: none; opacity: 1; transform: none; }
   .page-hero h1::after, .hero h1::after { width: 90px; animation: none; }
-  .card, .info-card, .hw-card, .game-card, .resource-link, .platform-section, .term-block {
+  .card, .info-card, .hw-card, .resource-link, .platform-section, .term-block {
     opacity: 1; transform: none;
   }
 }

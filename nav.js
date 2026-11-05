@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ── Scroll-reveal animations ──
-  const revealSel = '.card, .info-card, .hw-card, .game-card, .resource-link, .platform-section, .term-block';
+  const revealSel = '.card, .info-card, .hw-card, .resource-link, .platform-section, .term-block';
   const items = document.querySelectorAll(revealSel);
 
   if ('IntersectionObserver' in window && items.length) {
