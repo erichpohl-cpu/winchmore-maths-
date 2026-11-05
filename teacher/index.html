@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maths Staff Interface — Winchmore Maths</title>
   <meta name="robots" content="noindex, nofollow"/>
-  <link rel="stylesheet" href="../style.css?v=20260918d"/>
+  <link rel="stylesheet" href="../style.css"/>
   <link rel="stylesheet" href="tracker.css"/>
   <script src="auth.js"></script>
   <script>window.WM_AUTH.guard("login.html");</script>
@@ -13,25 +13,26 @@
   <style>
     .wm-launch {
       display: flex; flex-direction: column; align-items: center; gap: 1rem;
-      background: #12233A; color: #fff; border-radius: 16px;
+      background: #0B1F3A; color: #fff; border-radius: 16px;
       padding: 2.6rem 1.4rem; text-align: center;
     }
     .wm-launch h2 {
       font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; margin: 0; color: #fff;
     }
-    .wm-launch p { margin: 0; font-size: .9rem; color: rgba(255,255,255,.78); max-width: 44ch; }
+    .wm-launch p { margin: 0; font-size: .9rem; color: rgba(255,255,255,.78); max-width: 46ch; }
+    .wm-launch .wm-note { font-size: .8rem; color: rgba(255,255,255,.6); }
     .wm-spinner {
       width: 34px; height: 34px; border-radius: 50%;
-      border: 3px solid rgba(255,255,255,.25); border-top-color: #26de81;
+      border: 3px solid rgba(255,255,255,.25); border-top-color: #00C9A7;
       animation: wm-spin .8s linear infinite;
     }
     @keyframes wm-spin { to { transform: rotate(360deg); } }
     .wm-launch a.wm-go {
       font-family: inherit; font-size: .88rem; font-weight: 700; text-decoration: none;
       padding: .55rem 1.3rem; border-radius: 50px;
-      background: #26de81; border: 1.5px solid #26de81; color: #0b3323;
+      background: #00C9A7; border: 1.5px solid #00C9A7; color: #06302a;
     }
-    .wm-launch-done { background: #5b6b7c; }
+    .wm-launch-done { background: #44586d; }
     .wm-launch-done .wm-spinner { display: none; }
   </style>
 </head>
@@ -62,7 +63,7 @@
 </div>
 
 <div class="tagline-strip">Learning to Realise Potential</div>
-<header class="page-hero" style="border-top:5px solid #12233A;">
+<header class="page-hero" style="border-top:5px solid #0B1F3A;">
   <p class="page-hero-eyebrow">Staff only</p>
   <h1>Maths Staff <em>Interface</em></h1>
   <p>Signing you into the interactive planner. Every staff tool lives inside it.</p>
@@ -75,6 +76,9 @@
     <h2 id="wm-launch-title">Opening the Teacher Planner&hellip;</h2>
     <p id="wm-launch-msg">If it doesn&rsquo;t open by itself, use the button below.</p>
     <a class="wm-go" href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" id="wm-planner-link">Open the planner</a>
+    <p class="wm-note">You must be signed in to Google with your
+      <strong>@winchmore.enfield.sch.uk</strong> account. Personal Google
+      accounts cannot open the planner.</p>
   </div>
  </div>
 </section>
@@ -87,7 +91,7 @@
 
 <script>
 (function () {
-  var PLANNER = "https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec";
+  var PLANNER = document.getElementById("wm-planner-link").href;
   var KEY = "wm_planner_opened";
   var box = document.getElementById("wm-launch");
   var title = document.getElementById("wm-launch-title");
