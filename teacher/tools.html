@@ -3,117 +3,13 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Staff Tools — Maths Staff Interface — Winchmore Maths</title>
-  <link rel="stylesheet" href="../style.css?v=20260918d"/>
-  <link rel="stylesheet" href="tracker.css"/>
-  <script src="auth.js"></script>
-  <script>window.WM_AUTH.guard("login.html");</script>
-  <script src="../nav.js"></script>
+  <title>Maths Staff Interface — Winchmore Maths</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <meta http-equiv="refresh" content="0; url=index.html"/>
+  <script>location.replace("index.html");</script>
 </head>
-<body>
-
-<nav role="navigation" aria-label="Main navigation">
-  <a href="../index.html" class="nav-brand" aria-label="Winchmore Maths home">
-    <img src="../winchmore_maths_logo.png" alt="Winchmore School Mathematics" class="nav-logo-img"/>
-    <div class="nav-brand-text">Maths Interface<span>Winchmore School</span></div>
-  </a>
-  <ul class="nav-links" role="list">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="tools.html" class="active">Staff Tools</a></li>
-    <li><a href="trackers.html">Trackers</a></li>
-    <li><a href="timetable.html">Faculty Timetable</a></li>
-    <li><a href="#" id="logout-link">Log out</a></li>
-  </ul>
-  <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" onclick="toggleMenu(this)">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="mobile-menu" id="mobile-nav">
-  <a href="../index.html">Home</a>
-  <a href="tools.html">Staff Tools</a>
-  <a href="trackers.html">Trackers</a>
-  <a href="timetable.html">Faculty Timetable</a>
-  <a href="#" class="logout-link-m">Log out</a>
-</div>
-
-<div class="tagline-strip">Learning to Realise Potential</div>
-<header class="page-hero" style="border-top:5px solid #12233A;">
-  <p class="page-hero-eyebrow">Staff only</p>
-  <h1>Staff <em>Tools</em></h1>
-  <p>Every tool for the maths faculty in one place. The A level PLC trackers are on the <a href="trackers.html" style="color:inherit;text-decoration:underline;">Trackers</a> tab.</p>
-</header>
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="../index.html">Home</a> <span>&rsaquo;</span> Maths Staff Interface <span>&rsaquo;</span> Staff Tools
-</nav>
-
-<section class="section">
- <div class="container">
-
-  <div class="section-header">
-    <p class="section-eyebrow">Staff tools</p>
-    <h2>Teacher tools</h2>
-  </div>
-
-  <div class="info-grid">
-    <a href="timetable.html" class="info-card" style="border-top:4px solid #7C83FD;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128506;</div>
-      <h3>Faculty Timetable</h3>
-      <p>Live corridor view &mdash; which class is in which room right now.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycby8yBpQETF4vDRPHvhKy-0plVYlMy7fkRSUHn25IdokG6JfNBHNG40R859KuNq0ooz_Rg/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #e0563f;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128203;</div>
-      <h3>Cover Work Builder</h3>
-      <p>Pick your dates and build the cover sheet for the lessons you&rsquo;ll miss.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbyuBBtmJ_BhpsSLZ2oZJnlxLStW9SLMCummmZcm9nk1VoOBEPdjb3j9xfQjml9Ylh8n/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #F7B731;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128179;</div>
-      <h3>Video Pay Manager</h3>
-      <p>Opens the video pay Google tool in a new tab.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbwG182d97d1TYr_AYCyFJ3-34ESKg-Rz_Rw86OO_GaKA1CSSawbdifZ1GKKF-qU4tp_/exec" target="_blank" rel="noopener noreferrer" class="info-card" id="trolley-card" style="border-top:4px solid #12233A;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128187;</div>
-      <h3>Laptop Trolley Booking</h3>
-      <p>Book the laptop trolley for a period, up to two weeks ahead.</p>
-    </a>
-    <a href="https://script.google.com/a/macros/winchmore.enfield.sch.uk/s/AKfycbxL3dyPR2Lob1NSX59WW9OFMApS46Z_HfO99BMjfKUgmSM8mJgC6nsSu0dJWnIyxHQbyw/exec" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128197;</div>
-      <h3>Teacher Planner Interactive</h3>
-      <p>Plan your lessons week by week in the interactive planner.</p>
-    </a>
-    <a href="https://www.mathslinks.co.uk/resource-organiser" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #45B7D1;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128279;</div>
-      <h3>Maths Links</h3>
-      <p>Resource organiser &mdash; teaching resources sorted by topic.</p>
-    </a>
-    <a href="https://www.yesterdaysmathsexam.com/" target="_blank" rel="noopener noreferrer" class="info-card" style="border-top:4px solid #4ECDC4;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128221;</div>
-      <h3>Yesterday&rsquo;s Maths Exam</h3>
-      <p>Recent GCSE papers and questions ready to use in class.</p>
-    </a>
-    <a href="trackers.html" class="info-card" style="border-top:4px solid #26de81;text-decoration:none;color:inherit;">
-      <div class="info-icon">&#128202;</div>
-      <h3>A Level Trackers</h3>
-      <p>PLC trackers for Core Pure, AS and A level Pure &amp; Applied.</p>
-    </a>
-  </div>
- </div>
-</section>
-
-<footer>
-  <p>Winchmore School Maths Department &mdash;
-    <a href="https://www.winchmore.enfield.sch.uk" target="_blank" rel="noopener noreferrer">winchmore.enfield.sch.uk</a></p>
-  <p style="margin-top:.4rem;">Staff section &mdash; not linked from the student site.</p>
-</footer>
-
-<script>
-  document.getElementById("logout-link").addEventListener("click", function(e){
-    e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html");
-  });
-</script>
-<script>
-  Array.prototype.forEach.call(document.querySelectorAll(".logout-link-m"), function(a){
-    a.addEventListener("click", function(e){ e.preventDefault(); window.WM_AUTH.logout(); location.replace("login.html"); });
-  });
-</script>
+<body style="font-family:Nunito,system-ui,sans-serif;background:#0B1F3A;color:#fff;padding:3rem;text-align:center;">
+  <p>The staff tools now live inside the Teacher Planner.
+     <a href="index.html" style="color:#00C9A7;">Continue</a>.</p>
 </body>
 </html>
